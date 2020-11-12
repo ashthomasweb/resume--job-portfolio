@@ -1,0 +1,337 @@
+/*--Color Palette
+cream - #f6eedf
+blue -  #084177
+beige - rgb(160, 85, 80)
+dark  - #202040
+
+Alternate
+dark   - #202040
+purple - #543864
+orange - #ff6363
+yellow - #ffbd69
+
+Fonts
+Sacramento - cursive
+Merriweather - sans
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,700;1,400&family=Sacramento&display=swap" rel="stylesheet">
+--*/
+
+.huge {
+  font-size: 150px;
+}
+
+
+body {
+  background-color: #f6eedf;
+  margin: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: Sacramento, cursive;
+  font-size: 80px;
+  width: 60%;
+  margin: 0 auto 0 auto;
+}
+
+h2 {
+  margin: 0 auto 0;
+  font-family: Merriweather sans, sans-serif;
+  font-size: 24px;
+
+}
+
+h2.about {
+  margin-top: 20px;
+
+}
+
+h2.creativity-text {
+  color: white;
+  max-width: 520px;
+  padding:20 0;
+
+}
+
+p {
+  color: #353535;
+  font-size: 20px;
+  line-height: 30px;
+
+  text-align: left;
+  font-family:Merriweather sans, sans-serif;
+}
+
+
+.top-container {
+  padding: 30px;
+
+}
+
+.invisible-man {
+  margin-bottom: 18px;
+  height: 400px;
+}
+
+/*About Pane*/
+
+.about-container {
+  padding:30px 0;
+  background-color: #543864;
+
+}
+
+p.about {
+  max-width: 550px;
+  text-align: center;
+
+}
+
+.inner-about-container {
+  display:inline-block;
+  width:40%;
+  height:200px;
+  margin:0;
+  vertical-align:top;
+
+}
+
+.laptop-code {
+  width:200px;
+
+}
+
+/*Experience Pane*/
+
+.experience-container {
+  padding:30px;
+  background-color:#ff6363;
+  width:75%;
+  margin: 0 auto;
+  padding-bottom:40px;
+
+}
+
+.inner-exp-cont {
+  display:inline-block;
+  height:200px;
+  vertical-align:top;
+
+}
+
+p.experience-right {
+  margin-left:auto;
+  margin-right:auto;
+  width:450px;
+
+  padding-left:30px;
+
+}
+
+p.experience-left {
+  margin-left:auto;
+  margin-right:auto;
+  width:450px;
+
+  padding-right:30px;
+
+}
+
+.pre-layout-container {
+  height:auto;
+  padding:20px;
+
+}
+
+.layout-img {
+  width:200px;
+
+}
+
+.pre-remote-container {
+  height:auto;
+  padding:20px;
+
+}
+
+.remote-img {
+  width:200px;
+
+
+}
+
+.pre-educator-container {
+  height:auto;
+  padding:20px;
+
+}
+
+.educator-img {
+  width:200px;
+
+}
+
+.pre-detail-container {
+  height:auto;
+  padding:20px;
+
+}
+
+.details-img {
+  width:200px;
+
+}
+
+.organization-container {
+  padding-top:30px;
+  padding-bottom:30px;
+  background-color:#543864;
+
+}
+
+p.creativity-text {
+  max-width:500px;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+.skills-container {
+  background-color: lightblue;
+  padding:30px 0;
+  width:75%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  font-size:0;
+
+}
+
+.inner-skill-container {
+  margin-left:auto;
+  margin-right:auto;
+  width:80%;
+  text-align:center;
+  height:auto;
+  margin-top:24px;
+  margin-bottom:10px;
+
+}
+
+.inner2-skill-container {
+  display:inline-block;
+  font-size:0;
+  width:200px;
+  text-align:center;
+  margin:0 5px;
+  vertical-align:top;
+  height:auto;
+
+}
+
+.skill-row-left {
+  width:200px;
+  background-color:lightgrey;
+  height:200px;
+  vertical-align:top;
+  display:table;
+  border-radius:10px;
+
+}
+
+.skill-row-center {
+  width:200px;
+  background-color:grey;
+  height:200px;
+  vertical-align:top;
+  display:table;
+  border-radius:10px;
+
+}
+
+.skill-row-right {
+  border-radius:10px;
+  width:200px;
+  background-color:darkgrey;
+  height:200px;
+  vertical-align:top;
+  font-size:0;
+  display:table;
+}
+
+p.skill-text {
+  text-align:center;
+  font-size:22px;
+  margin:0;
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.portfolio-container {
+  background-color:white;
+
+  padding:30px 0;
+}
+
+.portfolio-inline {
+  width:auto;
+  height:150px;
+  line-height:150px;
+  display:inline-block;
+  margin:10px;
+  background-color:black;
+  vertical-align:top;
+}
+
+.img-gif {
+
+  height:150px;
+  vertical-align:middle;
+
+}
+
+.img-gif-hover {
+  width:150px;
+  vertical-align:middle;
+  opacity:.3;
+
+}
+
+.img-gif-hover:hover {
+  width:150px;
+  vertical-align:middle;
+  opacity:1;
+
+}
+.contact-container {
+  background-color: grey;
+  padding:30px 0;
+}
+
+.flexible-container {
+  resize: horizontal;
+  background-color: blue;
+  width: 300px;
+  height: 100px;
+}
+
+
+iframe {
+  margin: 50px auto;
+  height: 720px;
+  max-height: 720px;
+  width: 1080px;
+  resize: both;
+  overflow: auto;
+  padding: 15px;
+  background-color: rgb(147, 168, 236);
+}
+
+.iframe-wrapper {
+  height: 800px;
+  width: 90%;
+  background-color: #222;
+  margin-left: auto;
+  margin-right: auto;
+}
