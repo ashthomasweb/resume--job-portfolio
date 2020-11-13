@@ -1,15 +1,12 @@
+// || Require dependencies 
+const express = require("express");
 
-/* --- Dependencies --- */
-const express = require('express');
-// const /* variable */ = require(__dirname + /* '/public/js/file.js' */)
-/* --- Module Assignments --- */
+// || Assign dependencies 
 const app = express();
-app.use(express.static('public'));
+app.use(express.static("public"));
 
-
-
-/* --- Static Route --- */
-app.get("/", function(req, res){
+// || Routes 
+app.get("/", function(req, res) {
     res.sendFile(__dirname + "/index.html");
 });
 
@@ -25,12 +22,11 @@ app.get("/", function(req, res){
 
 
 
-
-// || working manual refresh for localhost and ftp-ready 
+// || Listener compatible with Heroku, Localhost, and A2
 let port = process.env.PORT;
-if (port == null || port == "") {
-    port = 3000;
-    console.log('Server started on port 3000.');
-}
-app.listen(port), function () {};
+if (port === null || port === "") { 
+    port = 3000; 
+};
+app.listen(port, () => console.log(`Server started at port ${port}.`));
+// || END Listener 
 
