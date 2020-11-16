@@ -8,11 +8,14 @@
   <meta name="author" content="William Rideout" />
   <meta name="copyright" content="2020" />
   <title>William Rideout</title>
+  <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/styles.css">
-  <!-- <link rel="stylesheet" href="/css/reset.css"> -->
 
+  <!-- API -->
+  <!-- need EmailJS code  -->
   <!-- Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,700;1,400&family=Sacramento&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,700;1,400&family=Sacramento&display=swap">
 </head>
 
 <body>
@@ -34,6 +37,50 @@
       <p class="about">I'm new to the field and super excited to be here. I have been a classical musician and educator
         for almost 15 years, and have decided to move on.</p>
     </div>
+
+  </div>
+
+  <div class="portfolio-container">
+    <br>
+    <h2>Here are some examples of my work</h2>
+    <br>
+    <div class="card--frame">
+      <div class="card--inner-pane">
+
+
+        <div class="card-left-section">
+          <img src="/images/gallery/lld-capture.png" >
+        </div>
+
+        <div class="card-right-section">
+          <h3>Client project</h3>
+          <p><a href="www.dev.looseleashdog.com">www.looseleashdog.com</a></p>
+          <br>
+          <h4>Stack</h4>
+          <p>Node.js, Express, Ejs, JS, Prismic, Curator API, EmailJS</p>
+          
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <br>
+
+  <div class="card--frame">
+    <div class="card--inner-pane">
+      <p>This project is for a local business-woman sole-proprietor. Her business model has been restricted to
+        Instagram, limiting her ability to provide her clientele and community with all that she has to offer. This
+        website allows her to showcase her client's good behavior and have a blog where she can generate affiliate
+        links and provide additional learning and enrichment opportunities to her clients.</p>
+    </div>
+  </div>
+
+  <br>
+
+
 
   </div>
 
@@ -125,22 +172,56 @@
     </div>
   </div>
 
-  <div class="portfolio-container">
 
-    <h2>Here are some examples of my work</h2>
-
-    <div class="iframe-wrapper">
-      <iframe src="https://rideoutweb.github.io/personal--the-simon-game/index.html"></iframe>
-    </div>
-
-  </div>
 
   <div class="contact-container">
+    <br>
 
-    <h2>You can contact me here at
-      -->insert email!<--</h2> <h3>Thanks for stopping by!</h3>
+    <div class="card--frame">
+      <div class="card--inner-pane">
 
+        <form id="contact-form" class="contact-form" name="contact">
+
+          <div class="card-top-section">
+            <label class="form-title">Your Name:</label>
+            <input class="form-entry" type="text" name="user_name" oninput="formFieldCheck()">
+            <label class="form-title">Email:</label>
+            <input class="form-entry" type="email" name="user_email" oninput="formFieldCheck()">
+            <button id="contact-button" class="card-btn-topright" type="submit"
+              onclick="contactResponse()">Send</button>
+          </div>
+
+          <div class="card-bottom-section">
+            <label class="form-title">Message:</label>
+            <textarea class="form-textarea" name="message" oninput="formFieldCheck()"></textarea>
+          </div>
+
+        </form>
+
+        <div id="hidden-response" class="hidden-response">
+          <div class="response-box">
+            <p>Thanks!</p>
+            <p>Your message has been sent</p>
+            <p>I'm looking forward to talking with you, I will reach out within 2 or 3 business days.</p>
+            <button type="button" class="hidden-button" onclick="location.href='/blog'" />Check out the Blog</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <br>
   </div>
+
+  <br>
+
+  <br>
+
+  <br>
+
+  <br>
+
+
+
 
   <script src="index.js" charset="utf-8"></script>
 </body>
