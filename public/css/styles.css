@@ -368,7 +368,7 @@ p.skill-text {
   background-color: #333;
 }
 
-.gallery-img-section img {
+.main-img {
   width: 450px;
   margin: 0 auto;
   display: block;
@@ -378,6 +378,52 @@ p.skill-text {
   left: 0;
   right: 0;
 }
+
+.gallery-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 37px;
+  height: 394px;
+  padding: 0;
+  border: 0;
+  background-repeat: no-repeat;
+  background-size: 20px 50px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  opacity: .3;
+  transition: opacity .2s;
+}
+
+.gallery-btn:hover {
+  opacity: 1;
+}
+
+.g-btn-left {
+  left: 0px;
+  background-image: url("/images/left-arrow.png");
+  background-position: 7px 172px;
+}
+
+.g-btn-right {
+  right: 0px;
+  background-image: url("/images/right-arrow.png");
+  background-position: 10px 172px;
+}
+
+
+button {
+  outline: none;
+  
+}
+
+
+
+
+
+
+
+
 
 .gallery-right-section {
   position: absolute;

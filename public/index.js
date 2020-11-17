@@ -17,3 +17,77 @@ function formFieldCheck() {
         elem.style.pointerEvents = "auto";
     }
 }
+
+
+
+
+// || Galleries 
+
+// * gallery image arrays 
+const gallery1 = ["/images/gallery/lld-capture.png", "/images/gallery/lld-capture2.png", "2", "word"];
+const gallery2 = ["/images/gallery/simon-capture.png", "/images/gallery/simon-capture2.png", "three"];
+
+
+// || gallery image control buttons 
+
+ 
+
+{
+let position = 0;
+function gallery1Right() {
+    if ( position == gallery1.length - 1 ) {
+        position = 0;
+    } else {
+        position++;
+    }
+
+    console.log(position);
+
+
+    // let currentImg = document.getElementById('gallery1-img');
+    // currentImg.setAttribute("src", )
+}
+
+function gallery1Left() {
+    if ( position == 0 ) {
+        position = gallery1.length - 1;
+    } else {
+        position--;
+    }
+
+    console.log(position);
+
+    // let currentImg = document.getElementById('gallery1-img');
+    // currentImg.setAttribute("src", )
+}
+}
+
+{
+    let position = 0;
+    function gallery2Right() {
+        if ( position == gallery2.length - 1 ) {
+            position = 0;
+        } else {
+            position++;
+        }
+    
+        console.log(position);
+    
+    
+        // let currentImg = document.getElementById('gallery1-img');
+        // currentImg.setAttribute("src", )
+    }
+    
+    function gallery2Left() {
+        if ( position == 0 ) {
+            position = gallery2.length - 1;
+        } else {
+            position--;
+        }
+    
+        console.log(position);
+    
+        // let currentImg = document.getElementById('gallery1-img');
+        // currentImg.setAttribute("src", )
+    }
+    }
