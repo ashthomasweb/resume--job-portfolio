@@ -16,6 +16,37 @@ Merriweather - sans
    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,700;1,400&family=Sacramento&display=swap" rel="stylesheet">
 --*/
 
+
+/* temporary theme colors from lld  */
+
+:root {
+  --theme-blue: #3fc5f0;
+  --theme-darkblue: #239cc4;
+  --theme-verylightblue: #ebfbff;
+  --theme-lightblue: #ccf2fd;
+  --theme-lightblue-alt: #b0e9ff;
+  --theme-darkgreen: #00d681; /* rgba(109, 236, 185, 1) */
+  --theme-green: #6decb9; /* rgba(109, 236, 185, 1) */
+  --theme-lightgreen: #9bffd7; 
+  --theme-lightgreen-alt: #9cefdb;
+
+  --theme-yellow: #f2f6d0;
+  --theme-lightyellow: #f5f7de;
+  --theme-borders: #3a3b48;
+  --theme-lightborders: #4d4f60;
+  --border-light: #e6e6e6;
+  --primary-background:#ffffff;
+  --secondary-background: #f9f9f9;
+  --copy-light: #b4b4b4;
+  --copy-mid: #6a6a6a;
+  --copy-dark: #3a3b48;
+  --shadow: rgba(0, 0, 0, 0.4);
+  --darken: rgba(0,0,0,0.1);
+  --clear: rgba(0, 0, 0, 0);
+  /*#48899f*/
+}
+
+
 .huge {
   font-size: 150px;
 }
@@ -281,6 +312,100 @@ p.skill-text {
   padding:30px 0;
 }
 
+
+
+
+
+
+
+
+ /* || Gallery  */
+
+
+
+
+
+
+
+
+.card--gallery {
+  position: relative;
+  display: block;
+  width: 800px;
+  height: 410px;
+  padding: 8px;
+  border: 0 !important;
+  margin: 0 auto;
+  background-color:  #222!important;
+  text-align: left;
+  
+}
+
+.card--gallery-inner {
+  position: absolute;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  background-color: var(--theme-verylightblue);
+  
+}
+
+.card--gallery-inner p {
+  font-size: 16px;
+  padding: 20px
+}
+
+
+
+
+
+.gallery-img-section {
+  position: relative;
+  display: inline-block;
+  width: 67%;
+  height: 100%;
+  padding: 20px 30px;
+  border-right: 1px solid #222;
+  background-color: #333;
+}
+
+.gallery-img-section img {
+  width: 450px;
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+}
+
+.gallery-right-section {
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  width: calc(33% - 4px);
+  height: 100%;
+  padding: 10px;
+}
+
+.gallery-right-section h3 {
+  font-size: 22px;
+  }
+
+.gallery-right-section h4 {
+font-size: 20px;
+}
+
+.gallery-right-section p {
+  font-size: 16px;
+}
+
+
+
+
+
+
+
 /* || modular contact card */
 
 
@@ -296,7 +421,7 @@ p.skill-text {
   padding: 4px;
   border: 0 !important;
   margin: 0 auto;
-  background-color: var(--theme-lightblue-alt) !important;
+  background-color:  var(--theme-lightblue-alt)!important;
   text-align: left;
 }
 
@@ -311,11 +436,34 @@ p.skill-text {
 
 
 
+.card--frame-large {
+  position: relative;
+  display: block;
+  width: 800px;
+  height: 410px;
+  padding: 8px;
+  border: 0 !important;
+  margin: 0 auto;
+  background-color:  #222!important;
+  text-align: left;
+}
+
+.card--inner-pane-large {
+  position: absolute;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  background-color: var(--theme-verylightblue);
+}
+
+
+
+
+
+
+
 .card-top-section {
   width: 100%;
   padding: 20px 30px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
   border-bottom: 1px solid var(--theme-lightblue-alt);
   background-color: var(--theme-lightblue);
 }
@@ -328,32 +476,42 @@ p.skill-text {
 }
 
 
+
+
+
 .card-left-section {
+  position: relative;
   display: inline-block;
   width: 67%;
   height: 100%;
   padding: 20px 30px;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   border-right: 1px solid var(--theme-lightblue-alt);
-  background-color: var(--theme-lightblue);
-  position: relative;
+  background-color: #333;
 }
 
 .card-left-section img {
-  vertical-align: middle;
-  
-  width: 90%;
+  width: 450px;
   margin: 0 auto;
-
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
 }
 
 .card-right-section {
+  position: absolute;
+  top: 0;
   display: inline-block;
   width: calc(33% - 4px);
   height: 100%;
-
+  padding: 10px;
 }
+
+
 
 
 
@@ -382,6 +540,27 @@ p.skill-text {
   cursor: pointer;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* || Contact form styling  */
 .contact-form * {
   display: block;
 }
@@ -486,31 +665,3 @@ textarea:focus {
 
 
 
-
-
-:root {
-  --theme-blue: #3fc5f0;
-  --theme-darkblue: #239cc4;
-  --theme-verylightblue: #ebfbff;
-  --theme-lightblue: #ccf2fd;
-  --theme-lightblue-alt: #b0e9ff;
-  --theme-darkgreen: #00d681; /* rgba(109, 236, 185, 1) */
-  --theme-green: #6decb9; /* rgba(109, 236, 185, 1) */
-  --theme-lightgreen: #9bffd7; 
-  --theme-lightgreen-alt: #9cefdb;
-
-  --theme-yellow: #f2f6d0;
-  --theme-lightyellow: #f5f7de;
-  --theme-borders: #3a3b48;
-  --theme-lightborders: #4d4f60;
-  --border-light: #e6e6e6;
-  --primary-background:#ffffff;
-  --secondary-background: #f9f9f9;
-  --copy-light: #b4b4b4;
-  --copy-mid: #6a6a6a;
-  --copy-dark: #3a3b48;
-  --shadow: rgba(0, 0, 0, 0.4);
-  --darken: rgba(0,0,0,0.1);
-  --clear: rgba(0, 0, 0, 0);
-  /*#48899f*/
-}
