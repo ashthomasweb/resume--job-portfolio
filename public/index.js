@@ -1,7 +1,4 @@
-// || contact form field checker 
-
-
-
+// || contact form field checker
 
 function formFieldCheck() {
     let name = document.forms["contact"]["user_name"].value;
@@ -17,8 +14,6 @@ function formFieldCheck() {
         elem.style.pointerEvents = "auto";
     }
 }
-
-
 
 
 // || Galleries 
@@ -54,7 +49,7 @@ const gallery5 = [];
         }
         currentImg.setAttribute("src", gallery1[position])
     }
-}
+} 
 
 {
     let position = 0;
@@ -100,7 +95,7 @@ const gallery5 = [];
         }
         currentImg.setAttribute("src", gallery3[position])
     }
-}
+} 
 
 {
     let position = 0;
@@ -123,7 +118,7 @@ const gallery5 = [];
         }
         currentImg.setAttribute("src", gallery4[position])
     }
-}
+} 
 
 {
     let position = 0;
@@ -147,5 +142,4 @@ const gallery5 = [];
         currentImg.setAttribute("src", gallery5[position])
     }
 }
-
 
