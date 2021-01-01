@@ -561,6 +561,7 @@ p {
   width: 161px;
   height: 137px;
   border: 7px solid lightblue;
+  pointer-events: none;
 }
 
 
