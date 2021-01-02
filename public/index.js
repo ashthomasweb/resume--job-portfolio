@@ -7,13 +7,21 @@ function formFieldCheck() {
     let elem = document.getElementById("contact-button");
 
     if (name == "" || email == "" || message == "") {
-        elem.style.backgroundColor = "var(--theme-lightgreen-alt)";
+        elem.style.backgroundColor = "var(--theme-darkgreen)";
         elem.style.pointerEvents = "none";
     } else {
-        elem.style.backgroundColor = "var(--theme-green)";
+        elem.style.backgroundColor = "var(--theme-yellow)";
         elem.style.pointerEvents = "auto";
     }
 }
+
+function testThis() {
+
+    document.getElementById("contact-button").innerText = "SENT"
+    document.getElementById("hidden-response").style.display = "block";
+
+}
+
 
 
 // || Galleries 
