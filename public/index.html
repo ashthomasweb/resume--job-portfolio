@@ -11,8 +11,6 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/styles.css">
 
-  <!-- API -->
-  <!-- need EmailJS code  -->
   <!-- Fonts -->
   <link rel="stylesheet" href="https://use.typekit.net/whd6rrl.css">
   <link rel="stylesheet"
@@ -25,23 +23,23 @@
     })();
   </script>
   <script type="text/javascript">
-    window.onload = function() {
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            // // generate a five digit number for the contact_number variable
-            // this.contact_number.value = Math.random() * 100000 | 0;
-            // sendForm(SERVICE_ID, CONTACT_TEMPLATE)
-            emailjs.sendForm('service_h2c2ek9', 'contact_form', this)
-                .then(function() {
-                    console.log('SUCCESS!');
-                    testThis();
-                    
-                }, function(error) {
-                    console.log('FAILED...', error);
-                });
-        });
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // // generate a five digit number for the contact_number variable
+        // this.contact_number.value = Math.random() * 100000 | 0;
+        // sendForm(SERVICE_ID, CONTACT_TEMPLATE)
+        emailjs.sendForm('service_h2c2ek9', 'contact_form', this)
+          .then(function () {
+            console.log('SUCCESS!');
+            testThis();
+
+          }, function (error) {
+            console.log('FAILED...', error);
+          });
+      });
     }
-</script>
+  </script>
 </head>
 
 <body>
@@ -67,9 +65,7 @@
   </div>
 
   <div class="gallery-container">
-    <br>
     <h2>Here are some examples of my work</h2>
-    <br>
 
     <!-- || Gallery1 Frame  -->
     <div class="card--gallery">
@@ -116,18 +112,19 @@
 
         <div class="gallery-img-section">
           <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onclick="gallery2Left()"></button>
-          <img id="gallery2-img" class="main-img" src="/images/gallery/simon-capture.png">
+          <img id="gallery2-img" class="main-img" src="/images/gallery/arnold-game.png">
           <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onclick="gallery2Right()"></button>
         </div>
 
         <div class="gallery-right-section">
           <h3>Personal Project</h3>
-          <p><a href="https://rideoutweb.github.io/personal--the-simon-game/" target="_blank">A Simon Game</a></p>
+          <p><a href="https://www.thearnoldgame.com" target="_blank">The Arnold Game</a></p>
           <br>
           <h4>Stack</h4>
           <p>HTML, CSS, JavaScript, jQuery</p>
           <button class="github-btn" type="button"
-            onclick="window.location.href='https://github.com/rideoutweb/personal--the-simon-game'" target="_blank">View
+            onclick="window.location.href='https://github.com/rideoutweb/personal--the-arnold-game'"
+            target="_blank">View
             GitHub Repo</button>
         </div>
 
@@ -136,7 +133,7 @@
 
     <div class="card--gallery" style="margin-top: -8px; height: 300px; ">
       <div class="card--gallery-inner" style="overflow-y: scroll;">
-        <p>A "Simon Game" was one of the projects in the course I took. I decided to not follow the directions and
+        <p>"The Arnold Game" was one of the projects in the course I took. I decided to not follow the directions and
           simply
           complete the assignment knowing the basic function of a simon game. I incorporated pop-culture sounds and some
           distractions to make it difficult. The player can double-click on various background elements and make them
@@ -227,8 +224,8 @@
 
   <div class="banner">
     <div>
-      <h2 class="creativity-text">What do I say here? Something about the "Why?" involved with the hiring
-        process?</h2>
+      <h2 class="creativity-text">I <i>love</i> programming. I want to create things that are permanent. Digital creations are
+        accessible across the globe, and this is <i>exciting</i> to me.</h2>
     </div>
   </div>
 
@@ -240,16 +237,15 @@
 
       <div class="inner2-skill-container">
         <div class="skill-row-left">
-          <p class="skill-text">Full-stack 2020 WebDev Bootcamp<br>- Angela Yu</p>
+          <p class="skill-text">Full-stack 2020<br>Web Development<br>Online Bootcamp<br><i>Angela Yu</i></p>
         </div>
       </div>
 
       <div class="inner2-skill-container">
         <div class="skill-row-center">
           <p class="skill-text">
-            HTML<br>
-            CSS<br>
-            JavaScript<br>
+            HTML5 & CSS3<br>
+            JavaScript ES6<br>
             Git & Github<br>
             Node/Express/EJS
           </p>
@@ -258,7 +254,7 @@
 
       <div class="inner2-skill-container">
         <div class="skill-row-right">
-          <p class="skill-text">Bachelors of Music<br>- Classical Performance</p>
+          <p class="skill-text">Bachelors of Music<br>in Performance<br><i>Classical Guitar</i></p>
         </div>
       </div>
 
@@ -266,8 +262,9 @@
 
   </div>
 
-  <div class="contact-container">
-    <br>
+  <section class="contact-container">
+    <h2>Contact Form</h2>
+
     <div class="card--frame">
 
       <form id="contact-form" class="contact-form" name="contact">
@@ -299,7 +296,18 @@
 
     </div>
     <br>
-  </div>
+  </section>
+
+  <footer>
+    <div class="footer-attributions">
+      <p>Secure email responder by EmailJS</p>
+      <p>
+        Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+          href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+      </p>
+    </div>
+
+  </footer>
   <script src="index.js" charset="utf-8"></script>
 </body>
 

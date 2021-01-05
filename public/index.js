@@ -28,7 +28,7 @@ function testThis() {
 
 // * gallery image arrays 
 const gallery1 = ["/images/gallery/lld-capture.png", "/images/gallery/lld-capture2.png"];
-const gallery2 = ["/images/gallery/simon-capture.png", "/images/gallery/simon-capture2.png"];
+const gallery2 = ["/images/gallery/arnold-game.png", "/images/gallery/arnold-game-color.png"];
 const gallery3 = [];
 const gallery4 = [];
 const gallery5 = [];

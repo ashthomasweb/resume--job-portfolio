@@ -184,12 +184,12 @@ p {
 /* || Gallery Section */
 
 .gallery-container {
-  padding: 30px;
+  padding: 50px 0;
 }
 
 .gallery-container h2 {
   font-size: 36px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .card--gallery {
@@ -327,7 +327,7 @@ p {
 
 .exp-wrap {
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 50px 0 40px;
   width: 80%;
   background-color: rgb(235, 235, 235);
 }
@@ -396,7 +396,7 @@ p {
 
 .skills-container {
   background-color: lightblue;
-  padding: 40px 0;
+  padding: 50px 0 60px;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -428,34 +428,34 @@ p {
 
 .skill-row-left {
   width: 200px;
-  background-color: rgb(235, 235, 235);
+  background-color: #ebfbff;
   height: 200px;
   vertical-align: top;
   display: table;
-  border-radius: 10px;
   padding: 5px;
+  border: 4px solid var(--theme-lightblue-alt);
+
 }
 
 .skill-row-center {
   width: 200px;
-  background-color: rgb(235, 235, 235);
+  background-color: #ebfbff;
   height: 200px;
   vertical-align: top;
   display: table;
-  border-radius: 10px;
   padding: 5px;
+  border: 4px solid var(--theme-lightblue-alt);
 
 }
 
 .skill-row-right {
-  border-radius: 10px;
   width: 200px;
-  background-color: rgb(235, 235, 235);
+  background-color: #ebfbff;
   height: 200px;
   vertical-align: top;
   display: table;
   padding: 5px;
-
+  border: 4px solid var(--theme-lightblue-alt);
 }
 
 .skill-text {
@@ -466,14 +466,18 @@ p {
 }
 
 
-
-
 /* || Contact card */
 
 .contact-container {
   background-color: #543864;
   padding: 50px 0;
 }
+
+.contact-container h2 {
+  color: white;
+  margin-bottom: 40px;
+}
+
 
 .card--frame {
   position: relative;
@@ -650,4 +654,21 @@ textarea:focus {
 }
 
 
+/* || Footer  */
+
+footer {
+  height: 100px;
+  background-color: #222222;
+  padding: 20px;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+footer a {
+  color: #00d681;
+}
 /* END of document */
