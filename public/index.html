@@ -17,35 +17,13 @@
     href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,700;1,400&family=Sacramento&display=swap">
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("user_py257ZOMhEmNaKdvol33C");
-    })();
-  </script>
-  <script type="text/javascript">
-    window.onload = function () {
-      document.getElementById('contact-form').addEventListener('submit', function (event) {
-        event.preventDefault();
-        // // generate a five digit number for the contact_number variable
-        // this.contact_number.value = Math.random() * 100000 | 0;
-        // sendForm(SERVICE_ID, CONTACT_TEMPLATE)
-        emailjs.sendForm('service_h2c2ek9', 'contact_form', this)
-          .then(function () {
-            console.log('SUCCESS!');
-            testThis();
 
-          }, function (error) {
-            console.log('FAILED...', error);
-          });
-      });
-    }
-  </script>
 </head>
 
 <body>
 
   <div class="top-container">
-    <h1>hi, i'm william</h1>
+    <h1>hi, i'm ash</h1>
     <img class="avatar" src="/images/avatar.png">
     <h2>i'm a web developer.</h2>
   </div>
@@ -267,7 +245,7 @@
 
     <div class="card--frame">
 
-      <form id="contact-form" class="contact-form" name="contact">
+      <form id="contact-form" class="contact-form" name="contact" method="POST">
 
         <div class="card-top-section">
           <label class="form-title">Your Name:</label>
@@ -275,7 +253,7 @@
           <label class="form-title">Contact Email:</label>
           <input class="form-entry" type="email" name="user_email" oninput="formFieldCheck()">
           <div class="stamp-wrap"></div>
-          <button id="contact-button" class="card-btn-topright" type="submit" onclick="contactResponse()">Send</button>
+          <button id="contact-button" class="card-btn-topright" type="submit" onclick="fetchJSON()">Send</button>
 
         </div>
 
@@ -300,7 +278,7 @@
 
   <footer>
     <div class="footer-attributions">
-      <p>Secure email responder by EmailJS</p>
+      <p>Secure email responder by NodeMailer</p>
       <p>
         Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
           href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>

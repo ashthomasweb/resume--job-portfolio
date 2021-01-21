@@ -15,13 +15,24 @@ function formFieldCheck() {
     }
 }
 
-function testThis() {
+function fetchJSON() {
 
-    document.getElementById("contact-button").innerText = "SENT"
-    document.getElementById("hidden-response").style.display = "block";
+    const Url = 'http://localhost:3000/';
+
+    fetch(Url)
+        .then(data => {
+            // return data.json();
+        })
+        .then(res => {
+            console.log('hi');
+            // console.log(data.json());
+        });
+
+
+    document.getElementById("contact-button").innerText = "SENT";
+    // document.getElementById("hidden-response").style.display = "block";
 
 }
-
 
 
 // || Galleries 
@@ -57,7 +68,7 @@ const gallery5 = [];
         }
         currentImg.setAttribute("src", gallery1[position])
     }
-} 
+}
 
 {
     let position = 0;
@@ -103,7 +114,7 @@ const gallery5 = [];
         }
         currentImg.setAttribute("src", gallery3[position])
     }
-} 
+}
 
 {
     let position = 0;
@@ -126,7 +137,7 @@ const gallery5 = [];
         }
         currentImg.setAttribute("src", gallery4[position])
     }
-} 
+}
 
 {
     let position = 0;
@@ -150,4 +161,3 @@ const gallery5 = [];
         currentImg.setAttribute("src", gallery5[position])
     }
 }
-
