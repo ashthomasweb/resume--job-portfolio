@@ -15,29 +15,6 @@ function formFieldCheck() {
     }
 }
 
-
-// document.getElementById("contact-button").addEventListener('click', (event) => {
-//     fetch('http://localhost:3000/', {
-//             method: 'POST',
-//             body: JSON.stringify({
-//                 user_name: form.elements["user_name"].value,
-//                 user_email: form.elements["user_email"].value,
-//                 message: form.elements["message"].value
-//             }),
-//             headers: {
-//                 'Content-Type': 'application/json'
-//             }
-//         })
-//         .then(function (response) {
-//             return response.json();
-//         })
-//         .then(function (myJson) {
-//             console.log(myJson);
-//         });
-
-
-// });
-
 document.getElementById("contact-button").addEventListener('click', (event) => {
     event.preventDefault();
     let form = document.getElementById("contact-form");
@@ -56,16 +33,10 @@ document.getElementById("contact-button").addEventListener('click', (event) => {
                 "Content-Type": "application/json"
             }
         })
-        .then(function (response) {
-            console.log('hi .then')
-            return response.json();
-        })
-        .then(function (myJson) {
-            console.log('hi .then2')
-            console.log(myJson);
-            console.log(myJson.error);
+        .then((response) => response.json())
+        .then((data) => {
             hiddenPane.style.display = "block";
-            if (myJson.error === "true!") {
+            if (data.error === true) {
                 errorPane.style.display = "block";
             } else {
                 successPane.style.display = "block";
@@ -73,18 +44,10 @@ document.getElementById("contact-button").addEventListener('click', (event) => {
             }
         });
 
-
-
     document.getElementById("contact-button").innerText = "SENDING";
-    // document.getElementById("hidden-response").style.display = "block";
 
 });
 
-// JSON.stringify({
-//     user_name: form.elements[0].value,
-//     user_email: form.elements[1].value,
-//     message: form.elements[3].value
-// })
 
 // || Galleries 
 

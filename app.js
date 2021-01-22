@@ -42,11 +42,10 @@ app.post('/', function (req, res) {
         })
         .finally(() => {
             if ( ifError == true ) {
-                res.json({error: "true!"})
+                res.json({error: true})
             } else {
-                res.json({error: "false!"})
+                res.json({error: false})
             }
-            console.log('hi promise all');
         });
 
 });
