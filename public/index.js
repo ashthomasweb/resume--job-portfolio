@@ -1,3 +1,5 @@
+// Main JS file for "Job-portfolio"
+
 // || contact form field checker
 
 function formFieldCheck() {
@@ -174,3 +176,6 @@ const gallery5 = [];
         currentImg.setAttribute("src", gallery5[position])
     }
 }
+
+
+// END of document

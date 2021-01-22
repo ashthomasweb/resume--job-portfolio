@@ -1,3 +1,5 @@
+// Server file for "Job-portfolio"
+
 // || Require dependencies 
 
 require('dotenv').config();
@@ -59,3 +61,5 @@ if (port == null || port == "") {
 app.listen(port, () => console.log(`Server started at port ${port}.`));
 // || END Listener 
 
+
+// END of document
