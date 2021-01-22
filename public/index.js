@@ -18,10 +18,9 @@ function formFieldCheck() {
 document.getElementById("contact-button").addEventListener('click', (event) => {
     event.preventDefault();
     let form = document.getElementById("contact-form");
-    let hiddenPane = document.getElementById("hidden-response")
+    let hiddenPane = document.getElementById("hidden-response");
     let errorPane = document.getElementById("error");
     let successPane = document.getElementById("success");
-    // console.log(form.elements[0].value);
     fetch('/', {
             method: "POST",
             body: JSON.stringify({
