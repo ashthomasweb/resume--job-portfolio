@@ -8,6 +8,7 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 // || Routes 
 app.get("/", function(req, res) {
@@ -20,30 +21,32 @@ app.post('/', function (req, res) {
 
     const { user_name, user_email, message } = req.body;
 
+    console.log(user_email);
+
     module.exports = { user_email, user_name, message };
 
     const { transporter, inquiry, finalConfirm } = require('./nodemailer.js');
 
-    var userInquiry = transporter.sendMail(inquiry);
+    transporter.sendMail(inquiry);
 
-    var userConfirm = transporter.sendMail(finalConfirm);
+    transporter.sendMail(finalConfirm);
 
-    Promise.all([userInquiry, userConfirm])
-        .then(([resultInq, resultConf]) => {
-            console.log("Emails sent", resultInq, resultConf);
-        })
-        .catch((err) => {
-            console.log(err);
-            ifError = true;
-        })
-        .finally(() => {
-            if ( ifError = true ) {
-                res.json({sent: true})
-            } else {
-                res.json({sent: false})
-            }
-            console.log('hi');
-        });
+    // Promise.all([userInquiry, userConfirm])
+    //     .then(([resultInq, resultConf]) => {
+    //         console.log("Emails sent", resultInq, resultConf);
+    //     })
+    //     .catch((err) => {
+    //         console.log(err);
+    //         ifError = true;
+    //     })
+    //     .finally(() => {
+    //         if ( ifError = true ) {
+    //             res.json({sent: true})
+    //         } else {
+    //             res.json({sent: false})
+    //         }
+    //         console.log('hi');
+    //     });
 
 });
 

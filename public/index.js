@@ -15,25 +15,63 @@ function formFieldCheck() {
     }
 }
 
-function fetchJSON() {
 
-    const Url = 'http://localhost:3000/';
+// document.getElementById("contact-button").addEventListener('click', (event) => {
+//     fetch('http://localhost:3000/', {
+//             method: 'POST',
+//             body: JSON.stringify({
+//                 user_name: form.elements["user_name"].value,
+//                 user_email: form.elements["user_email"].value,
+//                 message: form.elements["message"].value
+//             }),
+//             headers: {
+//                 'Content-Type': 'application/json'
+//             }
+//         })
+//         .then(function (response) {
+//             return response.json();
+//         })
+//         .then(function (myJson) {
+//             console.log(myJson);
+//         });
 
-    fetch(Url)
-        .then(data => {
-            // return data.json();
+
+// });
+
+document.getElementById("contact-button").addEventListener('click', (event) => {
+    event.preventDefault();
+    let form = document.getElementById("contact-form");
+    // console.log(form.elements[0].value);
+    fetch('/', {
+            method: "POST",
+            body: JSON.stringify({
+                user_name: form.elements[0].value,
+                user_email: form.elements[1].value,
+                message: form.elements[3].value
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            }
         })
-        .then(res => {
-            console.log('hi');
-            // console.log(data.json());
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (myJson) {
+            console.log(myJson);
         });
+
 
 
     document.getElementById("contact-button").innerText = "SENT";
     // document.getElementById("hidden-response").style.display = "block";
 
-}
+});
 
+// JSON.stringify({
+//     user_name: form.elements[0].value,
+//     user_email: form.elements[1].value,
+//     message: form.elements[3].value
+// })
 
 // || Galleries 
 
