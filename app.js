@@ -21,32 +21,33 @@ app.post('/', function (req, res) {
 
     const { user_name, user_email, message } = req.body;
 
-    console.log(user_email);
+    // console.log(user_email);
 
     module.exports = { user_email, user_name, message };
 
     const { transporter, inquiry, finalConfirm } = require('./nodemailer.js');
 
-    transporter.sendMail(inquiry);
+    let userInquiry = transporter.sendMail(inquiry);
 
-    transporter.sendMail(finalConfirm);
+    let userConfirm = transporter.sendMail(finalConfirm);
 
-    // Promise.all([userInquiry, userConfirm])
-    //     .then(([resultInq, resultConf]) => {
-    //         console.log("Emails sent", resultInq, resultConf);
-    //     })
-    //     .catch((err) => {
-    //         console.log(err);
-    //         ifError = true;
-    //     })
-    //     .finally(() => {
-    //         if ( ifError = true ) {
-    //             res.json({sent: true})
-    //         } else {
-    //             res.json({sent: false})
-    //         }
-    //         console.log('hi');
-    //     });
+    
+    Promise.all([userInquiry, userConfirm])
+        .then(([resultInq, resultConf]) => {
+            console.log("Emails sent", resultInq, resultConf);
+        })
+        .catch((err) => {
+            console.log(err);
+            ifError = true;
+        })
+        .finally(() => {
+            if ( ifError == true ) {
+                res.json({error: "true!"})
+            } else {
+                res.json({error: "false!"})
+            }
+            console.log('hi promise all');
+        });
 
 });
 

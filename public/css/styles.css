@@ -624,6 +624,7 @@ textarea:focus {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  display: none;
   max-width: 350px;
   margin: 0 auto;
 }

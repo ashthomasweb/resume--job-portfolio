@@ -41,6 +41,9 @@ function formFieldCheck() {
 document.getElementById("contact-button").addEventListener('click', (event) => {
     event.preventDefault();
     let form = document.getElementById("contact-form");
+    let hiddenPane = document.getElementById("hidden-response")
+    let errorPane = document.getElementById("error");
+    let successPane = document.getElementById("success");
     // console.log(form.elements[0].value);
     fetch('/', {
             method: "POST",
@@ -54,15 +57,25 @@ document.getElementById("contact-button").addEventListener('click', (event) => {
             }
         })
         .then(function (response) {
+            console.log('hi .then')
             return response.json();
         })
         .then(function (myJson) {
+            console.log('hi .then2')
             console.log(myJson);
+            console.log(myJson.error);
+            hiddenPane.style.display = "block";
+            if (myJson.error === "true!") {
+                errorPane.style.display = "block";
+            } else {
+                successPane.style.display = "block";
+                document.getElementById("contact-button").innerText = "SENT";
+            }
         });
 
 
 
-    document.getElementById("contact-button").innerText = "SENT";
+    document.getElementById("contact-button").innerText = "SENDING";
     // document.getElementById("hidden-response").style.display = "block";
 
 });

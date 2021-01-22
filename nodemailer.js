@@ -5,7 +5,7 @@ const nodemailer = require("nodemailer");
 const { user_name, user_email, message, } = require('./app.js');
 
 
-console.log(user_name);
+// console.log(user_name);
 // Mailer transport object 
 var transporter = nodemailer.createTransport({
     host: 'mi3-ts3.a2hosting.com',
