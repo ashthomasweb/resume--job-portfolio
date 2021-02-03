@@ -44,64 +44,24 @@
   <div class="gallery-container">
     <h2>Here are some examples of my work</h2>
 
-    <!-- || Gallery1 Frame  -->
+    <!-- || Gallery3 Frame  -->
     <div class="card--gallery">
       <div class="card--gallery-inner">
 
         <div class="gallery-img-section">
-          <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onclick="gallery1Left()"></button>
-          <img id="gallery1-img" class="main-img" src="/images/gallery/lld-capture.png">
-          <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onclick="gallery1Right()"></button>
+          <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onclick="gallery3Left()"></button>
+          <img id="gallery3-img" class="main-img" src="/images/gallery/lumberjack/capture.png">
+          <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onclick="gallery3Right()"></button>
         </div>
 
         <div class="gallery-right-section">
-          <h3>Client Project</h3>
-          <p><a href="https://www.dev.looseleashdog.com" target="_blank">www.looseleashdog.com</a></p>
+          <h3>Full-stack Template</h3>
+          <p><a href="https://www.lumberjack.ashthomasweb.com" target="_blank">LumberJack</a></p>
           <br>
-          <h4>Stack</h4>
-          <p>Node.js, Express, Ejs, JS, Prismic, Curator API, EmailJS</p>
+          <h4>Tech</h4>
+          <p>Node.js, Express, EJS, Prismic, Curator, NodeMailer</p>
           <button class="github-btn" type="button"
-            onclick="window.location.href='https://github.com/rideoutweb/client--loose-leash-dog'"
-            target="_blank">View GitHub Repo</button>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="card--gallery" style="margin-top: -8px; height: 300px; ">
-      <div class="card--gallery-inner" style="overflow-y: scroll;">
-        <p>This project is for a local business-woman sole-proprietor. Her business model has been restricted to
-          Instagram, limiting her ability to provide her clientele and community with all that she has to offer. This
-          website allows her to showcase her client's good behavior and have a blog where she can generate affiliate
-          links and provide additional learning and enrichment opportunities to her clients.</p>
-        <p>I used Node.js, express, and EJS to create the backend of the site. I connected a headless-CMS and built a
-          blog
-          main page and post template that autopopulates from the CMS. I connected the client's primary business traffic
-          through a social media aggregator API enabling link-through SEO and audience ease-of-access.</p>
-      </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <!-- || Gallery2 Frame  -->
-    <div class="card--gallery">
-      <div class="card--gallery-inner">
-
-        <div class="gallery-img-section">
-          <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onclick="gallery2Left()"></button>
-          <img id="gallery2-img" class="main-img" src="/images/gallery/arnold-game.png">
-          <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onclick="gallery2Right()"></button>
-        </div>
-
-        <div class="gallery-right-section">
-          <h3>Personal Project</h3>
-          <p><a href="https://www.thearnoldgame.com" target="_blank">The Arnold Game</a></p>
-          <br>
-          <h4>Stack</h4>
-          <p>HTML, CSS, JavaScript, jQuery</p>
-          <button class="github-btn" type="button"
-            onclick="window.location.href='https://github.com/rideoutweb/personal--the-arnold-game'"
-            target="_blank">View
+            onclick="window.location.href='https://github.com/rideoutweb/template-lumberjack'" target="_blank">View
             GitHub Repo</button>
         </div>
 
@@ -110,16 +70,20 @@
 
     <div class="card--gallery" style="margin-top: -8px; height: 300px; ">
       <div class="card--gallery-inner" style="overflow-y: scroll;">
-        <p>"The Arnold Game" was one of the projects in the course I took. I decided to not follow the directions and
-          simply
-          complete the assignment knowing the basic function of a simon game. I incorporated pop-culture sounds and some
-          distractions to make it difficult. The player can double-click on various background elements and make them
-          slowly change color. Another single-click on that same element will stop the color change.</p>
-        <p>This was my first solo project. I used jQuery for DOM manipulation, JS for control flow, and css for
-          animations
-          and transitions. The site is built using CSS Grid to ease in scaling to increased number of squares, or to
-          aide
-          in mobile development. Good luck, don't take Arnold too seriously.</p>
+        <p>"LumberJack" is a full-stack template developed for small businesses and social media creators. The theme is
+          lightweight and integrates third-party services to eliminate update, security, and code-heavy issues.
+          Featuring a headless CMS with Prismic, a multi-network aggregator in Curator, and automatic email responses by
+          NodeMailer, LumberJack's needs for maintenance and updates are low. Ships with detailed setup instructions
+          accesible by any front-end developer or diligent person.
+        </p>
+        <p>Making use of third-party API's keeps the website owner from having to engage with the site code after
+          launch, keeping breakage to a minimum. LumberJack's blog is automatically generated using EJS and comes with
+          a "Custom Type" ready to upload to your Prismic repository. Curator allows owners and creators to build feeds
+          from more than one network, enabling more cross-network audience engagement.
+        </p>
+        <p>Designed for a two-color brand scheme with highly legible greyscale copy. Card elements are modular and can
+          be used in a variety of configurations, color and size. LumberJack is fully compatible with any device.
+        </p>
       </div>
     </div>
 
@@ -127,7 +91,88 @@
   </div>
   <br>
   <br>
+  <br>
+  <!-- || Gallery2 Frame  -->
+  <div class="card--gallery">
+    <div class="card--gallery-inner">
 
+      <div class="gallery-img-section">
+        <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onclick="gallery2Left()"></button>
+        <img id="gallery2-img" class="main-img" src="/images/gallery/the-arnold-game/arnold-game.png">
+        <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onclick="gallery2Right()"></button>
+      </div>
+
+      <div class="gallery-right-section">
+        <h3>Personal Project</h3>
+        <p><a href="https://www.thearnoldgame.com" target="_blank">The Arnold Game</a></p>
+        <br>
+        <h4>Tech</h4>
+        <p>HTML, CSS, JavaScript, jQuery</p>
+        <button class="github-btn" type="button"
+          onclick="window.location.href='https://github.com/rideoutweb/personal--the-arnold-game'" target="_blank">View
+          GitHub Repo</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card--gallery" style="margin-top: -8px; height: 300px; ">
+    <div class="card--gallery-inner" style="overflow-y: scroll;">
+      <p>"The Arnold Game" was one of the projects in the course I took. I decided to not follow the directions and
+        simply complete the assignment knowing the basic function of a simon game. I incorporated pop-culture sounds and
+        some distractions to make it more fun and difficult. The player can double-click on various background elements
+        and make them slowly change color. Another single-click on that same element will stop the color change.
+      </p>
+      <p>This was my first solo project. I used jQuery for DOM manipulation, JS for control flow, and CSS for
+        animations and transitions. The site is built using CSS Grid to ease in scaling to increased number of squares,
+        or to aid in mobile development. Good luck, don't take Arnold too seriously.</p>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <!-- || Gallery1 Frame  -->
+  <div class="card--gallery">
+    <div class="card--gallery-inner">
+
+      <div class="gallery-img-section">
+        <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onclick="gallery1Left()"></button>
+        <img id="gallery1-img" class="main-img" src="/images/gallery/loose-leash-dog/lld-capture.png">
+        <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onclick="gallery1Right()"></button>
+      </div>
+
+      <div class="gallery-right-section">
+        <h3>Client Project</h3>
+        <p><a href="https://www.dev.looseleashdog.com" target="_blank">www.looseleashdog.com</a></p>
+        <br>
+        <h4>Tech</h4>
+        <p>Node.js, Express, Ejs, JS, Prismic, Curator API, NodeMailer</p>
+        <button class="github-btn" type="button"
+          onclick="window.location.href='https://github.com/rideoutweb/client--loose-leash-dog'" target="_blank">View
+          GitHub Repo</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card--gallery" style="margin-top: -8px; height: 300px; ">
+    <div class="card--gallery-inner" style="overflow-y: scroll;">
+      <p>This project was built for a local business-woman sole-proprietor. Her business model has been restricted to
+        Instagram, limiting her ability to provide her clientele and community with all that she has to offer. The
+        LumberJack template allows her to showcase her expertise and have a blog generating affiliate links and
+        providing additional learning and enrichment opportunities to her clients. I worked with the owner, matching
+        her business mission statement with a brand sense that appeals to her audience.
+      </p>
+      <p>Showcasing the client's primary business traffic encourages link-through SEO and grants audience
+        ease-of-access to other materials and monetizable content. Mobile-friendly content creation allows the business
+        owner to produce content more efficiently.</p>
+      <p></p>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
 
   <div class="banner">
     <div>
@@ -201,7 +246,8 @@
 
   <div class="banner">
     <div>
-      <h2 class="creativity-text">I <i>love</i> programming. I want to create things that are permanent. Digital creations are
+      <h2 class="creativity-text">I <i>love</i> programming. I want to create things that are permanent. Digital
+        creations are
         accessible across the globe, and this is <i>exciting</i> to me.</h2>
     </div>
   </div>
@@ -244,7 +290,7 @@
 
     <div class="card--frame">
 
-      <form id="contact-form" class="contact-form" name="contact" >
+      <form id="contact-form" class="contact-form" name="contact">
 
         <div class="card-top-section">
           <label class="form-title">Your Name:</label>

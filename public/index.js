@@ -53,9 +53,24 @@ document.getElementById("contact-button").addEventListener('click', (event) => {
 // || Galleries 
 
 // * gallery image arrays 
-const gallery1 = ["/images/gallery/lld-capture.png", "/images/gallery/lld-capture2.png"];
-const gallery2 = ["/images/gallery/arnold-game.png", "/images/gallery/arnold-game-color.png"];
-const gallery3 = [];
+const gallery1 = [
+    "/images/gallery/loose-leash-dog/lld-capture.png",
+    "/images/gallery/loose-leash-dog/lld-capture2.png"
+];
+const gallery2 = [
+    "/images/gallery/the-arnold-game/arnold-game.png",
+    "/images/gallery/the-arnold-game/arnold-game-color.png",
+    "/images/gallery/the-arnold-game/arnold-game-mobile.png",
+];
+const gallery3 = [
+    "/images/gallery/lumberjack/capture.png",
+    "/images/gallery/lumberjack/capture1.png",
+    "/images/gallery/lumberjack/capture2.png",
+    "/images/gallery/lumberjack/capture3.png",
+    "/images/gallery/lumberjack/capture4.png",
+    "/images/gallery/lumberjack/capture5.png",
+    "/images/gallery/lumberjack/mobile.png"
+];
 const gallery4 = [];
 const gallery5 = [];
 
@@ -131,51 +146,7 @@ const gallery5 = [];
     }
 }
 
-{
-    let position = 0;
-    let currentImg = document.getElementById('gallery4-img');
 
-    function gallery4Right() {
-        if (position == gallery4.length - 1) {
-            position = 0;
-        } else {
-            position++;
-        }
-        currentImg.setAttribute("src", gallery4[position])
-    }
-
-    function gallery4Left() {
-        if (position == 0) {
-            position = gallery4.length - 1;
-        } else {
-            position--;
-        }
-        currentImg.setAttribute("src", gallery4[position])
-    }
-}
-
-{
-    let position = 0;
-    let currentImg = document.getElementById('gallery5-img');
-
-    function gallery5Right() {
-        if (position == gallery5.length - 1) {
-            position = 0;
-        } else {
-            position++;
-        }
-        currentImg.setAttribute("src", gallery5[position])
-    }
-
-    function gallery5Left() {
-        if (position == 0) {
-            position = gallery5.length - 1;
-        } else {
-            position--;
-        }
-        currentImg.setAttribute("src", gallery5[position])
-    }
-}
 
 
 // END of document

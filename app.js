@@ -23,8 +23,6 @@ app.post('/', function (req, res) {
 
     const { user_name, user_email, message } = req.body;
 
-    // console.log(user_email);
-
     module.exports = { user_email, user_name, message };
 
     const { transporter, inquiry, finalConfirm } = require('./nodemailer.js');
