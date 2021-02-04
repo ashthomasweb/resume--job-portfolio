@@ -71,7 +71,9 @@ const gallery3 = [
     "/images/gallery/lumberjack/capture5.png",
     "/images/gallery/lumberjack/mobile.png"
 ];
-const gallery4 = [];
+const gallery4 = [
+    "/images/gallery/music-trainer/capture.png"
+];
 const gallery5 = [];
 
 
@@ -143,6 +145,29 @@ const gallery5 = [];
             position--;
         }
         currentImg.setAttribute("src", gallery3[position])
+    }
+}
+
+{
+    let position = 0;
+    let currentImg = document.getElementById('gallery4-img');
+
+    function gallery3Right() {
+        if (position == gallery4.length - 1) {
+            position = 0;
+        } else {
+            position++;
+        }
+        currentImg.setAttribute("src", gallery4[position])
+    }
+
+    function gallery3Left() {
+        if (position == 0) {
+            position = gallery4.length - 1;
+        } else {
+            position--;
+        }
+        currentImg.setAttribute("src", gallery4[position])
     }
 }
 
