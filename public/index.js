@@ -74,7 +74,10 @@ const gallery3 = [
 const gallery4 = [
     "/images/gallery/music-trainer/capture.png"
 ];
-const gallery5 = [];
+const gallery5 = [
+    "/images/gallery/wyldgreens/capture.png"
+
+];
 
 
 // || gallery image control buttons 
@@ -152,7 +155,7 @@ const gallery5 = [];
     let position = 0;
     let currentImg = document.getElementById('gallery4-img');
 
-    function gallery3Right() {
+    function gallery4Right() {
         if (position == gallery4.length - 1) {
             position = 0;
         } else {
@@ -161,13 +164,37 @@ const gallery5 = [];
         currentImg.setAttribute("src", gallery4[position])
     }
 
-    function gallery3Left() {
+    function gallery4Left() {
         if (position == 0) {
             position = gallery4.length - 1;
         } else {
             position--;
         }
         currentImg.setAttribute("src", gallery4[position])
+    }
+}
+
+
+{
+    let position = 0;
+    let currentImg = document.getElementById('gallery5-img');
+
+    function gallery5Right() {
+        if (position == gallery5.length - 1) {
+            position = 0;
+        } else {
+            position++;
+        }
+        currentImg.setAttribute("src", gallery5[position])
+    }
+
+    function gallery5Left() {
+        if (position == 0) {
+            position = gallery5.length - 1;
+        } else {
+            position--;
+        }
+        currentImg.setAttribute("src", gallery5[position])
     }
 }
 
