@@ -49,9 +49,6 @@ Merriweather - sans
   /*#48899f*/
 }
 
-
-
-
 * {
   box-sizing: border-box;
 }
@@ -123,8 +120,7 @@ p {
   color: #353535;
 }
 
-
-/* || General Layout  */
+/*  General Layout  */
 
 .banner {
   padding-top: 30px;
@@ -132,8 +128,7 @@ p {
   background-color: #543864;
 }
 
-
-/* || Avatar Section  */
+/*  Avatar Section  */
 
 .top-container {
   padding: 35px;
@@ -152,7 +147,7 @@ p {
   height: 370px;
 }
 
-/* || About Banner */
+/* About Banner */
 
 .about-title {
   margin-top: 20px;
@@ -180,8 +175,7 @@ p {
   width: 200px;
 }
 
-
-/* || Gallery Section */
+/* Gallery Section */
 
 .gallery-container {
   padding: 50px 0;
@@ -308,7 +302,7 @@ p {
 }
 
 
-/* || Creativity Banner  */
+/*  Creativity Banner  */
 
 .creativity-text {
   font-family: dinosaur, sans-serif;
@@ -323,7 +317,7 @@ p {
 }
 
 
-/* || Experience Section */
+/*  Experience Section */
 
 .experience-container {
   background-color: #222;
@@ -394,10 +388,10 @@ p {
 }
 
 
-/* || Last Banner  */
+/*  Last Banner  */
 
 
-/* || Skills Section  */
+/*  Skills Section  */
 
 .skills-container {
   background-color: lightblue;
@@ -471,7 +465,7 @@ p {
 }
 
 
-/* || Contact card */
+/*  Contact card */
 
 .contact-container {
   background-color: #543864;
@@ -574,7 +568,7 @@ p {
 }
 
 
-/* || Contact form */
+/*  Contact form */
 
 .contact-form * {
   display: block;
@@ -660,7 +654,7 @@ textarea:focus {
 }
 
 
-/* || Footer  */
+/*  Footer  */
 
 footer {
   height: 100px;
