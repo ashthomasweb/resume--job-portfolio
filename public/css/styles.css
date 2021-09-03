@@ -118,6 +118,9 @@ p {
   font-size: 20px;
   line-height: 30px;
   color: #353535;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /*  General Layout  */
@@ -243,15 +246,15 @@ p {
   cursor: pointer;
   opacity: .3;
   transition: opacity .2s;
-  
+
 }
 
 .gallery-btn:hover {
   opacity: 1;
 }
 
-.gallery-btn:focus { 
-  outline: none; 
+.gallery-btn:focus {
+  outline: none;
 }
 
 .g-btn-left {
@@ -669,4 +672,5 @@ footer p {
 footer a {
   color: #00d681;
 }
+
 /* END of document */
