@@ -65,14 +65,14 @@ function confirmTemplate() {
 
 // Nodemailer email objects
 function mailNewInquiry(user_name, user_email, message) {
-    return `{"from": "mailer@ashthomasweb.com",
+    return `{"from": "info@ashthomasweb.com",
     "to": "ashthomasweb@gmail.com",
-    "subject": "A person is reaching out about the LumberJack theme.",
+    "subject": "A person is reaching out from your portfolio.",
     "html": "${inquiryTemplate()}"}`;
 };
 
 function mailConfirmation(user_name, user_email, message) {
-    return `{"from": "mailer@ashthomasweb.com",
+    return `{"from": "info@ashthomasweb.com",
     "to": "${user_email}",
     "subject": "This is your email confirmation from Ash Thomas Web!",
     "html": "${confirmTemplate()}"}`;
