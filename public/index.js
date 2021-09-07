@@ -75,8 +75,8 @@ const gallery4 = [
     "/images/gallery/music-trainer/capture.png"
 ];
 const gallery5 = [
-    "/images/gallery/wyldgreens/capture.png"
-
+    "/images/gallery/wyldgreens/Capture1.png",
+    "/images/gallery/wyldgreens/Capture2.png"
 ];
 
 
