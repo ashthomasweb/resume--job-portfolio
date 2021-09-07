@@ -75,13 +75,11 @@ const gallery4 = [
     "/images/gallery/music-trainer/melody.jpg",
     "/images/gallery/music-trainer/tempo.jpg",
     "/images/gallery/music-trainer/generator.jpg"
-
 ];
 const gallery5 = [
     "/images/gallery/wyldgreens/Capture1.png",
     "/images/gallery/wyldgreens/Capture2.png"
 ];
-
 
 // || gallery image control buttons 
 

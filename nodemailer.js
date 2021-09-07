@@ -88,3 +88,5 @@ module.exports = {
     inquiry,
     finalConfirm,
 };
+
+// END of document
