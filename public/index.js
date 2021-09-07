@@ -72,7 +72,10 @@ const gallery3 = [
     "/images/gallery/lumberjack/mobile.png"
 ];
 const gallery4 = [
-    "/images/gallery/music-trainer/capture.png"
+    "/images/gallery/music-trainer/melody.png",
+    "/images/gallery/music-trainer/tempo.png",
+    "/images/gallery/music-trainer/generator.png"
+
 ];
 const gallery5 = [
     "/images/gallery/wyldgreens/Capture1.png",
