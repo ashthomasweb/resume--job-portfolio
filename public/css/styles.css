@@ -152,7 +152,7 @@ p {
 /* About Banner */
 
 .about-title {
-  margin-top: 20px;
+  margin-top: 16px;
   color: white;
 }
 
@@ -160,7 +160,7 @@ p {
   max-width: 550px;
   text-align: center;
   color: white;
-  margin-top: 26px;
+  margin-top: 14px;
   font-size: 20px;
 }
 
@@ -673,6 +673,31 @@ footer p {
 
 footer a {
   color: #00d681;
+}
+
+.github-link {
+  position: relative;
+  display: inline-block;
+  /* background-color: white; */
+  bottom: -23px;
+  width: 135px;
+  height: 33px;
+  font-size: 14px;
+  
+}
+
+
+.resume-link {
+  position: relative;
+  display: inline-block;
+  bottom: 10px;
+  width: 150px;
+  height: 35px;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
 }
 
 /* END of document */
