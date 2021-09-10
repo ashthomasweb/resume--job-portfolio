@@ -570,7 +570,6 @@ p {
   pointer-events: none;
 }
 
-
 /*  Contact form */
 
 .contact-form * {
@@ -656,7 +655,6 @@ textarea:focus {
   letter-spacing: .5px;
 }
 
-
 /*  Footer  */
 
 footer {
@@ -678,14 +676,11 @@ footer a {
 .github-link {
   position: relative;
   display: inline-block;
-  /* background-color: white; */
   bottom: -23px;
   width: 135px;
   height: 33px;
   font-size: 14px;
-  
 }
-
 
 .resume-link {
   position: relative;

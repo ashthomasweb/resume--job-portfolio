@@ -1,11 +1,9 @@
-// Nodemailer functions and templates for "Looseleashdog" 
+// Nodemailer functions
 
 // Dependencies
 const nodemailer = require("nodemailer");
 const { user_name, user_email, message, } = require('./app.js');
 
-
-// console.log(user_name);
 // Mailer transport object 
 var transporter = nodemailer.createTransport({
     host: 'mi3-ts3.a2hosting.com',
@@ -20,7 +18,6 @@ var transporter = nodemailer.createTransport({
 // Templates
 function inquiryTemplate() {
 
-    // Do not remove backtick
     let inqTemplate = `
 
     <div style='max-width: 80%; padding: 30px; border: 1px solid lightgrey; border-radius: 12px; margin: 15px;'>
@@ -34,7 +31,7 @@ function inquiryTemplate() {
             <p style='padding: 0 30px;'>${message}</p>
     </div>
     
-    `; // Do not remove backtick
+    `;
 
     let output = inqTemplate.replace(/\n/g, "").replace(/\r/g, "<br>");
     return output;
@@ -42,7 +39,6 @@ function inquiryTemplate() {
 
 function confirmTemplate() {
 
-    // Do not remove backtick
     let confTemplate = `
 
     <div style='max-width: 80%; padding: 30px; border: 1px solid lightgrey; border-radius: 12px; margin: 15px;'>   
@@ -57,7 +53,7 @@ function confirmTemplate() {
             <p style='padding: 0 30px;'>${message}</p>
     </div>
 
-    `; // Do not remove backtick
+    `; 
 
     let output = confTemplate.replace(/\n/g, "").replace(/\r/g, "<br>");
     return output;  
