@@ -31,7 +31,6 @@ app.post('/', function (req, res) {
 
     let userConfirm = transporter.sendMail(finalConfirm);
 
-    
     Promise.all([userInquiry, userConfirm])
         .then(([resultInq, resultConf]) => {
             console.log("Emails sent", resultInq, resultConf);
@@ -50,14 +49,12 @@ app.post('/', function (req, res) {
 
 });
 
-
-// || Listener compatible with Heroku, Localhost, and A2
+// || Listener compatible with Heroku, Localhost, and A2 - ?potential problem area 
 let port = process.env.PORT;
 // if (port == null || port == "") { 
 //     port = 3000; 
 // };
 app.listen(port, () => console.log(`Server started at port ${port}.`));
 // || END Listener 
-
 
 // END of document
