@@ -5,16 +5,42 @@
 require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
+const fs = require('fs')
+const path = require('path')
 
 // || Assign dependencies 
 const app = express();
 app.use(express.static("public"));
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 app.use(bodyParser.json());
 
 
+// Create the path to the lock file
+const lockFile = path.join(__dirname, './lock')
+
+let isExists = fs.existsSync(lockFile);
+
+if (isExists) {
+    // The file already exists, exit the process
+    console.log('app already running! exiting...')
+    process.exit()
+} else {
+    // The file does not exist, let's create it
+    fs.writeFileSync(lockFile, '')
+    
+    // Before the application quits, remove the lock file
+    process.on('exit', () => {
+        console.log('exiting and removing lockfile...')
+        fs.unlinkSync(lockFile)
+    })    
+}
+
+// setTimeout( () => {process.exit()}, 3000 )
+
 // || Routes 
-app.get("/", function(req, res) {
+app.get("/", function (req, res) {
     res.sendFile(__dirname + "/index.html");
 });
 
@@ -22,11 +48,23 @@ app.post('/', function (req, res) {
 
     let ifError = false;
 
-    const { user_name, user_email, message } = req.body;
+    const {
+        user_name,
+        user_email,
+        message
+    } = req.body;
 
-    module.exports = { user_email, user_name, message };
+    module.exports = {
+        user_email,
+        user_name,
+        message
+    };
 
-    const { transporter, inquiry, finalConfirm } = require('./nodemailer.js');
+    const {
+        transporter,
+        inquiry,
+        finalConfirm
+    } = require('./nodemailer.js');
 
     let userInquiry = transporter.sendMail(inquiry);
 
@@ -41,10 +79,14 @@ app.post('/', function (req, res) {
             ifError = true;
         })
         .finally(() => {
-            if ( ifError == true ) {
-                res.json({error: true})
+            if (ifError == true) {
+                res.json({
+                    error: true
+                })
             } else {
-                res.json({error: false})
+                res.json({
+                    error: false
+                })
             }
         });
 
