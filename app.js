@@ -48,7 +48,7 @@ app.post('/', function (req, res) {
 
     let ifError = false;
 
-    const {
+    let {
         user_name,
         user_email,
         message
@@ -60,7 +60,7 @@ app.post('/', function (req, res) {
         message
     };
 
-    const {
+    let {
         transporter,
         inquiry,
         finalConfirm

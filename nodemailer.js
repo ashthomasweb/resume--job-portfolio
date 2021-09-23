@@ -2,7 +2,7 @@
 
 // Dependencies
 const nodemailer = require("nodemailer");
-const { user_name, user_email, message, } = require('./app.js');
+let { user_name, user_email, message, } = require('./app.js');
 
 // Mailer transport object 
 var transporter = nodemailer.createTransport({
