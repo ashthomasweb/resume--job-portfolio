@@ -17,37 +17,37 @@ function formFieldCheck() {
     }
 }
 
-document.getElementById("contact-button").addEventListener('click', (event) => {
-    event.preventDefault();
-    let form = document.getElementById("contact-form");
-    let hiddenPane = document.getElementById("hidden-response");
-    let errorPane = document.getElementById("error");
-    let successPane = document.getElementById("success");
-    fetch('/', {
-            method: "POST",
-            body: JSON.stringify({
-                user_name: form.elements[0].value,
-                user_email: form.elements[1].value,
-                message: form.elements[3].value
-            }),
-            headers: {
-                "Content-Type": "application/json"
-            }
-        })
-        .then((response) => response.json())
-        .then((data) => {
-            hiddenPane.style.display = "block";
-            if (data.error === true) {
-                errorPane.style.display = "block";
-            } else {
-                successPane.style.display = "block";
-                document.getElementById("contact-button").innerText = "SENT";
-            }
-        });
+// document.getElementById("contact-button").addEventListener('click', (event) => {
+//     event.preventDefault();
+//     let form = document.getElementById("contact-form");
+//     let hiddenPane = document.getElementById("hidden-response");
+//     let errorPane = document.getElementById("error");
+//     let successPane = document.getElementById("success");
+//     fetch('/', {
+//             method: "POST",
+//             body: JSON.stringify({
+//                 user_name: form.elements[0].value,
+//                 user_email: form.elements[1].value,
+//                 message: form.elements[3].value
+//             }),
+//             headers: {
+//                 "Content-Type": "application/json"
+//             }
+//         })
+//         .then((response) => response.json())
+//         .then((data) => {
+//             hiddenPane.style.display = "block";
+//             if (data.error === true) {
+//                 errorPane.style.display = "block";
+//             } else {
+//                 successPane.style.display = "block";
+//                 document.getElementById("contact-button").innerText = "SENT";
+//             }
+//         });
 
-    document.getElementById("contact-button").innerText = "SENDING";
+//     document.getElementById("contact-button").innerText = "SENDING";
 
-});
+// });
 
 
 // || Galleries 
