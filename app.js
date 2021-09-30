@@ -5,8 +5,7 @@
 require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
-// const fs = require('fs')
-// const path = require('path')
+
 
 // || Assign dependencies 
 const app = express();
@@ -15,29 +14,6 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 app.use(bodyParser.json());
-
-
-// // Create the path to the lock file
-// const lockFile = path.join(__dirname, './lock')
-
-// let isExists = fs.existsSync(lockFile);
-
-// if (isExists) {
-//     // The file already exists, exit the process
-//     console.log('app already running! exiting...')
-//     process.exit()
-// } else {
-//     // The file does not exist, let's create it
-//     fs.writeFileSync(lockFile, '')
-
-//     // Before the application quits, remove the lock file
-//     process.on('exit', () => {
-//         console.log('exiting and removing lockfile...')
-//         fs.unlinkSync(lockFile)
-//     })    
-// }
-
-// setTimeout( () => {process.exit()}, 3000 )
 
 // // Dependencies
 // const nodemailer = require("nodemailer");
