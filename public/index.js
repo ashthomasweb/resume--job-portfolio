@@ -63,13 +63,13 @@ const gallery2 = [
     "/images/gallery/the-arnold-game/arnold-game-mobile.png",
 ];
 const gallery3 = [
-    "/images/gallery/lumberjack/capture.png",
-    "/images/gallery/lumberjack/capture1.png",
-    "/images/gallery/lumberjack/capture2.png",
-    "/images/gallery/lumberjack/capture3.png",
-    "/images/gallery/lumberjack/capture4.png",
-    "/images/gallery/lumberjack/capture5.png",
-    "/images/gallery/lumberjack/mobile.png"
+    "/images/gallery/lumber/capture.png",
+    "/images/gallery/lumber/capture1.png",
+    "/images/gallery/lumber/capture2.png",
+    "/images/gallery/lumber/capture3.png",
+    "/images/gallery/lumber/capture4.png",
+    "/images/gallery/lumber/capture5.png",
+    "/images/gallery/lumber/mobile.png"
 ];
 const gallery4 = [
     "/images/gallery/music-trainer/melody.jpg",
