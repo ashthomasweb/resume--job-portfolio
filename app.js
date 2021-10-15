@@ -34,7 +34,6 @@ app.post('/', function (req, res) {
         message
     } = req.body;
 
-
     // Mailer transport object 
     var transporter = nodemailer.createTransport({
         host: 'mi3-ts3.a2hosting.com',
