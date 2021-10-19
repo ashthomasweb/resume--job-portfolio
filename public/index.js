@@ -49,7 +49,6 @@ document.getElementById("contact-button").addEventListener('click', (event) => {
 
 });
 
-
 // || Galleries 
 
 // * gallery image arrays 
@@ -175,7 +174,6 @@ const gallery5 = [
     }
 }
 
-
 {
     let position = 0;
     let currentImg = document.getElementById('gallery5-img');
@@ -198,8 +196,5 @@ const gallery5 = [
         currentImg.setAttribute("src", gallery5[position])
     }
 }
-
-
-
 
 // END of document
