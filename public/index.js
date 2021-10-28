@@ -79,12 +79,12 @@ const gallery5 = [
     "/images/gallery/wyldgreens/Capture1.png",
     "/images/gallery/wyldgreens/Capture2.png"
 ];
-// const gallery6 = [
-//     "/images/gallery/metaquerydb/metaquerydb-capture3.png",
-//     "/images/gallery/metaquerydb/metaquerydb-capture1.png",
-//     "/images/gallery/metaquerydb/metaquerydb-capture2.png",
-//     "/images/gallery/metaquerydb/metaquerydb-capture4.png"
-// ];
+const gallery6 = [
+    "/images/gallery/metaqdb/capture3.png",
+    "/images/gallery/metaqdb/capture1.png",
+    "/images/gallery/metaqdb/capture2.png",
+    "/images/gallery/metaqdb/capture4.png"
+];
 
 
 
