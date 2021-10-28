@@ -79,6 +79,16 @@ const gallery5 = [
     "/images/gallery/wyldgreens/Capture1.png",
     "/images/gallery/wyldgreens/Capture2.png"
 ];
+const gallery6 = [
+    "/images/gallery/metaquery/metaquery-capture3.png",
+    "/images/gallery/metaquery/metaquery-capture1.png",
+    "/images/gallery/metaquery/metaquery-capture2.png",
+    "/images/gallery/metaquery/metaquery-capture4.png"
+];
+
+
+
+
 
 // || gallery image control buttons 
 
@@ -196,5 +206,29 @@ const gallery5 = [
         currentImg.setAttribute("src", gallery5[position])
     }
 }
+
+{
+    let position = 0;
+    let currentImg = document.getElementById('gallery6-img');
+
+    function gallery6Right() {
+        if (position == gallery6.length - 1) {
+            position = 0;
+        } else {
+            position++;
+        }
+        currentImg.setAttribute("src", gallery6[position])
+    }
+
+    function gallery6Left() {
+        if (position == 0) {
+            position = gallery6.length - 1;
+        } else {
+            position--;
+        }
+        currentImg.setAttribute("src", gallery6[position])
+    }
+}
+
 
 // END of document
