@@ -80,10 +80,10 @@ const gallery5 = [
     "/images/gallery/wyldgreens/Capture2.png"
 ];
 const gallery6 = [
-    "/images/gallery/metaquery/metaquery-capture3.png",
-    "/images/gallery/metaquery/metaquery-capture1.png",
-    "/images/gallery/metaquery/metaquery-capture2.png",
-    "/images/gallery/metaquery/metaquery-capture4.png"
+    "/images/gallery/metaquerydb/metaquery-capture3.png",
+    "/images/gallery/metaquerydb/metaquery-capture1.png",
+    "/images/gallery/metaquerydb/metaquery-capture2.png",
+    "/images/gallery/metaquerydb/metaquery-capture4.png"
 ];
 
 
