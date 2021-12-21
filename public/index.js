@@ -85,6 +85,13 @@ const gallery6 = [
     "/images/gallery/metaqdb/capture2.png",
     "/images/gallery/metaqdb/capture4.png"
 ];
+const gallery7 = [
+    "/images/gallery/flow-post/flow-post-capture1.png",
+    "/images/gallery/flow-post/flow-post-capture2.png",
+    "/images/gallery/flow-post/flow-post-capture3.png",
+    "/images/gallery/flow-post/capture.png",
+    "/images/gallery/flow-post/capture3.png",
+];
 
 
 
@@ -227,6 +234,29 @@ const gallery6 = [
             position--;
         }
         currentImg.setAttribute("src", gallery6[position])
+    }
+}
+
+{
+    let position = 0;
+    let currentImg = document.getElementById('gallery7-img');
+
+    function gallery7Right() {
+        if (position == gallery7.length - 1) {
+            position = 0;
+        } else {
+            position++;
+        }
+        currentImg.setAttribute("src", gallery7[position])
+    }
+
+    function gallery7Left() {
+        if (position == 0) {
+            position = gallery7.length - 1;
+        } else {
+            position--;
+        }
+        currentImg.setAttribute("src", gallery7[position])
     }
 }
 
