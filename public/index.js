@@ -86,11 +86,11 @@ const gallery6 = [
     "/images/gallery/metaqdb/capture4.png"
 ];
 const gallery7 = [
-    "/images/gallery/flow-post/flow-post-capture1.png",
-    "/images/gallery/flow-post/flow-post-capture2.png",
-    "/images/gallery/flow-post/flow-post-capture3.png",
-    "/images/gallery/flow-post/capture.png",
-    "/images/gallery/flow-post/capture3.png",
+    "/images/gallery/flow-post/FPcapture1.png",
+    "/images/gallery/flow-post/FPcapture2.png",
+    "/images/gallery/flow-post/FPcapture3.png",
+    "/images/gallery/flow-post/FPcapture.png",
+    "/images/gallery/flow-post/FPcapture4.png",
 ];
 
 
