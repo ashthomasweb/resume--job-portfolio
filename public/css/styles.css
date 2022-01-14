@@ -424,7 +424,7 @@ p {
   display: inline-block;
   width: 200px;
   text-align: center;
-  margin: 0 10px;
+  margin: 0 16px;
   vertical-align: top;
 }
 
@@ -467,6 +467,24 @@ p {
   vertical-align: middle;
 }
 
+.prev {
+  font-size: 18px;
+  opacity: .8;
+}
+
+.prev-tag {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  width: 80%;
+  transform: translateX(-50%);
+  font-size: 13px;
+  opacity: 1;
+  line-height: 1;
+  background-color: var(--theme-lightblue-alt);
+  border-radius: 10px;
+  padding-bottom: 3px;
+}
 
 /*  Contact card */
 
