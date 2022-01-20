@@ -1,730 +1,582 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="robots" content="noindex, nofollow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Ashley Thomas" />
-    <meta name="copyright" content="2020" />
-    <title>Ash Thomas Web</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
 
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/whd6rrl.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,700;1,400&family=Sacramento&display=swap"
-    />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
-    ></script>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Ashley Thomas" />
+  <meta name="copyright" content="2020" />
+  <title>Ash Thomas Web</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
 
-  <body>
-    <div class="top-container">
-      <h1>hi, i'm ash thomas.</h1>
-      <img class="avatar" src="/images/avatar.png" />
-      <h2>i'm an engineer & programmer.</h2>
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/whd6rrl.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,700;1,400&family=Sacramento&display=swap" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+</head>
+
+<body>
+  <div class="top-container">
+    <h1>hi, i'm ash thomas.</h1>
+    <img class="avatar" src="/images/self_avatar.png" />
+    <h2>i'm an engineer & programmer.</h2>
+  </div>
+
+  <div class="banner">
+    <div class="inner-about-container">
+      <img class="laptop-code" src="/images/laptop-code.png" />
     </div>
 
-    <div class="banner">
-      <div class="inner-about-container">
-        <img class="laptop-code" src="/images/laptop-code.png" />
-      </div>
+    <div class="inner-about-container">
+      <h2 class="about-title">A bit about me</h2>
+      <p class="about">
+        React & JavaScript engineer and developer. My focus is to create
+        functional and beautiful tools and layouts.
+      </p>
+      <button class="github-link" type="button" onclick="window.open('https://github.com/ashthomasweb', target='_blank')">
+        GitHub Profile
+      </button>
+    </div>
+  </div>
 
-      <div class="inner-about-container">
-        <h2 class="about-title">A bit about me</h2>
-        <p class="about">
-          React & JavaScript engineer and developer. My focus is to create
-          functional and beautiful tools and layouts.
+  <div class="gallery-container">
+    <h2>Here are some examples of my work</h2>
+
+    <!-- || Gallery7 Frame  -->
+    <div class="card--gallery">
+      <div class="card--gallery-inner">
+        <div class="gallery-img-section">
+          <button id="gallery-btn-7" class="gallery-btn g-btn-left" type="button" onclick="gallery7Left()"></button>
+          <img id="gallery7-img" class="main-img" src="/images/gallery/flow-post/FPcapture1.png" />
+          <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onclick="gallery7Right()"></button>
+        </div>
+
+        <div class="gallery-right-section">
+          <h3>Productivity Application</h3>
+          <p>
+            <a href="https://tadamat.com" target="_blank">www.tadamat.com</a>
+          </p>
+          <br />
+          <h4>Tech</h4>
+          <p>Node.js, React, Firebase for Auth and Storage</p>
+          <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/react--flow-post', target='_blank')">
+            View GitHub Repo
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card--gallery" style="margin-top: -8px; height: 300px">
+      <div class="card--gallery-inner" style="overflow-y: scroll">
+        <p>
+          Tadamat is a skewmorphic organization application. Users can save
+          custom boards and layouts. Board and note colors can be set by user
+          and individual notes can be checked off. A special 'Mat' function
+          creates a box that always remains behind the notes, serving as a
+          visual container. Future versions will include a 'Share' function,
+          multi-select, mat-board grouping, and full type customization.
         </p>
-        <button
-          class="github-link"
-          type="button"
-          onclick="window.open('https://github.com/ashthomasweb', target='_blank')"
-        >
-          GitHub Profile
-        </button>
+        <p>
+          Built with react. Experimentation with Hooks and Context is needed
+          before much further development. The skewmorphism wasn't obtainable
+          using Refs, if the skewmorphic effect cannot be retained in a
+          Hooks and Context architecture, all DOM queries will need to be moved into
+          state.
+        </p>
       </div>
     </div>
 
-    <div class="gallery-container">
-      <h2>Here are some examples of my work</h2>
+    <br />
+    <br />
+    <br />
+    <br />
 
-      <!-- || Gallery7 Frame  -->
-      <div class="card--gallery">
-        <div class="card--gallery-inner">
-          <div class="gallery-img-section">
-            <button
-              id="gallery-btn-7"
-              class="gallery-btn g-btn-left"
-              type="button"
-              onclick="gallery7Left()"
-            ></button>
-            <img
-              id="gallery7-img"
-              class="main-img"
-              src="/images/gallery/flow-post/FPcapture1.png"
-            />
-            <button
-              id="gallery-btn-r"
-              class="gallery-btn g-btn-right"
-              type="button"
-              onclick="gallery7Right()"
-            ></button>
-          </div>
-
-          <div class="gallery-right-section">
-            <h3>Productivity Application</h3>
-            <p>
-              <a href="https://tadamat.com" target="_blank">www.tadamat.com</a>
-            </p>
-            <br />
-            <h4>Tech</h4>
-            <p>Node.js, React, Firebase for Auth and Storage</p>
-            <button
-              class="github-btn"
-              type="button"
-              onclick="window.open('https://github.com/ashthomasweb/react--flow-post', target='_blank')"
-            >
-              View GitHub Repo
-            </button>
-          </div>
+    <!-- || Gallery5 Frame  -->
+    <div class="card--gallery">
+      <div class="card--gallery-inner">
+        <div class="gallery-img-section">
+          <button id="gallery-btn-5" class="gallery-btn g-btn-left" type="button" onclick="gallery5Left()"></button>
+          <img id="gallery5-img" class="main-img" src="/images/gallery/wyldgreens/Capture1.png" />
+          <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onclick="gallery5Right()"></button>
         </div>
-      </div>
 
-      <div class="card--gallery" style="margin-top: -8px; height: 300px">
-        <div class="card--gallery-inner" style="overflow-y: scroll">
+        <div class="gallery-right-section">
+          <h3>Client Project</h3>
           <p>
-            Tadamat is a skewmorphic organization application. Users can save
-            custom boards and layouts. Board and note colors can be set by user
-            and individual notes can be checked off. A special 'Mat' function
-            creates a box that always remains behind the notes, serving as a
-            visual container. Future versions will include a 'Share' function,
-            multi-select, mat-board grouping, and full type customization.
+            <a href="https://wyldgreens.herokuapp.com" target="_blank">Wyldgreens</a><br /><i>heroku-hosted</i>
           </p>
-          <p>
-            Built with react. Experimentation with Hooks and Context is needed
-            before much further development. The skewmorphism wasn't obtainable
-            using Refs, if the skewmorphic effect cannot be retained in a
-            Hooks and Context architecture, all DOM queries will need to be moved into
-            state.
-          </p>
-        </div>
-      </div>
-
-      <br />
-      <br />
-      <br />
-      <br />
-
-      <!-- || Gallery5 Frame  -->
-      <div class="card--gallery">
-        <div class="card--gallery-inner">
-          <div class="gallery-img-section">
-            <button
-              id="gallery-btn-5"
-              class="gallery-btn g-btn-left"
-              type="button"
-              onclick="gallery5Left()"
-            ></button>
-            <img
-              id="gallery5-img"
-              class="main-img"
-              src="/images/gallery/wyldgreens/Capture1.png"
-            />
-            <button
-              id="gallery-btn-r"
-              class="gallery-btn g-btn-right"
-              type="button"
-              onclick="gallery5Right()"
-            ></button>
-          </div>
-
-          <div class="gallery-right-section">
-            <h3>Client Project</h3>
-            <p>
-              <a href="https://wyldgreens.herokuapp.com" target="_blank"
-                >Wyldgreens</a
-              ><br /><i>heroku-hosted</i>
-            </p>
-            <br />
-            <h4>Tech</h4>
-            <p>Node.js, JS, NodeMailer</p>
-            <button
-              class="github-btn"
-              type="button"
-              onclick="window.open('https://github.com/ashthomasweb/client--wyldgreens', target='_blank')"
-            >
-              View GitHub Repo
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="card--gallery" style="margin-top: -8px; height: 300px">
-        <div class="card--gallery-inner" style="overflow-y: scroll">
-          <p>
-            This project was built for a Colorado-based local business,
-            unfortunately affected by the recent fires. The business' main
-            advertising medium is face to face contact and referrals, which
-            needed to be backed up with a website easily served up on a
-            customer's phone. The client requested that all materials be
-            presented on a single page. Delivering all the information and
-            functionality one page proved to be a challenge more than I
-            expected, and the project quickly grew out of my initially staged
-            plans for development.
-          </p>
-          <p>
-            The site runs on a node and express server. The site is a single
-            page presentation. It is a landing page, about page, product page
-            and order form at once. It uses a simple parallax on desktop and
-            image background to provide a solid color at the top for legibility
-            and cleanliness, and a Colorado-esque scene at the bottom for
-            customer familiarity and business branding.
-          </p>
-          <p></p>
-        </div>
-      </div>
-
-      <br />
-      <br />
-      <br />
-      <br />
-
-      <!-- || Gallery6 Frame  -->
-      <div class="card--gallery">
-        <div class="card--gallery-inner">
-          <div class="gallery-img-section">
-            <button
-              id="gallery-btn-l"
-              class="gallery-btn g-btn-left"
-              type="button"
-              onclick="gallery6Left()"
-            ></button>
-            <img
-              id="gallery6-img"
-              class="main-img"
-              src="/images/gallery/metaqdb/capture3.png"
-            />
-            <button
-              id="gallery-btn-r"
-              class="gallery-btn g-btn-right"
-              type="button"
-              onclick="gallery6Right()"
-            ></button>
-          </div>
-
-          <div class="gallery-right-section">
-            <h3>Database Tool</h3>
-            <p>MetaQuery DB<br /><i>on-going development</i></p>
-            <br />
-            <h4>Tech</h4>
-            <p>Python, MySQL, MongoDB, tKinter, PyMongo</p>
-            <button
-              class="github-btn"
-              type="button"
-              onclick="window.open('https://github.com/ashthomasweb/python--metaquery-db', target='_blank')"
-            >
-              View GitHub Repo
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="card--gallery" style="margin-top: -8px; height: 300px">
-        <div class="card--gallery-inner" style="overflow-y: scroll">
-          <p>
-            This is a desktop application used to query from multiple databases
-            using the same user interface. The application is highly extensible,
-            using dependency injection, software interfaces, and object-oriented
-            paradigms. It is still in development, will be adding MySQL Shell
-            and Mongo Atlas connections.
-          </p>
-          <p>
-            The primary functional requirement of this application is the
-            ability to make queries upon multiple databases from the same
-            window. The requirements do not encompass extensive creation of
-            records, however full SQL statements can be interpreted. The
-            project's main limitation is the chosen UI tech. Current
-            implementation of table display for data in tKinter is too
-            difficult, UI tech and layer needs to be changed. Usage of layered
-            architecture and software interfaces will help in the conversion to
-            a more robust UI.
-          </p>
-          <p></p>
-        </div>
-      </div>
-
-      <br />
-      <br />
-      <br />
-      <br />
-
-      <!-- || Gallery1 Frame  -->
-      <div class="card--gallery">
-        <div class="card--gallery-inner">
-          <div class="gallery-img-section">
-            <button
-              id="gallery-btn-l"
-              class="gallery-btn g-btn-left"
-              type="button"
-              onclick="gallery1Left()"
-            ></button>
-            <img
-              id="gallery1-img"
-              class="main-img"
-              src="/images/gallery/loose-leash-dog/lld-capture.png"
-            />
-            <button
-              id="gallery-btn-r"
-              class="gallery-btn g-btn-right"
-              type="button"
-              onclick="gallery1Right()"
-            ></button>
-          </div>
-
-          <div class="gallery-right-section">
-            <h3>Client Project</h3>
-            <p>
-              <a href="https://www.looseleashdog.com" target="_blank"
-                >www.looseleashdog.com</a
-              >
-            </p>
-            <br />
-            <h4>Tech</h4>
-            <p>Node.js, Express, EJS, Prismic, Curator, NodeMailer</p>
-            <button
-              class="github-btn"
-              type="button"
-              onclick="window.open('https://github.com/ashthomasweb/client--looseleashdog.com', target='_blank')"
-            >
-              View GitHub Repo
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="card--gallery" style="margin-top: -8px; height: 300px">
-        <div class="card--gallery-inner" style="overflow-y: scroll">
-          <p>
-            This project was built for a local business-woman sole-proprietor.
-            Her business model has been restricted to Instagram, limiting her
-            ability to provide her clientele and community access to her
-            services. The LumberJack template allows her to showcase her
-            expertise and have a blog generating affiliate links and providing
-            additional learning and enrichment opportunities to her clients. I
-            worked with the owner, matching her business mission statement with
-            a brand sense that appeals to her audience.
-          </p>
-          <p>
-            Showcasing the client's primary business traffic encourages
-            link-through SEO and grants audience ease-of-access to other
-            materials and monetizable content. Mobile-friendly content creation
-            allows the business owner to produce content more efficiently.
-          </p>
-          <p></p>
-        </div>
-      </div>
-
-      <br />
-      <br />
-      <br />
-      <br />
-
-      <!-- || Gallery4 Frame  -->
-      <div class="card--gallery">
-        <div class="card--gallery-inner">
-          <div class="gallery-img-section">
-            <button
-              id="gallery-btn-l"
-              class="gallery-btn g-btn-left"
-              type="button"
-              onclick="gallery4Left()"
-            ></button>
-            <img
-              id="gallery4-img"
-              class="main-img"
-              src="/images/gallery/music-trainer/melody.jpg"
-            />
-            <button
-              id="gallery-btn-r"
-              class="gallery-btn g-btn-right"
-              type="button"
-              onclick="gallery4Right()"
-            ></button>
-          </div>
-
-          <div class="gallery-right-section">
-            <h3>Music Experiment</h3>
-            <p>
-              <a
-                href="https://ashthomasweb.github.io/personal--music-trainer/"
-                target="_blank"
-                >Music Trainer & Generator</a
-              ><br /><i>on-going development</i>
-            </p>
-            <br />
-            <h4>Tech</h4>
-            <p>ES6, WebAudio, Local Storage</p>
-            <button
-              class="github-btn"
-              type="button"
-              onclick="window.open('https://github.com/ashthomasweb/personal--music-trainer', target='_blank')"
-            >
-              View GitHub Repo
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="card--gallery" style="margin-top: -8px; height: 300px">
-        <div class="card--gallery-inner" style="overflow-y: scroll">
-          <p>
-            This project is the conclusion to a hypothesis I had while a music
-            teacher. At that time I did not know anything about programming
-            other than it must follow standard logic principles. My theory was
-            that if you put all the 'rules' of music theory into code and
-            allowed for randomization in it's choices, the resultant music would
-            be surprisingly familiar and even sound pretty good at times- with
-            only occasional awkward moments. JavaScript and the WebAudio API are
-            used to provide a web-based ear-trainer and infinite music
-            generator.
-          </p>
-
-          <p>
-            This project is two-fold, containing a set of practice tools, as
-            well as a music generator. The tools help a student train their ear
-            in the subjects of melody, relative pitch, pitch memory, and tempo.
-            The music generator is a passion project that I will continue to
-            build upon for some time. My more recent study in object-oriented
-            principles leads me to realize the entirety of the project needs
-            redesign and overhaul to move very far forward. However, the
-            underlying logic in how to sort through the musical information has
-            been solved. In time it will not only be an expression of the power
-            of western musical structures, but also a learning device.
-          </p>
-          <p>
-            The application has a high level of educational value for a student
-            or professional. Certain skills that were difficult to practice have
-            been made available and accentuated through the use of the trainers.
-            Work your klangfarbenmelodie chops with multiple orchestral
-            instrument choices. The music trainer includes a function which
-            allows for different instruments to randomly substitute the primary
-            instrument sound, while still asking the student to repeat the
-            pattern back. This develops the ear to be sensitive to pitch while
-            listening to instruments outside of their familiarity. The melodic
-            idea consisting of the same note, but different tones/instruments,
-            is called "klangfarbenmelodie". This melody trainer facilitates the
-            study of an invaluable skill that is difficult to methodically
-            practice.
-          </p>
-        </div>
-      </div>
-
-      <br />
-      <br />
-      <br />
-      <br />
-
-      <!-- || Gallery3 Frame  -->
-      <div class="card--gallery">
-        <div class="card--gallery-inner">
-          <div class="gallery-img-section">
-            <button
-              id="gallery-btn-l"
-              class="gallery-btn g-btn-left"
-              type="button"
-              onclick="gallery3Left()"
-            ></button>
-            <img
-              id="gallery3-img"
-              class="main-img"
-              src="/images/gallery/lumber/capture.png"
-            />
-            <button
-              id="gallery-btn-r"
-              class="gallery-btn g-btn-right"
-              type="button"
-              onclick="gallery3Right()"
-            ></button>
-          </div>
-
-          <div class="gallery-right-section">
-            <h3>Full-stack Template</h3>
-            <p>
-              <a href="https://lumberjack-theme.herokuapp.com/" target="_blank"
-                >LumberJack Theme</a
-              ><br /><i>heroku-hosted</i>
-            </p>
-            <br />
-            <h4>Tech</h4>
-            <p>Node.js, Express, EJS, Prismic, Curator, NodeMailer</p>
-            <button
-              class="github-btn"
-              type="button"
-              onclick="window.open('https://github.com/ashthomasweb/template--lumberjack', target='_blank')"
-            >
-              View GitHub Repo
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="card--gallery" style="margin-top: -8px; height: 300px">
-        <div class="card--gallery-inner" style="overflow-y: scroll">
-          <p>
-            "LumberJack" is a full-stack template developed for small businesses
-            and social media creators. The theme is lightweight and integrates
-            third-party services to eliminate update, security, and code-heavy
-            issues. Featuring a headless CMS with Prismic, a multi-network
-            aggregator in Curator, and automatic email responses by NodeMailer,
-            LumberJack's needs for maintenance and updates are low. Ships with
-            detailed setup instructions accessible by any front-end developer or
-            diligent person.
-          </p>
-          <p>
-            Making use of third-party API's keeps the website owner from having
-            to engage with the site code after launch, keeping breakage to a
-            minimum. LumberJack's blog is automatically generated using EJS and
-            comes with a "Custom Type" ready to upload to your Prismic
-            repository. Curator allows owners and creators to build feeds from
-            more than one network, enabling more cross-network audience
-            engagement.
-          </p>
-          <p>
-            Designed for a two-color brand scheme with highly legible greyscale
-            copy. Card elements are modular and can be used in a variety of
-            configurations, color and size. LumberJack is fully compatible with
-            any device.
-          </p>
-        </div>
-      </div>
-
-      <br />
-      <br />
-      <br />
-    </div>
-
-    <div class="banner">
-      <div>
-        <h2 class="creativity-text">
-          Creativity and logic are not mutually exclusive, I think they go hand
-          in hand. Organization allows us to communicate effectively and with
-          style.
-        </h2>
-      </div>
-    </div>
-
-    <div class="experience-container">
-      <div class="exp-wrap">
-        <h2>Previous experience</h2>
-
-        <div class="layout-container">
-          <div class="exp-cont-inner">
-            <img class="layout-img" src="images/layout.png" />
-          </div>
-          <div class="exp-cont-inner">
-            <p class="exp-text-right">
-              I learned layout and design principles first using Quark and
-              staging a document for physical printing using an offset printing
-              press. Clearly delivering information is the key to effective
-              communication. Digital media allows for the broadest audience.
-            </p>
-          </div>
-        </div>
-
-        <hr style="width: 350px; margin: 15px auto" />
-
-        <div class="remote-container">
-          <div class="exp-cont-inner">
-            <p class="exp-text-left">
-              My music instruction business was conducted via online video chat.
-              It allowed me to reach a wide range of people. Relationships can
-              be built and effective work performed in a remote setting, I'm
-              looking forward to continuing to do so.
-            </p>
-          </div>
-          <div class="exp-cont-inner">
-            <img class="remote-img" src="images/remote-work.png" />
-          </div>
-        </div>
-
-        <hr style="width: 350px; margin: 15px auto" />
-
-        <div class="educator-container">
-          <div class="exp-cont-inner">
-            <img class="educator-img" src="images/teacher.png" />
-          </div>
-          <div class="exp-cont-inner">
-            <p class="exp-text-right">
-              I excelled as a musician and educator. Order and cleanliness give
-              way to beautiful and functional ideas. Learning has been my
-              profession, I have a practiced ability to approach a problem from
-              as many directions as it takes to get it perfect. Coding seems
-              like a natural extension.
-            </p>
-          </div>
-        </div>
-
-        <hr style="width: 350px; margin: 15px auto" />
-
-        <div class="detail-container">
-          <div class="exp-cont-inner">
-            <p class="exp-text-left">
-              Every challenge in music or with a student is different. However
-              you overcome it, the solution must always function correctly. But
-              the solutions are frequently unique. This appeals to me, writing
-              and designing code feels much the same, with the added bonus of
-              showing your work to the world!
-            </p>
-          </div>
-          <div class="exp-cont-inner">
-            <img class="details-img" src="images/creativity.png" />
-          </div>
+          <br />
+          <h4>Tech</h4>
+          <p>Node.js, JS, NodeMailer</p>
+          <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/client--wyldgreens', target='_blank')">
+            View GitHub Repo
+          </button>
         </div>
       </div>
     </div>
 
-    <div class="banner">
-      <div>
-        <h2 class="creativity-text">
-          I <i>love</i> programming. I want to create things that are permanent.
-          Digital creations are accessible across the globe, and this is
-          <i>exciting</i> to me.
-        </h2>
+    <div class="card--gallery" style="margin-top: -8px; height: 300px">
+      <div class="card--gallery-inner" style="overflow-y: scroll">
+        <p>
+          This project was built for a Colorado-based local business,
+          unfortunately affected by the recent fires. The business' main
+          advertising medium is face to face contact and referrals, which
+          needed to be backed up with a website easily served up on a
+          customer's phone. The client requested that all materials be
+          presented on a single page. Delivering all the information and
+          functionality one page proved to be a challenge more than I
+          expected, and the project quickly grew out of my initially staged
+          plans for development.
+        </p>
+        <p>
+          The site runs on a node and express server. The site is a single
+          page presentation. It is a landing page, about page, product page
+          and order form at once. It uses a simple parallax on desktop and
+          image background to provide a solid color at the top for legibility
+          and cleanliness, and a Colorado-esque scene at the bottom for
+          customer familiarity and business branding.
+        </p>
+        <p></p>
       </div>
     </div>
 
-    <div class="skills-container">
-      <h2>Languages, Technology, and Education</h2>
+    <br />
+    <br />
+    <br />
+    <br />
 
-      <div class="inner-skill-container">
-        <div class="inner2-skill-container">
-          <div class="skill-row-left">
-            <p class="skill-text">
-              React<br />
-              ES6 / SASS<br />
-              Node / Express<br />
-              EJS / heroku
-            </p>
-          </div>
+    <!-- || Gallery6 Frame  -->
+    <div class="card--gallery">
+      <div class="card--gallery-inner">
+        <div class="gallery-img-section">
+          <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onclick="gallery6Left()"></button>
+          <img id="gallery6-img" class="main-img" src="/images/gallery/metaqdb/capture3.png" />
+          <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onclick="gallery6Right()"></button>
         </div>
 
-        <div class="inner2-skill-container">
-          <div class="skill-row-center">
-            <p class="skill-text">
-              HTML5 / CSS3<br />
-              MySQL / Mongo<br />
-              Firebase & Firestore<br />
-              Git & Github<br />
-            </p>
-          </div>
-        </div>
-
-        <div class="inner2-skill-container">
-          <div class="skill-row-center">
-            <p class="skill-text">
-              WebAudio API<br />
-              Prismic / Curator<br />
-              Nodemailer<br />
-              Python 2.7 & 3+ tKinter
-            </p>
-          </div>
-        </div>
-
-        <br />
-        <br />
-
-        <br />
-
-        <div class="inner2-skill-container">
-          <div class="skill-row-right" style="height: 175px">
-            <p class="skill-text prev">
-              <i><span class="prev-tag">previous education</span></i>
-              Bachelors of Music<br />in Performance<br /><i
-                >Classical Guitar</i
-              >
-            </p>
-          </div>
-        </div>
-
-        <div class="inner2-skill-container">
-          <div class="skill-row-right" style="height: 175px">
-            <p class="skill-text prev">
-              <i><span class="prev-tag">previous experience</span></i>
-              Adult-focused<br />Music Instruction<br /><i
-                >Owner/Operator<br />2007 - 2019</i
-              >
-            </p>
-          </div>
+        <div class="gallery-right-section">
+          <h3>Database Tool</h3>
+          <p>MetaQuery DB<br /><i>on-going development</i></p>
+          <br />
+          <h4>Tech</h4>
+          <p>Python, MySQL, MongoDB, tKinter, PyMongo</p>
+          <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/python--metaquery-db', target='_blank')">
+            View GitHub Repo
+          </button>
         </div>
       </div>
     </div>
 
-    <section class="contact-container">
-      <h2>Contact Form</h2>
+    <div class="card--gallery" style="margin-top: -8px; height: 300px">
+      <div class="card--gallery-inner" style="overflow-y: scroll">
+        <p>
+          This is a desktop application used to query from multiple databases
+          using the same user interface. The application is highly extensible,
+          using dependency injection, software interfaces, and object-oriented
+          paradigms. It is still in development, will be adding MySQL Shell
+          and Mongo Atlas connections.
+        </p>
+        <p>
+          The primary functional requirement of this application is the
+          ability to make queries upon multiple databases from the same
+          window. The requirements do not encompass extensive creation of
+          records, however full SQL statements can be interpreted. The
+          project's main limitation is the chosen UI tech. Current
+          implementation of table display for data in tKinter is too
+          difficult, UI tech and layer needs to be changed. Usage of layered
+          architecture and software interfaces will help in the conversion to
+          a more robust UI.
+        </p>
+        <p></p>
+      </div>
+    </div>
 
-      <div class="card--frame">
-        <form id="contact-form" class="contact-form" name="contact">
-          <div class="card-top-section">
-            <label class="form-title">Your Name:</label>
-            <input
-              class="form-entry"
-              type="text"
-              name="user_name"
-              oninput="formFieldCheck()"
-            />
-            <label class="form-title">Contact Email:</label>
-            <input
-              class="form-entry"
-              type="email"
-              name="user_email"
-              oninput="formFieldCheck()"
-            />
-            <div class="stamp-wrap"></div>
-            <button id="contact-button" class="card-btn-topright" type="submit">
-              Send
-            </button>
-          </div>
+    <br />
+    <br />
+    <br />
+    <br />
 
-          <div class="card-bottom-section">
-            <label class="form-title">How can I help you?</label>
-            <textarea
-              class="form-textarea"
-              name="message"
-              oninput="formFieldCheck()"
-            ></textarea>
-          </div>
-        </form>
+    <!-- || Gallery1 Frame  -->
+    <div class="card--gallery">
+      <div class="card--gallery-inner">
+        <div class="gallery-img-section">
+          <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onclick="gallery1Left()"></button>
+          <img id="gallery1-img" class="main-img" src="/images/gallery/loose-leash-dog/lld-capture.png" />
+          <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onclick="gallery1Right()"></button>
+        </div>
 
-        <div id="hidden-response" class="hidden-response">
-          <div id="success" class="response-box">
-            <p>Thanks!</p>
-            <p>I'll receive your message soon.</p>
-            <p>
-              I'm looking forward to talking with you, I will reach out within 1
-              or 2 business days.
-            </p>
-          </div>
-          <div id="error" class="response-box">
-            <p>Ah bummer!</p>
-            <p>Something went wrong. But I've built a backup plan.</p>
-            <p>
-              Here is an old-fashioned mailto:
-              <a href="mailto:ashthomasweb@gmail.com">ashthomasweb@gmail.com</a>
-            </p>
-          </div>
+        <div class="gallery-right-section">
+          <h3>Client Project</h3>
+          <p>
+            <a href="https://www.looseleashdog.com" target="_blank">www.looseleashdog.com</a>
+          </p>
+          <br />
+          <h4>Tech</h4>
+          <p>Node.js, Express, EJS, Prismic, Curator, NodeMailer</p>
+          <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/client--looseleashdog.com', target='_blank')">
+            View GitHub Repo
+          </button>
         </div>
       </div>
+    </div>
+
+    <div class="card--gallery" style="margin-top: -8px; height: 300px">
+      <div class="card--gallery-inner" style="overflow-y: scroll">
+        <p>
+          This project was built for a local business-woman sole-proprietor.
+          Her business model has been restricted to Instagram, limiting her
+          ability to provide her clientele and community access to her
+          services. The LumberJack template allows her to showcase her
+          expertise and have a blog generating affiliate links and providing
+          additional learning and enrichment opportunities to her clients. I
+          worked with the owner, matching her business mission statement with
+          a brand sense that appeals to her audience.
+        </p>
+        <p>
+          Showcasing the client's primary business traffic encourages
+          link-through SEO and grants audience ease-of-access to other
+          materials and monetizable content. Mobile-friendly content creation
+          allows the business owner to produce content more efficiently.
+        </p>
+        <p></p>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- || Gallery4 Frame  -->
+    <div class="card--gallery">
+      <div class="card--gallery-inner">
+        <div class="gallery-img-section">
+          <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onclick="gallery4Left()"></button>
+          <img id="gallery4-img" class="main-img" src="/images/gallery/music-trainer/melody.jpg" />
+          <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onclick="gallery4Right()"></button>
+        </div>
+
+        <div class="gallery-right-section">
+          <h3>Music Experiment</h3>
+          <p>
+            <a href="https://ashthomasweb.github.io/personal--music-trainer/" target="_blank">Music Trainer & Generator</a><br /><i>on-going development</i>
+          </p>
+          <br />
+          <h4>Tech</h4>
+          <p>ES6, WebAudio, Local Storage</p>
+          <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/personal--music-trainer', target='_blank')">
+            View GitHub Repo
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card--gallery" style="margin-top: -8px; height: 300px">
+      <div class="card--gallery-inner" style="overflow-y: scroll">
+        <p>
+          This project is the conclusion to a hypothesis I had while a music
+          teacher. At that time I did not know anything about programming
+          other than it must follow standard logic principles. My theory was
+          that if you put all the 'rules' of music theory into code and
+          allowed for randomization in it's choices, the resultant music would
+          be surprisingly familiar and even sound pretty good at times- with
+          only occasional awkward moments. JavaScript and the WebAudio API are
+          used to provide a web-based ear-trainer and infinite music
+          generator.
+        </p>
+
+        <p>
+          This project is two-fold, containing a set of practice tools, as
+          well as a music generator. The tools help a student train their ear
+          in the subjects of melody, relative pitch, pitch memory, and tempo.
+          The music generator is a passion project that I will continue to
+          build upon for some time. My more recent study in object-oriented
+          principles leads me to realize the entirety of the project needs
+          redesign and overhaul to move very far forward. However, the
+          underlying logic in how to sort through the musical information has
+          been solved. In time it will not only be an expression of the power
+          of western musical structures, but also a learning device.
+        </p>
+        <p>
+          The application has a high level of educational value for a student
+          or professional. Certain skills that were difficult to practice have
+          been made available and accentuated through the use of the trainers.
+          Work your klangfarbenmelodie chops with multiple orchestral
+          instrument choices. The music trainer includes a function which
+          allows for different instruments to randomly substitute the primary
+          instrument sound, while still asking the student to repeat the
+          pattern back. This develops the ear to be sensitive to pitch while
+          listening to instruments outside of their familiarity. The melodic
+          idea consisting of the same note, but different tones/instruments,
+          is called "klangfarbenmelodie". This melody trainer facilitates the
+          study of an invaluable skill that is difficult to methodically
+          practice.
+        </p>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- || Gallery3 Frame  -->
+    <div class="card--gallery">
+      <div class="card--gallery-inner">
+        <div class="gallery-img-section">
+          <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onclick="gallery3Left()"></button>
+          <img id="gallery3-img" class="main-img" src="/images/gallery/lumber/capture.png" />
+          <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onclick="gallery3Right()"></button>
+        </div>
+
+        <div class="gallery-right-section">
+          <h3>Full-stack Template</h3>
+          <p>
+            <a href="https://lumberjack-theme.herokuapp.com/" target="_blank">LumberJack Theme</a><br /><i>heroku-hosted</i>
+          </p>
+          <br />
+          <h4>Tech</h4>
+          <p>Node.js, Express, EJS, Prismic, Curator, NodeMailer</p>
+          <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/template--lumberjack', target='_blank')">
+            View GitHub Repo
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card--gallery" style="margin-top: -8px; height: 300px">
+      <div class="card--gallery-inner" style="overflow-y: scroll">
+        <p>
+          "LumberJack" is a full-stack template developed for small businesses
+          and social media creators. The theme integrates
+          third-party services to eliminate update, security, and code-heavy
+          issues. Featuring a headless CMS with Prismic, a multi-network
+          aggregator in Curator, and automatic email responses by NodeMailer,
+          LumberJack's needs for maintenance and updates are low. Ships with
+          detailed setup instructions accessible by any front-end developer or
+          diligent person.
+        </p>
+        <p>
+          Making use of third-party API's keeps the website owner from having
+          to engage with the site code after launch, keeping breakage to a
+          minimum. LumberJack's blog is automatically generated using EJS and
+          comes with a "Custom Type" ready to upload to your Prismic
+          repository. Curator allows owners and creators to build feeds from
+          more than one network, enabling more cross-network audience
+          engagement.
+        </p>
+        <p>
+          Designed for a two-color brand scheme with highly legible greyscale
+          copy. Card elements are modular and can be used in a variety of
+          configurations, color and size. LumberJack is fully compatible with
+          any device.
+        </p>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+  </div>
+
+  <div class="banner">
+    <div>
+      <h2 class="creativity-text">
+        Creativity and logic are not mutually exclusive, I think they go hand
+        in hand. Organization allows us to communicate effectively and with
+        style!
+      </h2>
+    </div>
+  </div>
+
+  <div class="experience-container">
+    <div class="exp-wrap">
+      <h2>Previous experience</h2>
+
+      <div class="layout-container">
+        <div class="exp-cont-inner">
+          <img class="layout-img" src="images/layout.png" />
+        </div>
+        <div class="exp-cont-inner">
+          <p class="exp-text-right">
+            I have been involved with many aspects of design and layout, first learning to
+            stage a document for physical print using an offset press. Clearly delivering information is the key to effective
+            communication. Through teaching I have learned how to complete each problem with a fresh scope, and how subtle mis-steps affect the final result.
+          </p>
+        </div>
+      </div>
+
+      <hr style="width: 350px; margin: 15px auto" />
+
+      <div class="remote-container">
+        <div class="exp-cont-inner">
+          <p class="exp-text-left">
+            My music instruction business was partially conducted via online video chat.
+            It allowed me to reach a wide range of people. Relationships can
+            be built and effective work performed in a remote setting, I'm
+            looking forward to continuing to do so.
+          </p>
+        </div>
+        <div class="exp-cont-inner">
+          <img class="remote-img" src="images/remote-work.png" />
+        </div>
+      </div>
+
+      <hr style="width: 350px; margin: 15px auto" />
+
+      <div class="educator-container">
+        <div class="exp-cont-inner">
+          <img class="educator-img" src="images/teacher.png" />
+        </div>
+        <div class="exp-cont-inner">
+          <p class="exp-text-right">
+            Order and cleanliness in music is much like code. It gives
+            way to beautiful and functional ideas. Learning has been my
+            profession, I have a practiced ability to approach a problem from
+            as many directions as it takes to get it perfect.
+          </p>
+        </div>
+      </div>
+
+      <hr style="width: 350px; margin: 15px auto" />
+
+      <div class="detail-container">
+        <div class="exp-cont-inner">
+          <p class="exp-text-left">
+            Every challenge in music or with a student is different. However
+            you overcome it, the solution must always function correctly. But
+            the solutions are frequently unique.
+          </p>
+        </div>
+        <div class="exp-cont-inner">
+          <img class="details-img" src="images/creativity.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="banner">
+    <div>
+      <h2 class="creativity-text">
+        I <i>love</i> programming and creating things that are permanent.
+        Digital creations are accessible across the globe, and this is
+        exciting to me.
+      </h2>
+    </div>
+  </div>
+
+  <div class="skills-container">
+    <h2>Languages, Technology, and Education</h2>
+
+    <div class="inner-skill-container">
+      <div class="inner2-skill-container">
+        <div class="skill-row-left">
+          <p class="skill-text">
+            React<br />
+            ES6 / SASS<br />
+            Node / Express<br />
+            EJS / heroku
+          </p>
+        </div>
+      </div>
+
+      <div class="inner2-skill-container">
+        <div class="skill-row-center">
+          <p class="skill-text">
+            HTML5 / CSS3<br />
+            MySQL / Mongo<br />
+            Firebase & Firestore<br />
+            Git & Github<br />
+          </p>
+        </div>
+      </div>
+
+      <div class="inner2-skill-container">
+        <div class="skill-row-center">
+          <p class="skill-text">
+            WebAudio API<br />
+            Prismic / Curator<br />
+            Nodemailer<br />
+            Python 2.7 & 3+ tKinter
+          </p>
+        </div>
+      </div>
+
       <br />
-    </section>
+      <br />
 
-    <footer>
-      <div class="footer-attributions"></div>
-    </footer>
-    <script src="index.js" charset="utf-8"></script>
-  </body>
+      <br />
+
+      <div class="inner2-skill-container">
+        <div class="skill-row-right" style="height: 175px">
+          <p class="skill-text prev">
+            <i><span class="prev-tag">previous education</span></i>
+            Bachelors of Music<br />in Performance<br /><i>Classical Guitar</i>
+          </p>
+        </div>
+      </div>
+
+      <div class="inner2-skill-container">
+        <div class="skill-row-right" style="height: 175px">
+          <p class="skill-text prev">
+            <i><span class="prev-tag">previous experience</span></i>
+            Adult-focused<br />Music Instruction<br /><i>Owner/Operator<br />2007 - 2019</i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="contact-container">
+    <h2>Contact Form</h2>
+
+    <div class="card--frame">
+      <form id="contact-form" class="contact-form" name="contact">
+        <div class="card-top-section">
+          <label class="form-title">Your Name:</label>
+          <input class="form-entry" type="text" name="user_name" oninput="formFieldCheck()" />
+          <label class="form-title">Contact Email:</label>
+          <input class="form-entry" type="email" name="user_email" oninput="formFieldCheck()" />
+          <div class="stamp-wrap"></div>
+          <button id="contact-button" class="card-btn-topright" type="submit">
+            Send
+          </button>
+        </div>
+
+        <div class="card-bottom-section">
+          <label class="form-title">How can I help you?</label>
+          <textarea class="form-textarea" name="message" oninput="formFieldCheck()"></textarea>
+        </div>
+      </form>
+
+      <div id="hidden-response" class="hidden-response">
+        <div id="success" class="response-box">
+          <p>Thanks!</p>
+          <p>I'll receive your message soon.</p>
+          <p>
+            I'm looking forward to talking with you, I will reach out within 1
+            or 2 business days.
+          </p>
+        </div>
+        <div id="error" class="response-box">
+          <p>Ah bummer!</p>
+          <p>Something went wrong. But I've built a backup plan.</p>
+          <p>
+            Here is an old-fashioned mailto:
+            <a href="mailto:ashthomasweb@gmail.com">ashthomasweb@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+  </section>
+
+  <footer>
+    <div class="footer-attributions"></div>
+  </footer>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
 </html>
