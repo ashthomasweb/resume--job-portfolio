@@ -35,7 +35,7 @@ function wakeUpHerokuApps(input) {
 }
 
 // const appsToPing = ['wyldgreens.herokuapp.com', 'lumberjack-theme.herokuapp.com', 'react--rolodex.herokuapp.com']
-const appsToPing = ['at-react--hello-world']
+const appsToPing = ['at-react--hello-world.herokuapp.com']
 
 app.use(function(req, res, next) {
     appsToPing.forEach( (app) => {
