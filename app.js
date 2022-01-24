@@ -35,13 +35,13 @@ function wakeUpHerokuApps(input) {
 }
 
 // const appsToPing = ['wyldgreens.herokuapp.com', 'lumberjack-theme.herokuapp.com', 'react--rolodex.herokuapp.com']
-const appsToPing = ['fast-coast-74426.herokuapp.com', 'dry-wildwood-69307.herokuapp.com', 'sleepy-castle-13864.herokuapp.com']
+const appsToPing = ['at-react--hello-world']
 
 app.use(function(req, res, next) {
     appsToPing.forEach( (app) => {
         wakeUpHerokuApps(app);
     })
-    // next()
+    next()
 } )
 
 
