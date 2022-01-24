@@ -1,63 +1,51 @@
 // Server file for "Job-portfolio"
 
-require('dotenv').config();
-const express = require('express');
-const bodyParser = require('body-parser');
-const secure = require("ssl-express-www");
-const nodemailer = require("nodemailer");
-const app = express();
+require('dotenv').config()
+const express = require('express')
+const bodyParser = require('body-parser')
+const secure = require("ssl-express-www")
+const nodemailer = require("nodemailer")
+const http = require('http')
+const app = express()
 app.use(secure)
-app.use(express.static("public"));
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use(express.static("public"))
+app.use(bodyParser.urlencoded({
+    extended: true
+}))
+app.use(bodyParser.json())
 
-var http = require('http'); //importing http
-
-function wakeUpHerokuApps(input) {
-    console.log('hi')
-        var options = {
-            host: input,
-            port: 80,
-            path: '/'
-        };
-        http.get(options, function(res) {
-            res.on('data', function(chunk) {
-                try {
-                    // optional logging... disable after it's working
-                    // console.log("HEROKU RESPONSE: " + chunk);
-                } catch (err) {
-                    console.log(err.message);
-                }
-            });
-        }).on('error', function(err) {
-            console.log("Error: " + err.message);
-        });
-}
-
+// Middleware to ping Heroku Apps 
 const appsToPing = ['wyldgreens.herokuapp.com', 'lumberjack-theme.herokuapp.com']
-// const appsToPing = ['at-react--hello-world.herokuapp.com']
-
-app.use(function(req, res, next) {
-    appsToPing.forEach( (app) => {
+function wakeUpHerokuApps(input) {
+    var options = {
+        host: input,
+        port: 80,
+        path: '/'
+    };
+    http.get(options, (res) => {
+        res.on('data', () => {
+            try {} catch (err) {
+                console.log(err.message)
+            }
+        })
+    }).on('error', (err) => {
+        console.log("Error: " + err.message)
+    })
+}
+app.use((req, res, next) => {
+    appsToPing.forEach((app) => {
         wakeUpHerokuApps(app);
         setTimeout(() => {
             wakeUpHerokuApps(app)
         }, 1000 * 60 * 29.5)
     })
     next()
-} )
-
+})
 
 // || Routes 
 app.get("/", function (req, res) {
     res.sendFile(__dirname + "/index.html");
-}); 
-
-// app.get("/test", function (req, res) {
-//     console.log('hi')
-//     test()
-//     res.send('hidave')
-// }); 
+});
 
 app.post('/', function (req, res) {
 
@@ -171,8 +159,8 @@ app.post('/', function (req, res) {
 
 // || Listener
 let port = process.env.PORT;
-if (port == null || port == "") { 
-    port = 3000; 
+if (port == null || port == "") {
+    port = 3000;
 };
 app.listen(port, () => console.log(`Server started at port ${port}.`));
 
