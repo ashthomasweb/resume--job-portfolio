@@ -34,12 +34,15 @@ function wakeUpHerokuApps(input) {
         });
 }
 
-// const appsToPing = ['wyldgreens.herokuapp.com', 'lumberjack-theme.herokuapp.com', 'react--rolodex.herokuapp.com']
-const appsToPing = ['at-react--hello-world.herokuapp.com']
+const appsToPing = ['wyldgreens.herokuapp.com', 'lumberjack-theme.herokuapp.com']
+// const appsToPing = ['at-react--hello-world.herokuapp.com']
 
 app.use(function(req, res, next) {
     appsToPing.forEach( (app) => {
         wakeUpHerokuApps(app);
+        setTimeout(() => {
+            wakeUpHerokuApps(app)
+        }, 1000 * 60 * 29.5)
     })
     next()
 } )
