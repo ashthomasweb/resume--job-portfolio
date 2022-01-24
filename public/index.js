@@ -54,7 +54,13 @@ document.getElementById("contact-button").addEventListener('click', (event) => {
 // * gallery image arrays 
 const gallery1 = [
     "/images/gallery/loose-leash-dog/lld-capture.png",
-    "/images/gallery/loose-leash-dog/lld-capture2.png"
+    "/images/gallery/loose-leash-dog/lld-capture2.png",
+    "/images/gallery/loose-leash-dog/lld1.png",
+    "/images/gallery/loose-leash-dog/lld3.png",
+    "/images/gallery/loose-leash-dog/lld4.png",
+    "/images/gallery/loose-leash-dog/lld7.png",
+
+
 ];
 const gallery2 = [
     "/images/gallery/the-arnold-game/arnold-game.png",
@@ -77,7 +83,12 @@ const gallery4 = [
 ];
 const gallery5 = [
     "/images/gallery/wyldgreens/Capture1.png",
-    "/images/gallery/wyldgreens/Capture2.png"
+    "/images/gallery/wyldgreens/Capture2.png",
+    "/images/gallery/wyldgreens/wg1.png",
+    "/images/gallery/wyldgreens/wg2.png",
+    "/images/gallery/wyldgreens/wg3.png",
+
+
 ];
 const gallery6 = [
     "/images/gallery/metaqdb/capture3.png",
