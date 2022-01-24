@@ -11,10 +11,49 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+var http = require('http'); //importing http
+
+function wakeUpHerokuApps(input) {
+    console.log('hi')
+        var options = {
+            host: input,
+            port: 80,
+            path: '/'
+        };
+        http.get(options, function(res) {
+            res.on('data', function(chunk) {
+                try {
+                    // optional logging... disable after it's working
+                    // console.log("HEROKU RESPONSE: " + chunk);
+                } catch (err) {
+                    console.log(err.message);
+                }
+            });
+        }).on('error', function(err) {
+            console.log("Error: " + err.message);
+        });
+}
+
+const appsToPing = ['wyldgreens.herokuapp.com', 'lumberjack-theme.herokuapp.com', 'react--rolodex.herokuapp.com']
+
+app.use("/", function(req, res, next) {
+    appsToPing.forEach( (app) => {
+        wakeUpHerokuApps(app);
+    })
+    next()
+} )
+
+
 // || Routes 
 app.get("/", function (req, res) {
     res.sendFile(__dirname + "/index.html");
-});
+}); 
+
+// app.get("/test", function (req, res) {
+//     console.log('hi')
+//     test()
+//     res.send('hidave')
+// }); 
 
 app.post('/', function (req, res) {
 
