@@ -123,6 +123,31 @@ p {
   transform: translateX(-50%);
 }
 
+ul {
+  font-family: dinosaur, sans-serif;
+  list-style: inside;
+  list-style-type: circle;
+  line-height: 1.3;
+  padding-left: 8px;
+  margin-top: 4px;
+}
+
+li {
+  color: #353535;
+  font-size: 16px!important;
+}
+
+li::marker {
+  font-size: 14px;
+  padding-bottom: 12px!important;
+}
+
+.tech-item {
+  margin-left: -4px!important;
+  position: relative;
+  top: 1px;
+}
+
 /*  General Layout  */
 
 .banner {
@@ -606,7 +631,7 @@ p {
   width: 315px;
   border: 1px solid var(--theme-lightblue-alt);
   margin-bottom: 10px;
-  font-family: iskra, sans-serif;
+  font-family: dinosaur, sans-serif;
   font-size: 16px;
   color: var(--copy-mid);
 }
@@ -650,7 +675,7 @@ textarea:focus {
 
 .response-box p {
   margin-bottom: 20px;
-  font-family: dinosaur, serif;
+  font-family: dinosaur, sans-serif;
   font-size: 34px;
   font-weight: 700;
 }

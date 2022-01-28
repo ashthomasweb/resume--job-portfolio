@@ -59,8 +59,6 @@ const gallery1 = [
     "/images/gallery/loose-leash-dog/lld3.png",
     "/images/gallery/loose-leash-dog/lld4.png",
     "/images/gallery/loose-leash-dog/lld7.png",
-
-
 ];
 const gallery2 = [
     "/images/gallery/the-arnold-game/arnold-game.png",
@@ -83,30 +81,24 @@ const gallery4 = [
 ];
 const gallery5 = [
     "/images/gallery/wyldgreens/Capture1.png",
-    "/images/gallery/wyldgreens/Capture2.png",
     "/images/gallery/wyldgreens/wg1.png",
     "/images/gallery/wyldgreens/wg2.png",
+    "/images/gallery/wyldgreens/Capture2.png",
     "/images/gallery/wyldgreens/wg3.png",
-
-
 ];
 const gallery6 = [
+    "/images/gallery/metaqdb/window-view.jpg",
     "/images/gallery/metaqdb/capture3.png",
     "/images/gallery/metaqdb/capture1.png",
     "/images/gallery/metaqdb/capture2.png",
     "/images/gallery/metaqdb/capture4.png"
 ];
 const gallery7 = [
-    "/images/gallery/flow-post/FPcapture1.png",
-    "/images/gallery/flow-post/FPcapture2.png",
-    "/images/gallery/flow-post/FPcapture3.png",
-    "/images/gallery/flow-post/FPcapture.png",
-    "/images/gallery/flow-post/FPcapture4.png",
+    "/images/gallery/elephant-chart/EC6.png",
+    "/images/gallery/elephant-chart/EC5.png",
+    "/images/gallery/elephant-chart/EC1.png",
+    "/images/gallery/elephant-chart/EC3.png",
 ];
-
-
-
-
 
 // || gallery image control buttons 
 
