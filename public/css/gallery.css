@@ -1,7 +1,7 @@
 /* Gallery CSS for Portfolio Site */
 
 .gallery-container {
-    padding: 50px 0;
+    padding: 40px 0 66px;
 }
 
 .gallery-container h2 {
@@ -16,9 +16,18 @@
     height: 410px;
     padding: 8px;
     border: 0 !important;
-    margin: 0 auto;
+    margin: -8px auto 0;
     background-color: #222;
     text-align: left;
+}
+
+.lower {
+    margin-top: -8px;
+    height: 325px;
+}
+
+.lower-text {
+    overflow-y: scroll;
 }
 
 .card--gallery-inner {
@@ -99,7 +108,7 @@
     position: absolute;
     top: 0;
     display: inline-block;
-    width: calc(33% - 4px);
+    width: calc(33%);
     height: 100%;
     padding: 10px;
 }
@@ -129,9 +138,19 @@
 .github-btn {
     position: absolute;
     bottom: 10px;
-    width: calc(100% - 20px);
-    height: 45px;
-    font-size: 18px;
+    width: calc(100% - 40px);
+    height: 38px;
+    font-size: 17px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.spacer {
+    position: relative;
+    left: 50%;
+    height: 85px;
+    width: 2px;
+    opacity: 0;
 }
 
 /* END of document  */
