@@ -60,11 +60,6 @@ const gallery1 = [
     "/images/gallery/loose-leash-dog/lld4.png",
     "/images/gallery/loose-leash-dog/lld7.png",
 ];
-const gallery2 = [
-    "/images/gallery/the-arnold-game/arnold-game.png",
-    "/images/gallery/the-arnold-game/arnold-game-color.png",
-    "/images/gallery/the-arnold-game/arnold-game-mobile.png",
-];
 const gallery3 = [
     "/images/gallery/lumber/capture.png",
     "/images/gallery/lumber/capture1.png",
@@ -100,7 +95,7 @@ const gallery7 = [
     "/images/gallery/elephant-chart/EC3.png",
 ];
 
-// || gallery image control buttons 
+// gallery image copy paste control scopes - Rainy day refactor project!
 
 {
     let position = 0;
@@ -122,29 +117,6 @@ const gallery7 = [
             position--;
         }
         currentImg.setAttribute("src", gallery1[position])
-    }
-}
-
-{
-    let position = 0;
-    let currentImg = document.getElementById('gallery2-img');
-
-    function gallery2Right() {
-        if (position == gallery2.length - 1) {
-            position = 0;
-        } else {
-            position++;
-        }
-        currentImg.setAttribute("src", gallery2[position])
-    }
-
-    function gallery2Left() {
-        if (position == 0) {
-            position = gallery2.length - 1;
-        } else {
-            position--;
-        }
-        currentImg.setAttribute("src", gallery2[position])
     }
 }
 
@@ -262,6 +234,5 @@ const gallery7 = [
         currentImg.setAttribute("src", gallery7[position])
     }
 }
-
 
 // END of document
