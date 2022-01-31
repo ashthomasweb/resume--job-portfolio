@@ -5,6 +5,8 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const secure = require("ssl-express-www")
 const nodemailer = require("nodemailer")
+const { google } = require('googleapis')
+const OAuth2 = google.auth.OAuth2
 const http = require('http')
 const app = express()
 app.use(secure)
@@ -47,7 +49,7 @@ app.get("/", function (req, res) {
     res.sendFile(__dirname + "/index.html");
 });
 
-app.post('/', function (req, res) {
+app.post('/', async function (req, res) {
 
     let ifError = false;
 
@@ -58,23 +60,38 @@ app.post('/', function (req, res) {
     } = req.body;
 
     // Mailer transport object 
-    var transporter = nodemailer.createTransport({
-        host: 'mi3-ts3.a2hosting.com',
-        port: 465,
-        secure: true,
+
+    const oauth2Client = new OAuth2(
+        process.env.CLIENT_ID,
+        process.env.CLIENT_SECRET,
+        'https://developers.google.com/oauthplayground'
+    )
+
+    oauth2Client.setCredentials({
+        refresh_token: process.env.REFRESH_TOKEN
+    })
+    
+    const accessToken = await oauth2Client.getAccessToken()
+    
+    let transporter = nodemailer.createTransport({
+        service: "Gmail",
         auth: {
-            user: process.env.MAIL_USER,
-            pass: process.env.MAIL_PASS,
+            type: 'OAuth2',
+            user: process.env.EMAIL,
+            clientId: process.env.CLIENT_ID,
+            clientSecret: process.env.CLIENT_SECRET,
+            refreshToken: process.env.REFRESH_TOKEN,
+            accessToken: accessToken
         }
     });
-
+  
     // Templates
     function inquiryTemplate() {
 
         let inqTemplate = `
 
                 <div style='max-width: 80%; padding: 30px; border: 1px solid lightgrey; border-radius: 12px; margin: 15px;'>
-                    <h2>Hi Ash, someone is looking at your portfolio!</h2>
+                    <h2>Hi Ashley, someone is looking at your portfolio!</h2>
                         <p>Below is a copy of the email.</p> 
                     <h2>From:</h2>
                         <p style='padding: 0 30px;'><strong>${user_name}</strong></p>
@@ -114,14 +131,14 @@ app.post('/', function (req, res) {
 
     // Nodemailer email objects
     function mailNewInquiry(user_name, user_email, message) {
-        return `{"from": "info@ashthomasweb.com",
+        return `{"from": "ashthomasweb@gmail.com",
         "to": "ashthomasweb@gmail.com",
         "subject": "A person is reaching out from your portfolio.",
         "html": "${inquiryTemplate()}"}`;
     };
 
     function mailConfirmation(user_name, user_email, message) {
-        return `{"from": "info@ashthomasweb.com",
+        return `{"from": "ashthomasweb@gmail.com",
         "to": "${user_email}",
         "subject": "This is your email confirmation from Ash Thomas Web!",
         "html": "${confirmTemplate()}"}`;
