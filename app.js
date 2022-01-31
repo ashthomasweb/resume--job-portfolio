@@ -49,7 +49,7 @@ app.get("/", function (req, res) {
     res.sendFile(__dirname + "/index.html");
 });
 
-app.post('/', async function (req, res) {
+app.post('/', async (req, res) => {
 
     let ifError = false;
 
@@ -70,14 +70,22 @@ app.post('/', async function (req, res) {
     oauth2Client.setCredentials({
         refresh_token: process.env.REFRESH_TOKEN
     })
-    
-    const accessToken = await oauth2Client.getAccessToken()
+
+    const accessToken = await new Promise((resolve, reject) => {
+        oauth2Client.getAccessToken((err, token) => {
+          if (err) {
+            console.log(err)
+            reject('Error');
+          }
+          resolve(token);
+        });
+      });
     
     let transporter = nodemailer.createTransport({
         service: "Gmail",
         auth: {
             type: 'OAuth2',
-            user: process.env.EMAIL,
+            user: process.env.MAIL_USER,
             clientId: process.env.CLIENT_ID,
             clientSecret: process.env.CLIENT_SECRET,
             refreshToken: process.env.REFRESH_TOKEN,
@@ -157,6 +165,7 @@ app.post('/', async function (req, res) {
         })
         .catch((err) => {
             console.log(err);
+            console.log('error')
             ifError = true;
         })
         .finally(() => {
