@@ -95,7 +95,7 @@ const gallery7 = [
     "/images/gallery/elephant-chart/EC3.png",
 ];
 
-// gallery image copy paste control scopes - Rainy day refactor project!
+// gallery image copy/paste control scopes - Rainy day refactor project!
 
 {
     let position = 0;
