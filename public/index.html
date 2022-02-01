@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="./css/contact.css" />
 
   <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/whd6rrl.css" />
 </head>
 
@@ -25,18 +28,21 @@
   </section>
 
   <div class="banner top">
-    <div class="inner-banner-half-cell laptop-cell">
-      <img class="laptop-img" src="/images/laptop-code.png" />
-    </div>
+    <div class='banner-cell-wrap'>
 
-    <div class="inner-banner-half-cell">
-      <h2 class="about-title">A bit about me</h2>
-      <p class="about-text">
-        React & JavaScript Full-Stack Engineer. My focus is to create<br>tools and layouts that are both functional and beautiful.
-      </p>
-      <button class="github-link" type="button" onclick="window.open('https://github.com/ashthomasweb', target='_blank')">
-        GitHub Profile
-      </button>
+      <div class="inner-banner-half-cell laptop-cell">
+        <img class="laptop-img" src="/images/laptop-code.png" />
+      </div>
+      
+      <div class="inner-banner-half-cell text-cell">
+        <h2 class="about-title">A bit about me</h2>
+        <p class="about-text">
+          React & JavaScript Full-Stack Engineer. My focus is to create<br>tools and layouts that are both functional and beautiful.
+        </p>
+        <button class="github-link" type="button" onclick="window.open('https://github.com/ashthomasweb', target='_blank')">
+          GitHub Profile
+        </button>
+      </div>
     </div>
   </div>
 
@@ -57,7 +63,7 @@
           <div class="gallery-right-section">
             <h3>Visual Productivity<br>Web App</h3>
             <p>
-              <a href="https://elephantchart.com" target="_blank">www.elephantchart.com</a><br /><i>on-going development</i>
+              <a href="https://elephantchart.com" target="_blank">www.elephantchart.com</a><br /><br /><span class="sub-items">in-production<br>future versions scheduled</span>
             </p>
             <br />
             <h4>Tech</h4>
@@ -65,8 +71,7 @@
               <li><span class='tech-item'>Node.js</span></li>
               <li><span class='tech-item'>React</span></li>
               <li><span class='tech-item'>SASS</span></li>
-
-              <li><span class='tech-item'>Firebase for Auth & Storage</span></li>
+              <li><span class='tech-item'>Firebase Auth & Storage</span></li>
             </ul>
             <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/react--elephant-chart', target='_blank')">
               View GitHub Repo
@@ -95,7 +100,7 @@
             individual notes can be checked off. Future versions will include a 'Share'
             function, multi-select, additional shapes and note backgrounds, arrows and
             flow chart graphics, strings and tack graphics, full type customization, and
-            more. Maybe even trash can basketball! It's supposed to imitate real life,
+            more. Perhaps a game of trash can basketball! It's supposed to imitate real life,
             after all.
           </p>
           <p>
@@ -122,7 +127,7 @@
           <div class="gallery-right-section">
             <h3>Client Project</h3>
             <p>
-              <a href="https://wyldgreens.herokuapp.com" target="_blank">www.wyldgreens.com</a>
+              <a href="https://wyldgreens.herokuapp.com" target="_blank">Wyldgreens</a><br><br><span class="sub-items">in-production</span>
             </p>
             <br />
             <h4>Tech</h4>
@@ -150,13 +155,12 @@
             functionality on one page was an interesting challenge.
           </p>
           <p>
-            The site runs on a node and express server. The site is a single
-            page presentation. It's a Landing page, About page, Product page,
-            and Order page in one. It uses a single parallax on desktop and
+            The site is a single page presentation. It's a Landing page, About page, 
+            Product page, and Order page in one. It uses a single parallax on desktop and
             custom image background to provide a solid color at the top for legibility
             and cleanliness, gradually moving to a Colorado mountain scene for
             customer familiarity and business branding. Fully custom CSS and JS
-            animation and form work.
+            animation and form work. The site runs on a Node and Express server. 
           </p>
         </div>
       </div>
@@ -177,15 +181,15 @@
           </div>
 
           <div class="gallery-right-section">
-            <h3 >Database Tool</h3>
-            <p><span style="text-decoration: underline;">MetaQuery DB</span><br /><i>on-going development</i><br /><i>basic UI</i></p>
+            <h3>Database Tool</h3>
+            <p><a href="https://github.com/ashthomasweb/python--metaquery-db" target='_blank' >MetaQuery DB</a><br /><br /><span class="sub-items">on-going production<br />basic UI</span></p>
             <br />
             <h4>Tech</h4>
             <ul>
               <li><span class='tech-item'>Python</span></li>
               <li><span class='tech-item'>MySQL</span></li>
               <li><span class='tech-item'>MongoDB</span></li>
-              <li><span class='tech-item'>tKinter</span></li>
+              <li><span class='tech-item'>TKinter</span></li>
               <li><span class='tech-item'>PyMongo</span></li>
             </ul>
             <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/python--metaquery-db', target='_blank')">
@@ -203,7 +207,7 @@
             using the same user interface. The application is highly extensible,
             using dependency injection, software interfaces, and object-oriented
             paradigms. It is still in development, will be adding MySQL Shell
-            and Mongo Atlas connections. The project is on 'hold' until an
+            and Mongo Atlas connections. The project is status is on-hold until an
             appropriate UI tech is implemented.
           </p>
           <p>
@@ -212,7 +216,7 @@
             requirements do not encompass extensive creation of records at this time,
             however full SQL statements can be interpreted. The project's primary
             limitation is the chosen user interface tech. Displaying table data in
-            tKinter is highly impractical. A completely new UI technology and layer
+            TKinter is highly impractical. A completely new UI technology and layer
             needs to be chosen and created. Layered architecture and software
             interfaces will allow for an easy transition to a more robust UI.
           </p>
@@ -237,7 +241,7 @@
           <div class="gallery-right-section">
             <h3>Client Project</h3>
             <p>
-              <a href="https://www.looseleashdog.com" target="_blank">www.looseleashdog.com</a>
+              <a href="https://www.looseleashdog.com" target="_blank">www.looseleashdog.com</a><br><br><span class="sub-items">in-production</span>
             </p>
             <br />
             <h4>Tech</h4>
@@ -271,7 +275,7 @@
           </p>
           <p>
             As the clients current model is proving successful, directly embedding that
-            content as a media carousel was efficient for me as a developer and increases
+            content as a media carousel was efficient development, and increases
             the value of every Instagram post she makes. With her primary business traffic
             directly on the site, link-through SEO is increased and grants her audience
             ease-of-access to other materials and monetizable content. Mobile-friendly
@@ -300,7 +304,7 @@
           <div class="gallery-right-section">
             <h3>Music Experiment</h3>
             <p>
-              <a href="https://ashthomasweb.github.io/personal--music-trainer/" target="_blank">Music Trainer & Generator</a><br /><i>on-going development</i><br /><i>basic UI</i>
+              <a href="https://ashthomasweb.github.io/personal--music-trainer/" target="_blank">Music Trainer & Generator</a><br><br /><span class="sub-items">on-going development<br />basic UI</span>
             </p>
             <br />
             <h4>Tech</h4>
@@ -323,12 +327,12 @@
             JavaScript ES6 and the WebAudio API are used to provide a web-based
             ear-trainer and infinite music generator. The tools help a student
             train their musical ear in the subjects of melody, relative pitch,
-            pitch memory, and tempo. The music generator is a passion project
+            pitch memory, and tempo. The Music Generator is a passion project
             and experiment that I will return to. My more recent study in
             object-oriented principles and software architecture has led me to
             realize the entirety of the project needs refactor and rearchitecture!
             However, the underlying logic in how to solve the 'musical problems'
-            works well, and supports my hypothesis.
+            works well.
           </p>
 
           <p>
@@ -338,7 +342,7 @@
             the results would be surprisingly familiar and even sound pretty good
             at times- with only occasional awkward moments! The goal of the project,
             given further development, is that the generator will express the power
-            of western musical structures (usually termed 'music theory') by allowing
+            of Western Musical structures (usually termed 'music theory') by allowing
             them to 'speak' without human interaction, showcasing their merit and the
             'natural behavior' of music.
           </p>
@@ -351,7 +355,7 @@
             called "klangfarbenmelodie". The trainer utilizes and teaches this with a
             mode randomizing the playback to multiple orchestral instrument choices.
             This develops the ear to be sensitive to pitch while listening to instruments
-            outside of the students familiarity, accentuating the 'pitch' side of the learning.
+            outside of the student's familiarity, accentuating the 'pitch' side of the learning.
           </p>
         </div>
       </div>
@@ -375,7 +379,7 @@
           <div class="gallery-right-section">
             <h3>Full-stack Template</h3>
             <p>
-              <a href="https://lumberjack-theme.herokuapp.com/" target="_blank">LumberJack Theme</a>
+              <a href="https://lumberjack-theme.herokuapp.com/" target="_blank">LumberJack Theme</a><br><br><span class="sub-items">in-production</span>
             </p>
             <br />
             <h4>Tech</h4>
@@ -447,7 +451,7 @@
               React<br />
               ES6 / SASS<br />
               Node / Express<br />
-              EJS / heroku
+              EJS / Heroku
             </p>
           </div>
         </div>
@@ -457,13 +461,13 @@
             <p class="skill-text">
               HTML5 / CSS3<br />
               MySQL / Mongo<br />
-              Firebase & Firestore<br />
+              Firebase<br />
               Git & Github
             </p>
           </div>
         </div>
 
-        <div class="inner2-skill-container">
+        <div class="inner2-skill-container on-break">
           <div class="skill-row-center">
             <p class="skill-text">
               WebAudio API<br />
@@ -489,7 +493,7 @@
           <div class="skill-row-right prev-e">
             <p class="skill-text prev">
               <i><span class="prev-tag">previous experience</span></i>
-              Adult-focused<br />Music Instruction<br /><i>Owner/Operator<br />2007 - 2019</i>
+              <i>Owner/Operator</i><br />Adult-focused<br />Music Instruction<br /><i>2007 - 2019</i>
             </p>
           </div>
         </div>
@@ -511,30 +515,14 @@
 
   <section class="experience-container">
     <div class="exp-wrap">
-      <h2>Previous experience</h2>
-
-      <div class="layout-container">
-        <div class="exp-cont-inner">
-          <img class="layout-img" src="images/layout.png" />
-        </div>
-        <div class="exp-cont-inner">
-          <p class="exp-text-right">
-            My first computer had the latest and greatest 6x86 Pentium chip
-            of 1996! I started studying layout while operating an offset printing press in
-            high-school. I have always been drawn to layout and technology,
-            and the elegance in how information can be displayed or delivered.
-          </p>
-        </div>
-      </div>
-
-      <hr class="experience-hr" />
+      <h2>Relevant experience</h2>
 
       <div class="remote-container">
         <div class="exp-cont-inner">
           <p class="exp-text-left">
             Operating a music instruction business for 12 years, which was partially
             conducted online, I learned how to work effectively in a remote setting where
-            a very high level of interaction was required. I am excellent at managing my
+            a high level of interaction was required. I excel at managing my
             workflow and self-directing both creative and logical tasks.
           </p>
         </div>
@@ -551,10 +539,10 @@
         </div>
         <div class="exp-cont-inner">
           <p class="exp-text-right">
-            Being an educator requires the ability to approach a challenge from as many
-            directions as it takes to get the job done, and the same goes in music.
-            Sometimes it's a delicate task, occasionally it takes heavy lifting.
-            I am experienced with problem solving from many angles.
+            Preparing music for performance requires you to approach each challenge from as many
+            directions as it takes- and the same goes for education.
+            Sometimes it can be a delicate task, occasionally it takes heavy lifting.
+            I have extensive experience solving problems using more than one approach.
           </p>
         </div>
       </div>
@@ -563,15 +551,14 @@
 
       <div class="detail-container">
         <div class="exp-cont-inner">
-          <p class="exp-text-left">
-            In teaching and music, clearly delivering information is the key
-            to effective communication. I find this applies in many places! From
-            a symphony to comments put into code, delivering a message in print
-            to structuring an object, less fluff produces a better outcome.
+          <p class="exp-text-left" style='max-width: 440px;'>
+            In teaching and music, cleanly delivering information is the key
+            to communication. Whether a symphony or comments in the code, displaying a message on-screen
+            or structuring an object, less fluff seems to produce a better product.
           </p>
         </div>
         <div class="exp-cont-inner">
-          <img class="details-img" src="images/creativity.png" />
+          <img class="details-img" src="images/layout.png" />
         </div>
       </div>
     </div>

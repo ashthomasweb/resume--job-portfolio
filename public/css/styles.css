@@ -2,7 +2,7 @@
 
 :root {
   --main-background: #fbf6ed;
-  --primary-text: #353535;
+  --primary-text: #3a3a3b;
   --banner-background: #543864;
   --inverted-heading: white;
   --skills-background: lightblue;
@@ -13,9 +13,31 @@
   --lightblue-alt: #b0e9ff;
   --theme-yellow: #f7d84f;
   --theme-blue: #3fc5f0;
+  --theme-link: #17517e;
+
   --theme-darkgreen: #00d681;
   --copy-dark: #3a3b48;
   --copy-mid: #6a6a6a;
+  --font-body: dinosaur, sans-serif;
+  --font-body: Cairo, sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+  padding-bottom: 0px;
+  line-height: 1;
+  color: var(--theme-link);
+  font-weight: 600;
+  margin-bottom: 10px;
+  border-bottom: 4px solid #17517e70;
+
+  transition: border-bottom .3s ease-in-out;
+}
+
+a:hover {
+  border-bottom: 4px solid var(--theme-link);
+
 }
 
 body {
@@ -55,20 +77,21 @@ h4, h5, h6 {
 
 p {
   text-align: left;
-  font-family: dinosaur, sans-serif;
+  font-family: var(--font-body);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
   line-height: 30px;
+  letter-spacing: .5px;
   color: var(--primary-text);
 }
 
 ul {
-  font-family: dinosaur, sans-serif;
+  font-family: var(--font-body);
   list-style: inside;
   list-style-type: circle;
   line-height: 1.3;
-  padding-left: 8px;
+  padding-left: 33px;
   margin-top: 4px;
 }
 
@@ -92,6 +115,7 @@ button {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: var(--banner-background);
+  position: relative;
 }
 
 .top {
@@ -102,6 +126,14 @@ button {
 .bottom {
   box-shadow: 0 -3px 30px 0px #444;
   border-top: solid 3px #383838;
+}
+
+.banner-cell-wrap {
+  max-width: 1200px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+
 }
 
 /*  Avatar Section  */
@@ -132,6 +164,10 @@ button {
   vertical-align: top;
 }
 
+.text-cell {
+  min-width: 538px;
+}
+
 .laptop-cell {
   width: 30%;
   position: relative;
@@ -157,12 +193,16 @@ button {
 }
 
 .github-link {
+  font-family: antarctican-headline, serif;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 600;
   position: relative;
   display: inline-block;
   bottom: -23px;
   width: 135px;
   height: 33px;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 /* Gallery section code in /gallery.css */
@@ -170,7 +210,7 @@ button {
 /* Creativity Banner */
 
 .text-only-full-cell {
-  font-family: dinosaur, sans-serif;
+  font-family: var(--font-body);
   font-weight: 400;
   color: var(--inverted-heading);
   max-width: 600px;
@@ -192,6 +232,8 @@ button {
   background-color: var(--skills-background);
   padding: 40px 0 50px;
   width: 75%;
+  max-width: 1100px;
+
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -291,6 +333,16 @@ button {
   height: 40px;
 }
 
+@media screen and (max-width: 1059.5px) {
+
+  .on-break {
+    margin-top: 26px;
+    margin-bottom: -8px;
+  }
+
+}
+
+
 /* Programming Banner */
 
 /*  Experience Section */
@@ -304,11 +356,12 @@ button {
   margin: 0 auto;
   padding: 50px 0 40px;
   width: 75%;
+  max-width: 1100px;
   background-color: var(--cool-white-background);
 }
 
 .exp-wrap h2 {
-  margin-bottom: 25px;
+  margin-bottom: 37px;
 }
 
 .exp-cont-inner {
@@ -321,7 +374,11 @@ button {
   margin-left: auto;
   margin-right: auto;
   width: 450px;
-  padding-left: 30px;
+  position: relative;
+  bottom: 6px;
+  padding-left: 50px;
+  color: #666;
+
 }
 
 .exp-text-left {
@@ -329,6 +386,9 @@ button {
   margin-right: auto;
   width: 450px;
   padding-right: 30px;
+  position: relative;
+  top: 12px;
+  color: #666;
 }
 
 .layout-container {
@@ -348,7 +408,7 @@ button {
 }
 
 .educator-container {
-  padding: 20px;
+  padding: 25px;
 }
 
 .educator-img {
@@ -366,6 +426,7 @@ button {
 .experience-hr {
   width: 350px;
   margin: 15px auto;
+  opacity: .5;
 }
 
 /* Contact css in /contact.css */

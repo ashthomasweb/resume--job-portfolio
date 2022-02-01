@@ -57,6 +57,7 @@
 }
 
 .lower-text {
+    padding: 10px 12px;
     background-color: #efefef!important;
     overflow-y: scroll;
 }
@@ -70,7 +71,7 @@
 
 .card--gallery-inner p {
     font-size: 16px;
-    padding: 20px 20px 20px 25px;
+    padding: 14px 20px 20px 25px;
 }
 
 .gallery-img-section {
@@ -151,18 +152,34 @@
     font-size: 28px;
     font-weight: 600;
     letter-spacing: 1px;
+    position: relative;
+    left: 12px;
+    padding-top: 4px;
 }
 
 .gallery-right-section h4 {
     font-size: 20px;
+    position: relative;
+    left: 25px;
 }
 
 .gallery-right-section p {
     font-size: 16px;
-    line-height: 1.4;
+    line-height: 1.2;
     height: 107px;
 }
 
+.as-if-link {
+    border-bottom: 4px solid rgba(0, 0, 0, .1);
+}
+
+.sub-items {
+    font-size: 13px;
+    font-style: italic;
+    position: relative;
+    left: 6px;
+    bottom: 5px;
+}
 
 .tech-item {
     margin-left: -4px !important;
@@ -173,12 +190,28 @@
 
 .github-btn {
     position: absolute;
-    bottom: 15px;
-    width: calc(100% - 40px);
+    bottom: 19px;
+    width: calc(100% - 46px);
     height: 38px;
     font-size: 17px;
+    font-family: antarctican-headline, serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
     left: 50%;
+    border: 1px solid #777;
+    border-radius: 2px;
+    color: #888;
     transform: translateX(-50%);
+    transition: color .15s ease-out, border .15s ease-in-out, background-color .15s ease-out, letter-spacing .15s ease-out;
+}
+
+.github-btn:hover {
+    color: #444;
+    background-color: #fafafa;
+    border: 1px solid #222;
+    border-radius: 2px;
+    letter-spacing: 1.7px;
 }
 
 .spacer {
