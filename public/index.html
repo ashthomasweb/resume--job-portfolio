@@ -24,16 +24,15 @@
     <h2>i'm a full-stack web engineer.</h2>
   </section>
 
-  <div class="banner">
-    <div class="inner-banner-half-cell">
+  <div class="banner top">
+    <div class="inner-banner-half-cell laptop-cell">
       <img class="laptop-img" src="/images/laptop-code.png" />
     </div>
 
     <div class="inner-banner-half-cell">
       <h2 class="about-title">A bit about me</h2>
       <p class="about-text">
-        React & JavaScript Full-Stack Engineer. My focus is to create
-        functional and beautiful tools and layouts.
+        React & JavaScript Full-Stack Engineer. My focus is to create<br>tools and layouts that are both functional and beautiful.
       </p>
       <button class="github-link" type="button" onclick="window.open('https://github.com/ashthomasweb', target='_blank')">
         GitHub Profile
@@ -42,369 +41,392 @@
   </div>
 
   <section class="gallery-container">
-    <h2>Here are some examples of my work</h2>
+    <!-- <h2>Here are some examples of my work</h2> -->
 
     <!-- || Gallery7 Frame  -->
-    <div class="card--gallery">
-      <div class="card--gallery-inner">
-        <div class="gallery-img-section">
-          <button id="gallery-btn-7" class="gallery-btn g-btn-left" type="button" onmousedown="gallery7Left()"></button>
-          <img id="gallery7-img" class="main-img" src="/images/gallery/elephant-chart/EC6.png" />
-          <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="gallery7Right()"></button>
-        </div>
+    <div class="gallery-frame">
 
-        <div class="gallery-right-section">
-          <h3>Productivity Application</h3>
+      <div class="card--gallery">
+        <div class="card--gallery-inner">
+          <div class="gallery-img-section">
+            <button id="gallery-btn-7" class="gallery-btn g-btn-left" type="button" onmousedown="gallery7Left()"></button>
+            <img id="gallery7-img" class="main-img" src="/images/gallery/elephant-chart/EC6.png" />
+            <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="gallery7Right()"></button>
+          </div>
+
+          <div class="gallery-right-section">
+            <h3>Visual Productivity<br>Web App</h3>
+            <p>
+              <a href="https://elephantchart.com" target="_blank">www.elephantchart.com</a><br /><i>on-going development</i>
+            </p>
+            <br />
+            <h4>Tech</h4>
+            <ul>
+              <li><span class='tech-item'>Node.js</span></li>
+              <li><span class='tech-item'>React</span></li>
+              <li><span class='tech-item'>SASS</span></li>
+
+              <li><span class='tech-item'>Firebase for Auth & Storage</span></li>
+            </ul>
+            <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/react--elephant-chart', target='_blank')">
+              View GitHub Repo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card--gallery lower">
+        <div class="card--gallery-inner lower-text">
           <p>
-            <a href="https://elephantchart.com" target="_blank">www.elephantchart.com</a><br /><i>on-going development</i>
+            Elephant Chart is an organization application. It features a
+            skewmorphic (life-like) drag and drop, and saveable custom charts
+            and layouts. It uses Firebase for authorization and storage of chart data.
+            Users can log in via Google or any standard email address. The application
+            makes use of moveable visual containers that can be grouped and layered.
+            Elephant Chart is a tool that can be helpful wherever organization of ideas
+            or information is necessary.
           </p>
-          <br />
-          <h4>Tech</h4>
-          <ul>
-            <li><span class='tech-item'>Node.js</span></li> 
-            <li><span class='tech-item'>React</span></li>
-            <li><span class='tech-item'>Firebase for Auth and Storage</span></li>
-          </ul>
-          <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/react--elephant-chart', target='_blank')">
-            View GitHub Repo
-          </button>
+          <p>
+            Elephant Charts can be extremely large, and each note has a tray where
+            the user can store additional information. A 'Mat' function allows the user
+            to group and move notes or other mats together. With the large size, and
+            three or more levels of visual information organization, Elephant Chart
+            lives up to it's name. Backboard and note colors can be set by user and
+            individual notes can be checked off. Future versions will include a 'Share'
+            function, multi-select, additional shapes and note backgrounds, arrows and
+            flow chart graphics, strings and tack graphics, full type customization, and
+            more. Maybe even trash can basketball! It's supposed to imitate real life,
+            after all.
+          </p>
+          <p>
+            Built with React. Experimentation with Hooks and Context is needed
+            before much further development. Potential full refactor if skewmorphic
+            effect can be maintained in more efficient architecture.
+          </p>
         </div>
       </div>
     </div>
-
-    <div class="card--gallery lower">
-      <div class="card--gallery-inner lower-text">
-        <p>
-          Elephant Chart is an organization application. It features a
-          skewmorphic (life-like) drag and drop, and saveable custom charts
-          and layouts. It uses Firebase for authorization and storage of chart data.
-          Users can log in via Google or any standard email address. The application 
-          makes use of moveable visual containers that can be grouped and layered. 
-          Elephant Chart is a tool that can be helpful wherever organization of ideas 
-          or information is necessary. 
-        </p>
-        <p>
-          Elephant Charts can be extremely large, and each note has a tray where 
-          the user can store additional information. A 'Mat' function allows the user 
-          to group and move notes or other mats together. With the large size, and 
-          three or more levels of visual information organization, Elephant Chart 
-          lives up to it's name. Backboard and note colors can be set by user and 
-          individual notes can be checked off. Future versions will include a 'Share' 
-          function, multi-select, additional shapes and note backgrounds, arrows and 
-          flow chart graphics, strings and tack graphics, full type customization, and 
-          more. Maybe even trash can basketball! It's supposed to imitate real life, 
-          after all.
-        </p>
-        <p>
-          Built with React. Experimentation with Hooks and Context is needed
-          before much further development. Potential full refactor if skewmorphic 
-          effect can be maintained in more efficient architecture.
-        </p>
-      </div>
-    </div>
-    <div class="spacer"></div>  
+    <div class="spacer"></div>
 
     <!-- || Gallery5 Frame  -->
-    <div class="card--gallery">
-      <div class="card--gallery-inner">
-        <div class="gallery-img-section">
-          <button id="gallery-btn-5" class="gallery-btn g-btn-left" type="button" onmousedown="gallery5Left()"></button>
-          <img id="gallery5-img" class="main-img" src="/images/gallery/wyldgreens/Capture1.png" />
-          <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="gallery5Right()"></button>
-        </div>
+    <div class="gallery-frame">
 
-        <div class="gallery-right-section">
-          <h3>Client Project</h3>
+      <div class="card--gallery">
+        <div class="card--gallery-inner">
+          <div class="gallery-img-section">
+            <button id="gallery-btn-5" class="gallery-btn g-btn-left" type="button" onmousedown="gallery5Left()"></button>
+            <img id="gallery5-img" class="main-img" src="/images/gallery/wyldgreens/Capture1.png" />
+            <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="gallery5Right()"></button>
+          </div>
+
+          <div class="gallery-right-section">
+            <h3>Client Project</h3>
+            <p>
+              <a href="https://wyldgreens.herokuapp.com" target="_blank">www.wyldgreens.com</a>
+            </p>
+            <br />
+            <h4>Tech</h4>
+            <ul>
+              <li><span class='tech-item'>Node.js</span></li>
+              <li><span class='tech-item'>JS ES6</span></li>
+              <li><span class='tech-item'>NodeMailer</span></li>
+            </ul>
+            <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/client--wyldgreens', target='_blank')">
+              View GitHub Repo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card--gallery lower">
+        <div class="card--gallery-inner lower-text">
           <p>
-            <a href="https://wyldgreens.herokuapp.com" target="_blank">www.wyldgreens.com</a>
+            This project was built for a Colorado-based local business,
+            unfortunately affected by the recent fires. The business' main
+            advertising medium is face to face contact and referrals, which
+            needed to be backed up with a website quickly delivered on a
+            potential customer's phone. The client requested that all materials be
+            presented on a single page. Delivering all the information and
+            functionality on one page was an interesting challenge.
           </p>
-          <br />
-          <h4>Tech</h4>
-          <ul>
-            <li><span class='tech-item'>Node.js</span></li>
-            <li><span class='tech-item'>JS</span></li>
-            <li><span class='tech-item'>NodeMailer</span></li>
-          </ul>
-          <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/client--wyldgreens', target='_blank')">
-            View GitHub Repo
-          </button>
+          <p>
+            The site runs on a node and express server. The site is a single
+            page presentation. It's a Landing page, About page, Product page,
+            and Order page in one. It uses a single parallax on desktop and
+            custom image background to provide a solid color at the top for legibility
+            and cleanliness, gradually moving to a Colorado mountain scene for
+            customer familiarity and business branding. Fully custom CSS and JS
+            animation and form work.
+          </p>
         </div>
       </div>
     </div>
 
-    <div class="card--gallery lower">
-      <div class="card--gallery-inner lower-text">
-        <p>
-          This project was built for a Colorado-based local business,
-          unfortunately affected by the recent fires. The business' main
-          advertising medium is face to face contact and referrals, which
-          needed to be backed up with a website quickly delivered on a 
-          potential customer's phone. The client requested that all materials be
-          presented on a single page. Delivering all the information and
-          functionality on one page was an interesting challenge.
-        </p>
-        <p>
-          The site runs on a node and express server. The site is a single
-          page presentation. It's a Landing page, About page, Product page,
-          and Order page in one. It uses a single parallax on desktop and
-          custom image background to provide a solid color at the top for legibility
-          and cleanliness, gradually moving to a Colorado mountain scene for
-          customer familiarity and business branding. Fully custom CSS and JS 
-          animation and form work.
-        </p>
-      </div>
-    </div>
-
-    <div class="spacer"></div>  
+    <div class="spacer"></div>
 
     <!-- || Gallery6 Frame  -->
-    <div class="card--gallery">
-      <div class="card--gallery-inner">
+    <div class="gallery-frame">
 
-        <div class="gallery-img-section">
-          <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="gallery6Left()"></button>
-          <img id="gallery6-img" class="main-img" src="/images/gallery/metaqdb/window-view.jpg" />
-          <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="gallery6Right()"></button>
+      <div class="card--gallery">
+        <div class="card--gallery-inner">
+
+          <div class="gallery-img-section">
+            <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="gallery6Left()"></button>
+            <img id="gallery6-img" class="main-img" src="/images/gallery/metaqdb/window-view.jpg" />
+            <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="gallery6Right()"></button>
+          </div>
+
+          <div class="gallery-right-section">
+            <h3 >Database Tool</h3>
+            <p><span style="text-decoration: underline;">MetaQuery DB</span><br /><i>on-going development</i><br /><i>basic UI</i></p>
+            <br />
+            <h4>Tech</h4>
+            <ul>
+              <li><span class='tech-item'>Python</span></li>
+              <li><span class='tech-item'>MySQL</span></li>
+              <li><span class='tech-item'>MongoDB</span></li>
+              <li><span class='tech-item'>tKinter</span></li>
+              <li><span class='tech-item'>PyMongo</span></li>
+            </ul>
+            <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/python--metaquery-db', target='_blank')">
+              View GitHub Repo
+            </button>
+          </div>
+
         </div>
+      </div>
 
-        <div class="gallery-right-section">
-          <h3>Database Tool</h3>
-          <p>MetaQuery DB<br /><i>on-going development</i><br /><i>basic UI</i></p>
-          <br />
-          <h4>Tech</h4>
-          <ul>
-            <li><span class='tech-item'>Python</span></li>
-            <li><span class='tech-item'>MySQL</span></li>
-            <li><span class='tech-item'>MongoDB</span></li>
-            <li><span class='tech-item'>tKinter</span></li>
-            <li><span class='tech-item'>PyMongo</span></li>
-          </ul>
-          <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/python--metaquery-db', target='_blank')">
-            View GitHub Repo
-          </button>
+      <div class="card--gallery lower">
+        <div class="card--gallery-inner lower-text">
+          <p>
+            This is a desktop application used to query from multiple databases
+            using the same user interface. The application is highly extensible,
+            using dependency injection, software interfaces, and object-oriented
+            paradigms. It is still in development, will be adding MySQL Shell
+            and Mongo Atlas connections. The project is on 'hold' until an
+            appropriate UI tech is implemented.
+          </p>
+          <p>
+            The primary functional requirement of this application is to query
+            different database providers from the same application window. The
+            requirements do not encompass extensive creation of records at this time,
+            however full SQL statements can be interpreted. The project's primary
+            limitation is the chosen user interface tech. Displaying table data in
+            tKinter is highly impractical. A completely new UI technology and layer
+            needs to be chosen and created. Layered architecture and software
+            interfaces will allow for an easy transition to a more robust UI.
+          </p>
         </div>
-
       </div>
     </div>
 
-    <div class="card--gallery lower">
-      <div class="card--gallery-inner lower-text">
-        <p>
-          This is a desktop application used to query from multiple databases
-          using the same user interface. The application is highly extensible,
-          using dependency injection, software interfaces, and object-oriented
-          paradigms. It is still in development, will be adding MySQL Shell
-          and Mongo Atlas connections. The project is on 'hold' until an 
-          appropriate UI tech is implemented.
-        </p>
-        <p>
-          The primary functional requirement of this application is to query 
-          different database providers from the same application window. The 
-          requirements do not encompass extensive creation of records at this time, 
-          however full SQL statements can be interpreted. The project's primary 
-          limitation is the chosen user interface tech. Displaying table data in 
-          tKinter is highly impractical. A completely new UI technology and layer 
-          needs to be chosen and created. Layered architecture and software 
-          interfaces will allow for an easy transition to a more robust UI.
-        </p>
-      </div>
-    </div>
-
-    <div class="spacer"></div>  
+    <div class="spacer"></div>
 
     <!-- || Gallery1 Frame  -->
-    <div class="card--gallery">
-      <div class="card--gallery-inner">
+    <div class="gallery-frame">
 
-        <div class="gallery-img-section">
-          <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="gallery1Left()"></button>
-          <img id="gallery1-img" class="main-img" src="/images/gallery/loose-leash-dog/lld-capture.png" />
-          <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="gallery1Right()"></button>
+      <div class="card--gallery">
+        <div class="card--gallery-inner">
+
+          <div class="gallery-img-section">
+            <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="gallery1Left()"></button>
+            <img id="gallery1-img" class="main-img" src="/images/gallery/loose-leash-dog/lld-capture.png" />
+            <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="gallery1Right()"></button>
+          </div>
+
+          <div class="gallery-right-section">
+            <h3>Client Project</h3>
+            <p>
+              <a href="https://www.looseleashdog.com" target="_blank">www.looseleashdog.com</a>
+            </p>
+            <br />
+            <h4>Tech</h4>
+            <ul>
+              <li><span class='tech-item'>Node.js</span></li>
+              <li><span class='tech-item'>Express</span></li>
+              <li><span class='tech-item'>EJS</span></li>
+              <li><span class='tech-item'>Prismic</span></li>
+              <li><span class='tech-item'>Curator</span></li>
+              <li><span class='tech-item'>NodeMailer</span></li>
+            </ul>
+            <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/client--looseleashdog.com', target='_blank')">
+              View GitHub Repo
+            </button>
+          </div>
+
         </div>
+      </div>
 
-        <div class="gallery-right-section">
-          <h3>Client Project</h3>
+      <div class="card--gallery lower">
+        <div class="card--gallery-inner lower-text">
           <p>
-            <a href="https://www.looseleashdog.com" target="_blank">www.looseleashdog.com</a>
+            This project was built for a sole-proprietorship dog trainer. The business
+            model has been restricted to Instagram, limiting the ability to provide
+            clientele and the community access to the business. The LumberJack template
+            showcases her services, message, and contact info, while the blog can
+            generate affiliate links and provide additional learning and enrichment
+            opportunities to her clients. 'Friendly' design elements match her business
+            mission statement and generates a brand sense that appeals to her target
+            demographics.
           </p>
-          <br />
-          <h4>Tech</h4>
-          <ul>
-            <li><span class='tech-item'>Node.js</span></li>
-            <li><span class='tech-item'>Express</span></li>
-            <li><span class='tech-item'>EJS</span></li>
-            <li><span class='tech-item'>Prismic</span></li>
-            <li><span class='tech-item'>Curator</span></li>
-            <li><span class='tech-item'>NodeMailer</span></li>
-          </ul>
-          <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/client--looseleashdog.com', target='_blank')">
-            View GitHub Repo
-          </button>
+          <p>
+            As the clients current model is proving successful, directly embedding that
+            content as a media carousel was efficient for me as a developer and increases
+            the value of every Instagram post she makes. With her primary business traffic
+            directly on the site, link-through SEO is increased and grants her audience
+            ease-of-access to other materials and monetizable content. Mobile-friendly
+            content creation allows the business owner to produce content more efficiently
+            and from any place she has service.
+          </p>
         </div>
-
       </div>
     </div>
 
-    <div class="card--gallery lower" >
-      <div class="card--gallery-inner lower-text">
-        <p>
-          This project was built for a sole-proprietorship dog trainer. The business
-          model has been restricted to Instagram, limiting the ability to provide 
-          clientele and the community access to the business. The LumberJack template 
-          showcases her services, message, and contact info, while the blog can 
-          generate affiliate links and provide additional learning and enrichment 
-          opportunities to her clients. 'Friendly' design elements match her business 
-          mission statement and generates a brand sense that appeals to her target 
-          demographics.
-        </p>
-        <p>
-          As the clients current model is proving successful, directly embedding that 
-          content as a media carousel was efficient for me as a developer and increases 
-          the value of every Instagram post she makes. With her primary business traffic 
-          directly on the site, link-through SEO is increased and grants her audience 
-          ease-of-access to other materials and monetizable content. Mobile-friendly 
-          content creation allows the business owner to produce content more efficiently 
-          and from any place she has service.
-        </p>
-      </div>
-    </div>
 
-    <div class="spacer"></div>  
+    <div class="spacer"></div>
 
     <!-- || Gallery4 Frame  -->
-    <div class="card--gallery">
-      <div class="card--gallery-inner">
+    <div class="gallery-frame">
 
-        <div class="gallery-img-section">
-          <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="gallery4Left()"></button>
-          <img id="gallery4-img" class="main-img" src="/images/gallery/music-trainer/melody.jpg" />
-          <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="gallery4Right()"></button>
+      <div class="card--gallery">
+        <div class="card--gallery-inner">
+
+          <div class="gallery-img-section">
+            <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="gallery4Left()"></button>
+            <img id="gallery4-img" class="main-img" src="/images/gallery/music-trainer/melody.jpg" />
+            <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="gallery4Right()"></button>
+          </div>
+
+          <div class="gallery-right-section">
+            <h3>Music Experiment</h3>
+            <p>
+              <a href="https://ashthomasweb.github.io/personal--music-trainer/" target="_blank">Music Trainer & Generator</a><br /><i>on-going development</i><br /><i>basic UI</i>
+            </p>
+            <br />
+            <h4>Tech</h4>
+            <ul>
+              <li><span class='tech-item'>ES6</span></li>
+              <li><span class='tech-item'>WebAudio</span></li>
+              <li><span class='tech-item'>Local Storage</span></li>
+            </ul>
+            <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/personal--music-trainer', target='_blank')">
+              View GitHub Repo
+            </button>
+          </div>
+
         </div>
+      </div>
 
-        <div class="gallery-right-section">
-          <h3>Music Experiment</h3>
+      <div class="card--gallery lower">
+        <div class="card--gallery-inner lower-text">
           <p>
-            <a href="https://ashthomasweb.github.io/personal--music-trainer/" target="_blank">Music Trainer & Generator</a><br /><i>on-going development</i><br /><i>basic UI</i>
+            JavaScript ES6 and the WebAudio API are used to provide a web-based
+            ear-trainer and infinite music generator. The tools help a student
+            train their musical ear in the subjects of melody, relative pitch,
+            pitch memory, and tempo. The music generator is a passion project
+            and experiment that I will return to. My more recent study in
+            object-oriented principles and software architecture has led me to
+            realize the entirety of the project needs refactor and rearchitecture!
+            However, the underlying logic in how to solve the 'musical problems'
+            works well, and supports my hypothesis.
           </p>
-          <br />
-          <h4>Tech</h4>
-          <ul>
-            <li><span class='tech-item'>ES6</span></li>
-            <li><span class='tech-item'>WebAudio</span></li>
-            <li><span class='tech-item'>Local Storage</span></li>
-          </ul>
-          <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/personal--music-trainer', target='_blank')">
-            View GitHub Repo
-          </button>
+
+          <p>
+            The Music Generator is the conclusion to a hypothesis I formed while
+            teaching music. My theory was that if you programmed all the 'rules'
+            of music theory and then allowed for randomization in it's choices,
+            the results would be surprisingly familiar and even sound pretty good
+            at times- with only occasional awkward moments! The goal of the project,
+            given further development, is that the generator will express the power
+            of western musical structures (usually termed 'music theory') by allowing
+            them to 'speak' without human interaction, showcasing their merit and the
+            'natural behavior' of music.
+          </p>
+
+          <p>
+            The application has a high level of educational value for any musician.
+            The Melodic Trainer facilitates musical development through use of an
+            invaluable skill that is difficult to methodically practice. The melodic
+            idea consisting of the same note, but different tones/instruments, is
+            called "klangfarbenmelodie". The trainer utilizes and teaches this with a
+            mode randomizing the playback to multiple orchestral instrument choices.
+            This develops the ear to be sensitive to pitch while listening to instruments
+            outside of the students familiarity, accentuating the 'pitch' side of the learning.
+          </p>
         </div>
-
       </div>
     </div>
 
-    <div class="card--gallery lower">
-      <div class="card--gallery-inner lower-text">
-        <p>
-          JavaScript ES6 and the WebAudio API are used to provide a web-based
-          ear-trainer and infinite music generator. The tools help a student 
-          train their musical ear in the subjects of melody, relative pitch, 
-          pitch memory, and tempo. The music generator is a passion project 
-          and experiment that I will return to. My more recent study in 
-          object-oriented principles and software architecture has led me to 
-          realize the entirety of the project needs refactor and rearchitecture! 
-          However, the underlying logic in how to solve the 'musical problems' 
-          works well, and supports my hypothesis.
-        </p>
 
-        <p>
-          The Music Generator is the conclusion to a hypothesis I formed while 
-          teaching music. My theory was that if you programmed all the 'rules' 
-          of music theory and then allowed for randomization in it's choices, 
-          the results would be surprisingly familiar and even sound pretty good 
-          at times- with only occasional awkward moments! The goal of the project,
-          given further development, is that the generator will express the power 
-          of western musical structures (usually termed 'music theory') by allowing 
-          them to 'speak' without human interaction, showcasing their merit and the 
-          'natural behavior' of music.
-        </p>
-
-        <p>
-          The application has a high level of educational value for any musician. 
-          The Melodic Trainer facilitates musical development through use of an 
-          invaluable skill that is difficult to methodically practice. The melodic 
-          idea consisting of the same note, but different tones/instruments, is 
-          called "klangfarbenmelodie". The trainer utilizes and teaches this with a 
-          mode randomizing the playback to multiple orchestral instrument choices. 
-          This develops the ear to be sensitive to pitch while listening to instruments 
-          outside of the students familiarity, accentuating the 'pitch' side of the learning.
-        </p>
-      </div>
-    </div>
-
-    <div class="spacer"></div>  
+    <div class="spacer"></div>
 
     <!-- || Gallery3 Frame  -->
-    <div class="card--gallery">
-      <div class="card--gallery-inner">
+    <div class="gallery-frame">
 
-        <div class="gallery-img-section">
-          <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="gallery3Left()"></button>
-          <img id="gallery3-img" class="main-img" src="/images/gallery/lumber/capture.png" />
-          <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="gallery3Right()"></button>
+      <div class="card--gallery">
+        <div class="card--gallery-inner">
+
+          <div class="gallery-img-section">
+            <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="gallery3Left()"></button>
+            <img id="gallery3-img" class="main-img" src="/images/gallery/lumber/capture.png" />
+            <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="gallery3Right()"></button>
+          </div>
+
+          <div class="gallery-right-section">
+            <h3>Full-stack Template</h3>
+            <p>
+              <a href="https://lumberjack-theme.herokuapp.com/" target="_blank">LumberJack Theme</a>
+            </p>
+            <br />
+            <h4>Tech</h4>
+            <ul>
+              <li><span class='tech-item'>Node.js</span></li>
+              <li><span class='tech-item'>Express</span></li>
+              <li><span class='tech-item'>EJS</span></li>
+              <li><span class='tech-item'>Prismic</span></li>
+              <li><span class='tech-item'>Curator</span></li>
+              <li><span class='tech-item'>NodeMailer</span></li>
+            </ul>
+            <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/template--lumberjack', target='_blank')">
+              View GitHub Repo
+            </button>
+          </div>
+
         </div>
+      </div>
 
-        <div class="gallery-right-section">
-          <h3>Full-stack Template</h3>
+      <div class="card--gallery lower">
+        <div class="card--gallery-inner lower-text">
           <p>
-            <a href="https://lumberjack-theme.herokuapp.com/" target="_blank">LumberJack Theme</a>
+            "LumberJack" is a full-stack template developed for small businesses
+            and social media creators. The theme integrates third-party services
+            to eliminate update, security, and issues associated with code-heavy
+            CMS templates. Featuring a headless CMS with Prismic, a multi-network
+            aggregator in Curator, and automatic email responses by NodeMailer,
+            LumberJack's needs for maintenance and updates are low. Ships with
+            detailed setup instructions.
           </p>
-          <br />
-          <h4>Tech</h4>
-          <ul>
-            <li><span class='tech-item'>Node.js</span></li>
-            <li><span class='tech-item'>Express</span></li>
-            <li><span class='tech-item'>EJS</span></li>
-            <li><span class='tech-item'>Prismic</span></li>
-            <li><span class='tech-item'>Curator</span></li>
-            <li><span class='tech-item'>NodeMailer</span></li>
-          </ul>
-          <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/template--lumberjack', target='_blank')">
-            View GitHub Repo
-          </button>
+          <p>
+            Making use of third-party API's keeps the website operator from having
+            to engage with the site code after launch, keeping user-breakage to a
+            minimum. LumberJack's blog is generated using EJS and Prismic.
+            Curator allows owners and creators to build feeds from more than one
+            network, enabling more cross-network audience engagement.
+          </p>
+          <p>
+            Designed for a two-color brand scheme with highly legible greyscale
+            copy. Card elements are modular and can be used in a variety of
+            configurations, color and size. LumberJack is fully compatible with
+            any device.
+          </p>
         </div>
-
       </div>
     </div>
 
-    <div class="card--gallery lower">
-      <div class="card--gallery-inner lower-text">
-        <p>
-          "LumberJack" is a full-stack template developed for small businesses
-          and social media creators. The theme integrates third-party services 
-          to eliminate update, security, and issues associated with code-heavy 
-          CMS templates. Featuring a headless CMS with Prismic, a multi-network
-          aggregator in Curator, and automatic email responses by NodeMailer,
-          LumberJack's needs for maintenance and updates are low. Ships with
-          detailed setup instructions.
-        </p>
-        <p>
-          Making use of third-party API's keeps the website operator from having
-          to engage with the site code after launch, keeping user-breakage to a
-          minimum. LumberJack's blog is generated using EJS and Prismic. 
-          Curator allows owners and creators to build feeds from more than one 
-          network, enabling more cross-network audience engagement.
-        </p>
-        <p>
-          Designed for a two-color brand scheme with highly legible greyscale
-          copy. Card elements are modular and can be used in a variety of
-          configurations, color and size. LumberJack is fully compatible with
-          any device.
-        </p>
-      </div>
-    </div>
 
   </section>
 
-  <div class="banner">
+  <div class="banner bottom">
     <div>
       <h2 class="text-only-full-cell">
         Creativity and logic are not mutually exclusive, I think they go hand
@@ -413,11 +435,11 @@
       </h2>
     </div>
   </div>
-  
+
   <section class="skills-parent">
     <div class="skills-container">
       <h2>Languages, Technology, and Education</h2>
-      
+
       <div class="inner-skill-container">
         <div class="inner2-skill-container">
           <div class="skill-row-left">
@@ -429,7 +451,7 @@
             </p>
           </div>
         </div>
-        
+
         <div class="inner2-skill-container">
           <div class="skill-row-center">
             <p class="skill-text">
@@ -440,7 +462,7 @@
             </p>
           </div>
         </div>
-        
+
         <div class="inner2-skill-container">
           <div class="skill-row-center">
             <p class="skill-text">
@@ -451,9 +473,9 @@
             </p>
           </div>
         </div>
-        
+
         <div class='spacer-small'></div>
-        
+
         <div class="inner2-skill-container">
           <div class="skill-row-right prev-e">
             <p class="skill-text prev">
@@ -462,7 +484,7 @@
             </p>
           </div>
         </div>
-        
+
         <div class="inner2-skill-container">
           <div class="skill-row-right prev-e">
             <p class="skill-text prev">
@@ -472,10 +494,10 @@
           </div>
         </div>
       </div>
-      
+
     </div>
   </section>
-  
+
   <div class="banner">
     <div>
       <h2 class="text-only-full-cell">
@@ -497,22 +519,22 @@
         </div>
         <div class="exp-cont-inner">
           <p class="exp-text-right">
-            My first computer had the latest and greatest 6x86 Pentium chip 
-            of 1996! I started studying layout while operating an offset printing press in 
-            high-school. I have always been drawn to layout and technology, 
+            My first computer had the latest and greatest 6x86 Pentium chip
+            of 1996! I started studying layout while operating an offset printing press in
+            high-school. I have always been drawn to layout and technology,
             and the elegance in how information can be displayed or delivered.
           </p>
         </div>
       </div>
 
-      <hr class="experience-hr"/>
+      <hr class="experience-hr" />
 
       <div class="remote-container">
         <div class="exp-cont-inner">
           <p class="exp-text-left">
-            Operating a music instruction business for 12 years, which was partially 
-            conducted online, I learned how to work effectively in a remote setting where 
-            a very high level of interaction was required. I am excellent at managing my 
+            Operating a music instruction business for 12 years, which was partially
+            conducted online, I learned how to work effectively in a remote setting where
+            a very high level of interaction was required. I am excellent at managing my
             workflow and self-directing both creative and logical tasks.
           </p>
         </div>
@@ -521,7 +543,7 @@
         </div>
       </div>
 
-      <hr class="experience-hr"/>
+      <hr class="experience-hr" />
 
       <div class="educator-container">
         <div class="exp-cont-inner">
@@ -529,8 +551,8 @@
         </div>
         <div class="exp-cont-inner">
           <p class="exp-text-right">
-            Being an educator requires the ability to approach a challenge from as many 
-            directions as it takes to get the job done, and the same goes in music. 
+            Being an educator requires the ability to approach a challenge from as many
+            directions as it takes to get the job done, and the same goes in music.
             Sometimes it's a delicate task, occasionally it takes heavy lifting.
             I am experienced with problem solving from many angles.
           </p>
@@ -542,9 +564,9 @@
       <div class="detail-container">
         <div class="exp-cont-inner">
           <p class="exp-text-left">
-            In teaching and music, clearly delivering information is the key 
-            to effective communication. This seems to apply in many places! From 
-            a symphony to comments put into code, delivering a message in print 
+            In teaching and music, clearly delivering information is the key
+            to effective communication. I find this applies in many places! From
+            a symphony to comments put into code, delivering a message in print
             to structuring an object, less fluff produces a better outcome.
           </p>
         </div>

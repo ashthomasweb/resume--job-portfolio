@@ -1,12 +1,41 @@
 /* Gallery CSS for Portfolio Site */
 
 .gallery-container {
-    padding: 40px 0 66px;
+    padding: 72px 0 66px;
+    position: relative;
+
+}
+
+.gallery-container::before {
+    background-image: url(/images/arabesque.png);
+    background-attachment: fixed;
+    background-color: rgb(48, 48, 82);
+    position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.7;
+      background-size: repeat;
+      content: "";
+}
+
+.gallery-frame {
+    box-shadow: 0 0px 50px -15px #383838;
+    width: 800px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    outline: 2px solid #383838;
+    border-radius: 1px;
+    box-sizing: border-box;
 }
 
 .gallery-container h2 {
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 50px;
+    position: relative;
+    /* color: white; */
 }
 
 .card--gallery {
@@ -19,6 +48,7 @@
     margin: -8px auto 0;
     background-color: #222;
     text-align: left;
+
 }
 
 .lower {
@@ -27,6 +57,7 @@
 }
 
 .lower-text {
+    background-color: #efefef!important;
     overflow-y: scroll;
 }
 
@@ -59,7 +90,7 @@
     left: 0;
     right: 0;
     display: block;
-    width: 450px;
+    width: 469px;
     margin: 0 auto;
 }
 
@@ -75,13 +106,12 @@
     background-size: 20px 50px;
     background-color: rgba(0, 0, 0, 0);
     cursor: pointer;
-    opacity: .3;
+    opacity: .1;
     transition: opacity .2s;
-
 }
 
 .gallery-btn:hover {
-    opacity: 1;
+    opacity: .9;
 }
 
 .gallery-btn:focus {
@@ -91,13 +121,16 @@
 .g-btn-left {
     left: 0px;
     background-image: url("/images/left-arrow.png");
-    background-position: 7px 172px;
+    background-position: 6px 182px;
+    background-size: 40%;
 }
 
 .g-btn-right {
     right: 0px;
     background-image: url("/images/right-arrow.png");
-    background-position: 10px 172px;
+    background-position: 17px 182px;
+    background-size: 40%;
+
 }
 
 .gallery-btn button {
@@ -111,6 +144,7 @@
     width: calc(33%);
     height: 100%;
     padding: 10px;
+    background-color: #ddd;
 }
 
 .gallery-right-section h3 {
@@ -125,6 +159,8 @@
 
 .gallery-right-section p {
     font-size: 16px;
+    line-height: 1.4;
+    height: 107px;
 }
 
 
@@ -137,7 +173,7 @@
 
 .github-btn {
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     width: calc(100% - 40px);
     height: 38px;
     font-size: 17px;

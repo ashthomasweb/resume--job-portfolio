@@ -11,8 +11,7 @@
 * [Contact](#contact)
 
 ## General Info
-A simple digital portfolio to showcase my development work. Unobtrusive flat design and clear color sections frame content.
-Gallery with link to the related gitHub repo as well as a simple carousel is the focus of the portfolio. Known technologies are listed below the project gallery, and previous experience below that. The portfolio is designed as a "Career-change Resume", so leaves off detail about previous employment, opting for skills learned in previous settings that will contribute to success in the development industry.
+A simple digital portfolio to showcase my development work. Unobtrusive flat design and clear color sections frame content. Gallery with link to the related gitHub repo as well as a simple carousel is the focus of the portfolio. Known technologies are listed below the project gallery, and previous experience below that. The portfolio is designed as a "Career-change Resume", so leaves off detail about previous employment, opting for skills learned in previous settings that will contribute to success in the development industry.
 
 ## Technologies
 * Node.js - version 16.13.0
