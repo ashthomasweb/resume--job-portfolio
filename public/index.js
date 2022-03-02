@@ -95,6 +95,16 @@ const gallery7 = [
     "/images/gallery/elephant-chart/EC3.png",
 ];
 
+const gallery8 = [
+    "/images/gallery/uLog/uLog1.png",
+    "/images/gallery/uLog/uLog2.png",
+    "/images/gallery/uLog/uLog3.png",
+];
+
+const gallery9 = [
+    "/images/gallery/mock-horizon/capture1.png",
+];
+
 // gallery image copy/paste control scopes - Rainy day refactor project!
 
 {
@@ -232,6 +242,53 @@ const gallery7 = [
             position--;
         }
         currentImg.setAttribute("src", gallery7[position])
+    }
+}
+
+
+{
+    let position = 0;
+    let currentImg = document.getElementById('gallery8-img');
+
+    function gallery8Right() {
+        if (position == gallery8.length - 1) {
+            position = 0;
+        } else {
+            position++;
+        }
+        currentImg.setAttribute("src", gallery8[position])
+    }
+
+    function gallery8Left() {
+        if (position == 0) {
+            position = gallery8.length - 1;
+        } else {
+            position--;
+        }
+        currentImg.setAttribute("src", gallery8[position])
+    }
+}
+
+{
+    let position = 0;
+    let currentImg = document.getElementById('gallery9-img');
+
+    function gallery9Right() {
+        if (position == gallery9.length - 1) {
+            position = 0;
+        } else {
+            position++;
+        }
+        currentImg.setAttribute("src", gallery9[position])
+    }
+
+    function gallery9Left() {
+        if (position == 0) {
+            position = gallery9.length - 1;
+        } else {
+            position--;
+        }
+        currentImg.setAttribute("src", gallery9[position])
     }
 }
 
