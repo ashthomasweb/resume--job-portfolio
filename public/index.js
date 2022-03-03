@@ -102,7 +102,7 @@ const gallery8 = [
 ];
 
 const gallery9 = [
-    "/images/gallery/mock-horizon/capture2.png",
+    "/images/gallery/skylines/capture2.png",
 ];
 
 // gallery image copy/paste control scopes - Rainy day refactor project!
