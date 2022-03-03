@@ -96,9 +96,9 @@ const gallery7 = [
 ];
 
 const gallery8 = [
-    "/images/gallery/uLog/uLogCapture1.png",
-    "/images/gallery/uLog/uLogCapture2.png",
-    "/images/gallery/uLog/uLogCapture3.png",
+    "/images/gallery/logger/Capture1.png",
+    "/images/gallery/logger/Capture2.png",
+    "/images/gallery/logger/Capture3.png",
 ];
 
 const gallery9 = [
