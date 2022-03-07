@@ -102,7 +102,7 @@ const gallery8 = [
 ];
 
 const gallery9 = [
-    "/images/gallery/skylines/capture2.png",
+    "/images/gallery/skylines/dashboard.png",
 ];
 
 // gallery image copy/paste control scopes - Rainy day refactor project!
