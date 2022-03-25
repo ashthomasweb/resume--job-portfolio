@@ -105,6 +105,11 @@ const gallery9 = [
     "/images/gallery/skylines/dashboard.png",
 ];
 
+const gallery10 = [
+    "/images/gallery/FERN/Capture.png",
+    "/images/gallery/FERN/Capture1.png",
+];
+
 // gallery image copy/paste control scopes - Rainy day refactor project!
 
 {
@@ -291,5 +296,30 @@ const gallery9 = [
         currentImg.setAttribute("src", gallery9[position])
     }
 }
+
+
+{
+    let position = 0;
+    let currentImg = document.getElementById('gallery10-img');
+
+    function gallery10Right() {
+        if (position == gallery10.length - 1) {
+            position = 0;
+        } else {
+            position++;
+        }
+        currentImg.setAttribute("src", gallery10[position])
+    }
+
+    function gallery10Left() {
+        if (position == 0) {
+            position = gallery10.length - 1;
+        } else {
+            position--;
+        }
+        currentImg.setAttribute("src", gallery10[position])
+    }
+}
+
 
 // END of document
