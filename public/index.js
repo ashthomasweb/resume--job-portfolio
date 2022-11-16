@@ -2,6 +2,20 @@
 
 // || contact form field checker
 
+function toggleProjectPane() {
+    let personalElem = document.querySelector(".personal-projects");
+    let professionalElem = document.querySelector(".professional-projects");
+    if (personalElem.dataset.display === 'true') {
+        personalElem.dataset.display = 'false'
+        personalElem.style.display = 'none'
+        professionalElem.style.display = 'block'
+    } else if (personalElem.dataset.display === 'false'){
+        personalElem.dataset.display = 'true'
+        personalElem.style.display = 'block'
+        professionalElem.style.display = 'none'
+    }
+}
+
 function formFieldCheck() {
     let name = document.forms["contact"]["user_name"].value;
     let email = document.forms["contact"]["user_email"].value;
