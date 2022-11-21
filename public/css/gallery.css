@@ -1,7 +1,7 @@
 /* Gallery CSS for Portfolio Site */
 
 .gallery-container {
-    padding: 72px 0 66px;
+    padding: 100px 0 66px;
     position: relative;
 
 }
@@ -28,7 +28,7 @@
 .gallery-container::before {
     background-image: url(/images/arabesque.png);
     background-attachment: fixed;
-    background-color: #141419;
+    background-color: #303052;
     position: absolute;
       top: 0px;
       right: 0px;

@@ -5,14 +5,31 @@
 function toggleProjectPane() {
     let personalElem = document.querySelector(".personal-projects");
     let professionalElem = document.querySelector(".professional-projects");
+    let header = document.querySelector('#project-header')
+    let currentPos = window.scrollY
+    const fullHeight = Math.max(
+        document.body.scrollHeight,
+        document.documentElement.scrollHeight,
+        document.body.offsetHeight,
+        document.documentElement.offsetHeight,
+        document.body.clientHeight,
+        document.documentElement.clientHeight
+    );
+    console.log(fullHeight)
+    console.log(currentPos)
     if (personalElem.dataset.display === 'true') {
         personalElem.dataset.display = 'false'
         personalElem.style.display = 'none'
         professionalElem.style.display = 'block'
+        console.log(header)
+        header.textContent = 'Professional Projects'
     } else if (personalElem.dataset.display === 'false'){
         personalElem.dataset.display = 'true'
         personalElem.style.display = 'block'
         professionalElem.style.display = 'none'
+        console.log(header)
+
+        header.textContent = 'Personal Projects'
     }
 }
 
@@ -31,37 +48,37 @@ function formFieldCheck() {
     }
 }
 
-document.getElementById("contact-button").addEventListener('click', (event) => {
-    event.preventDefault();
-    let form = document.getElementById("contact-form");
-    let hiddenPane = document.getElementById("hidden-response");
-    let errorPane = document.getElementById("error");
-    let successPane = document.getElementById("success");
-    fetch('/', {
-            method: "POST",
-            body: JSON.stringify({
-                user_name: form.elements[0].value,
-                user_email: form.elements[1].value,
-                message: form.elements[3].value
-            }),
-            headers: {
-                "Content-Type": "application/json"
-            }
-        })
-        .then((response) => response.json())
-        .then((data) => {
-            hiddenPane.style.display = "block";
-            if (data.error === true) {
-                errorPane.style.display = "block";
-            } else {
-                successPane.style.display = "block";
-                document.getElementById("contact-button").innerText = "SENT";
-            }
-        });
+// document.getElementById("contact-button").addEventListener('click', (event) => {
+//     event.preventDefault();
+//     let form = document.getElementById("contact-form");
+//     let hiddenPane = document.getElementById("hidden-response");
+//     let errorPane = document.getElementById("error");
+//     let successPane = document.getElementById("success");
+//     fetch('/', {
+//             method: "POST",
+//             body: JSON.stringify({
+//                 user_name: form.elements[0].value,
+//                 user_email: form.elements[1].value,
+//                 message: form.elements[3].value
+//             }),
+//             headers: {
+//                 "Content-Type": "application/json"
+//             }
+//         })
+//         .then((response) => response.json())
+//         .then((data) => {
+//             hiddenPane.style.display = "block";
+//             if (data.error === true) {
+//                 errorPane.style.display = "block";
+//             } else {
+//                 successPane.style.display = "block";
+//                 document.getElementById("contact-button").innerText = "SENT";
+//             }
+//         });
 
-    document.getElementById("contact-button").innerText = "SENDING";
+//     document.getElementById("contact-button").innerText = "SENDING";
 
-});
+// });
 
 // || Galleries 
 
@@ -334,6 +351,14 @@ const gallery10 = [
         currentImg.setAttribute("src", gallery10[position])
     }
 }
+
+document.querySelector('.edu-exp-wrap').addEventListener('mouseover', function() {
+	document.querySelector('.exp-wrap').style.animationPlayState = 'paused'
+})
+
+document.querySelector('.edu-exp-wrap').addEventListener('mouseout', function() {
+	document.querySelector('.exp-wrap').style.animationPlayState = 'running'
+})
 
 
 // END of document
