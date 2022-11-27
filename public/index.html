@@ -53,7 +53,7 @@
     <div class="project-header-wrapper top-pane">
       <h3 id="project-header">Professional Projects</h3>
       <label class="switch">
-        <input type="checkbox" onClick="toggleProjectPane(event)" />
+        <input id="top-switch-input" type="checkbox" onClick="toggleProjectPane(event)" />
         <span class="slider"></span>
       </label>
     </div>
@@ -276,8 +276,7 @@
           </div>
         </div>
       </div>
-
-      <div class="spacer"></div>
+<br/>
     </div>
     <div class="personal-projects" data-display="false">
       <!-- <h3>Personal Projects</h3> -->
@@ -788,14 +787,16 @@
           </div>
         </div>
       </div>
+      <div class="spacer"></div>
       
       <div id="lower-switch-pane" class="project-header-wrapper bottom-pane">
-        <h3 id="project-header">Professional Projects</h3>
+        <h3 id="project-header">Personal Projects</h3>
         <label class="switch">
-          <input id="lower-switch" type="checkbox" onClick="toggleProjectPane(event)" />
+          <input id="lower-switch" type="checkbox" checked onClick="toggleProjectPane(event)" />
           <span class="slider"></span>
         </label>
       </div>
+      <br/>
 
     </div>
 
@@ -803,17 +804,14 @@
 
   <div class="banner bottom">
     <div>
-      <h2 class="text-only-full-cell">
-        "Programmers should generalize in concepts and specialize in
-        languages."
+      <h2 class="banner-title">
+        Languages, Technology, and Education
       </h2>
     </div>
   </div>
 
   <section class="skills-parent">
     <div class="skills-container">
-      <h2>Languages, Technology, and Education</h2>
-
       <div class="inner-skill-container">
         <div class="inner2-skill-container">
           <div class="skill-row-left">
@@ -851,7 +849,7 @@
         <div class="spacer-small"></div>
 
         <div class="inner2-skill-container">
-          <div id='education-btn' class="skill-row-right prev-e card-button" onclick="educationButton()">
+          <div id='education-btn' class="skill-row-right prev-e card-button" >
             <p class="skill-text prev">
               <span class="prev-tag">previous education</span>
               Bachelor's of Music<br />in Performance<br /><i>Classical Guitar</i>
@@ -860,7 +858,7 @@
         </div>
 
         <div class="inner2-skill-container">
-          <div id='experience-btn' class="skill-row-right prev-e card-button" onclick="experienceButton()">
+          <div id='experience-btn' class="skill-row-right prev-e card-button" >
             <p class="skill-text prev">
               <i><span class="prev-tag">previous experience</span></i>
               <i>Owner/Operator</i><br />Adult-focused<br />Music

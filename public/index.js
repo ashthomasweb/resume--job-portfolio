@@ -6,19 +6,27 @@ function toggleProjectPane(e) {
     let personalElem = document.querySelector(".personal-projects");
     let professionalElem = document.querySelector(".professional-projects");
     let header = document.querySelector('#project-header')
-    let lowerSwitch = document.querySelector('#lower-switch-pane')
+    let topSwitchInput = document.querySelector('#top-switch-input')
     if (personalElem.dataset.display === 'true') {
         if (e.target.id === 'lower-switch') {
+            topSwitchInput.checked = false
             setTimeout(() => {
                 window.scrollTo({left: 0, top: 400, behavior: 'smooth'})
             }, 10);
+            setTimeout(() => {
+                professionalElem.style.display = 'block'
+            }, 110);
+            setTimeout(() => {
+                personalElem.dataset.display = 'false'
+                personalElem.style.display = 'none'
+            }, 1000);
+        } else {
+            personalElem.dataset.display = 'false'
+            personalElem.style.display = 'none'
+            professionalElem.style.display = 'block'
         }
-        personalElem.dataset.display = 'false'
-        personalElem.style.display = 'none'
-        professionalElem.style.display = 'block'
         header.textContent = 'Professional Projects'
     } else if (personalElem.dataset.display === 'false'){
-        console.log(getComputedStyle(lowerSwitch).getPropertyValue('top'))
         personalElem.dataset.display = 'true'
         personalElem.style.display = 'block'
         professionalElem.style.display = 'none'

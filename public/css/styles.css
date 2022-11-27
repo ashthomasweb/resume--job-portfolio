@@ -221,6 +221,15 @@ button {
 }
 
 
+.banner-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  line-height: 1.4;
+  margin: 10px auto 20px;
+
+}
+
 /*  Skills Section  */
 
 .skills-parent {
@@ -379,9 +388,8 @@ button {
 .exp-wrap {
   margin: 0 auto;
   padding: 10px 0 40px;
-  width: 1820px;
+  width: 2420px;
   height: 270px;
-  left: -800px;
   position: relative;
   user-select: none;
   /* max-width: 1100px; */
@@ -390,27 +398,24 @@ button {
   animation-direction: alternate;
 }
 
-.exp-wrap:hover { 
-  /* animation: slider 100s linear infinite; */
+.exp-wrap:hover {
   background-color: white;
 }
 
 
 @keyframes slider {
   0% {
-    left: -10px;
+    left: -1100px;
   }
   48.5% {
-    left: -10px;
+    left: -1100px;
   }
   50% {
-    left: -860px;
+    left: -60px;
   }
   100% {
-    left: -860px;
+    left: -60px;
   }
-
-
 }
 
 .exp-wrap h2 {
@@ -439,6 +444,7 @@ button {
 }
 .bottom-pane {
   bottom: 0!important;
+  position: relative!important;
 }
 
 .exp-text-left {
@@ -461,6 +467,8 @@ button {
 
 .remote-container {
   top: 0;
+  position: relative;
+  right: 166px;
   height: 250px;
   padding: 20px;
   display: inline-block;
@@ -474,6 +482,8 @@ button {
 .educator-container {
   top: 0;
   margin-left: 150px;
+  position: relative;
+  right: -20px;
   height: 250px;
   padding: 25px;
   display: inline-block;
