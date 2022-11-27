@@ -28,7 +28,7 @@
 .gallery-container::before {
     background-image: url(/images/arabesque.png);
     background-attachment: fixed;
-    background-color: #303052;
+    background-color: #1c213f;
     position: absolute;
       top: 0px;
       right: 0px;
