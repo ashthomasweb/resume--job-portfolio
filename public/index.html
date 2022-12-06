@@ -36,14 +36,22 @@
         </div>
 
         <div class="inner-banner-half-cell text-cell">
-          <h2 class="about-title">A bit about me</h2>
+          <h2 class="about-title">A Bit About Me</h2>
           <p class="about-text">
             My focus is to create functional tools and layouts that assist in
             business and life. I love programming and creating things that are
             permanent and accessible across the globe.
           </p>
           <button
-            class="github-link"
+            class="github-btn"
+            style="
+              width: 180px;
+              position: relative;
+              bottom: -23px;
+              font-size: 15px;
+              transform: none;
+              left: -1px;
+            "
             type="button"
             onclick="window.open('https://github.com/ashthomasweb', target='_blank')"
           >
@@ -424,9 +432,7 @@
                     href="https://ashthomasweb.github.io/personal--music-trainer/"
                     target="_blank"
                     >Trainer & Generator</a
-                  ><br /><br /><span class="sub-items"
-                    >on-going development<br />basic UI</span
-                  >
+                  ><br /><br /><span class="sub-items">in-testing</span>
                 </p>
                 <br />
                 <h4>Tech</h4>
@@ -515,13 +521,17 @@
                     href="https://github.com/ashthomasweb/delta-trades"
                     target="_blank"
                     >Delta Trades</a
-                  >
+                  ><br /><br />
+                  <span class="sub-items">in-testing</span>
                 </p>
-                <br />
-                <h4>Tech</h4>
+                <h4>Tech & Patterns</h4>
                 <ul>
                   <li><span class="tech-item">React</span></li>
-                  <li><span class="tech-item">CSS</span></li>
+                  <li><span class="tech-item">JavaScript</span></li>
+                  <li><span class="tech-item">Couplers</span></li>
+                  <li><span class="tech-item">Interface Pattern</span></li>
+                  <li><span class="tech-item">Factory Methods</span></li>
+                  <li><span class="tech-item">Subscribers</span></li>
                 </ul>
                 <button
                   class="github-btn"
@@ -537,33 +547,32 @@
           <div class="card--gallery lower">
             <div class="card--gallery-inner lower-text">
               <p>
-                The software operates on a node server, which chains various
-                actions resulting in a potential Option Contract being purchased
-                and followup Stop Limit Order being placed.
+                I'm developing this with another engineer. The software operates
+                on a node server, which chains various modules together
+                resulting in a potential Options Contract being purchased and
+                followup Stop Limit Order being placed.
               </p>
               <p>
-                There are 10 distinct modules, a simple interface and a database
-                that a generated data packet moves through or is operated on by.
+                There are 10 distinct modules, a simple chart interface, and a
+                database that a generated data packet moves through or is
+                operated upon.
               </p>
               <p>
                 Small coupler modules sit between the server and module. This
                 decouples the server and module allowing for controlled
-                development and potential middleware firing in the future.
+                development and potential middleware in the future.
               </p>
               <p>
-                An Interface Pattern is being developed to allow for multiple
+                An Interface Pattern is under development to allow for multiple
                 Investor API Clients to be connected and run simultaneously from
                 the same algorithm.
               </p>
               <p>
                 A logger module continously sends updates to an alert manager
-                and finally to a database.
+                and finally to a database, and a simple custom React UI and
+                candlestick-chart allows for historic viewing of the algorigthm
+                for testing.
               </p>
-              <p>
-                A simple custom React UI and candlestick-chart allows for
-                historic viewing of the algorigthm for testing.
-              </p>
-              <p>I'm developing this with another engineer.</p>
             </div>
           </div>
         </div>
@@ -683,7 +692,8 @@
                 <p>
                   <a href="https://orbiter-a7b41.web.app/" target="_blank"
                     >orbiter web app</a
-                  >
+                  ><br /><br />
+                  <span class="sub-items">just for fun</span>
                 </p>
                 <br />
                 <h4>Tech</h4>
@@ -705,11 +715,19 @@
           <div class="card--gallery lower">
             <div class="card--gallery-inner lower-text">
               <p>
-                Just a fun Web App to illustrate the complexity of the solar
-                system and planets. I've loved space and the stars since a young
-                kid. This was a way that I could do some 'exploring' of space on
-                my own. The imaging effect is CSS and the positioning is React.
-                Combined it forms a 3D illusion, and not a true 3D space.
+                A rainy-day project to capture the motion of the
+                planets of the solar system. I've loved space and the stars
+                since I was a young kid. This project is a way that I can do some
+                'exploring' of space on my own. Next task is to work up a more
+                convincing Moon Component, and add the appropriate moons to each
+                planet. There are almost 200 moons in our solar system.
+              </p>
+              <p>
+                The imaging effect is a combination of CSS and React.
+                Positioning is found from a normally-positioned object, whose
+                coordinates are then cast onto a separate plane that is rotated
+                down to a horizontal 'orbit'. Combined it forms a 3D illusion, and
+                not a true 3D space.
               </p>
               <p>
                 The background is an image from the new James Web Telescope. The
@@ -717,7 +735,7 @@
                 orbital angle. However, to make it visible on the screen certain
                 bodies needed to be further scaled down in size. The four inner
                 planets and as well as Pluto are correctly related in size to
-                each other, the four large gas giants are in reality 20 time
+                each other, the four large gas giants are in reality 20 times
                 larger than they appear in this simulation, and the sun is 200
                 times larger than in the simulation.
               </p>
@@ -758,7 +776,8 @@
                     href="https://github.com/ashthomasweb/js--tdd"
                     target="_blank"
                     >uLog</a
-                  >
+                  ><br /><br />
+                  <span class="sub-items">workflow tool</span>
                 </p>
                 <br />
                 <h4>Tech</h4>
@@ -776,13 +795,12 @@
             </div>
           </div>
 
-          <div class="card--gallery lower">
+          <div class="card--gallery lower" style="height: 300px;">
             <div class="card--gallery-inner lower-text">
               <p>
                 uLog is a simple test package for JavaScript and Node.js. It has
                 just one test action, to verify the return of a function. uLog
                 outputs all test data to a .txt file in the project directory.
-                Project is in development.
               </p>
               <p>
                 User can categorize the test run and the add a note which will
@@ -829,7 +847,7 @@
                     href="https://github.com/ashthomasweb/python--metaquery-db"
                     target="_blank"
                     >MetaQuery DB</a
-                  ><br /><br />
+                  ><br /><br /><span class="sub-items">workflow tool</span>
                 </p>
                 <br />
                 <h4>Tech</h4>
@@ -851,7 +869,7 @@
             </div>
           </div>
 
-          <div class="card--gallery lower">
+          <div class="card--gallery lower " style="height: 320px;">
             <div class="card--gallery-inner lower-text">
               <p>
                 This is a desktop application used to query from multiple
@@ -958,14 +976,18 @@
             <div class="educator-container">
               <div class="exp-cont-inner">
                 <p class="exp-text-left">
-                  Operating a music instruction business for 12 years, which was
-                  partially conducted online, I learned how to work effectively
-                  in a remote setting where a high level of interaction was
-                  required. I excel at managing my own workflow.
+                  Owning and operating a music instruction business for 10
+                  years, partially taught online, I have experience in a remote
+                  setting where a high level of interaction is required. I can
+                  manage my own workflow and enjoy organizing a project into
+                  smaller tasks.
                 </p>
               </div>
-              <div class="exp-cont-inner" style="margin-left: 36px">
-                <img class="educator-img" src="images/teacher.png" />
+              <div class="exp-cont-inner" style="margin-left: 16px">
+                <img
+                  class="educator-img"
+                  src="images/piano-online-lesson.png"
+                />
                 <!-- <img class="details-img" src="images/layout.png" /> -->
               </div>
               <div class="exp-cont-inner">
@@ -973,7 +995,7 @@
                   Preparing music requires you to approach each challenge from
                   as many directions as it takes, and in performance you always
                   need a backup plan. Music requires you to utilize established
-                  principles while also thinking on your feet and being
+                  principles - while also thinking on your feet<br />and being
                   creative.
                 </p>
               </div>
