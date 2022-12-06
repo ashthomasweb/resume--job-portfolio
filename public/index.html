@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;500;700&family=Oswald:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://use.typekit.net/whd6rrl.css" />
@@ -62,7 +62,7 @@
             type="checkbox"
             onClick="toggleProjectPane(event)"
           />
-          <span class="slider"></span>
+          <span id="thanks-w3" class="slider"></span>
         </label>
       </div>
 
@@ -74,17 +74,15 @@
           <div class="card--gallery no-image">
             <div class="card--gallery-inner">
               <div class="gallery-img-section">
-                <h3>Software Developer at Kloudlog LLC</h3>
-                <p class="light-text">
-                  A next-generation infrastructure tool for architects.
-                </p>
-                <p class="light-text">
-                  Extended 6 month contract - non-disclosure agreement
-                </p>
-                <p class="light-text">Awarded ownership of User Interface.</p>
-                <p class="light-text">
-                  Prinicipal contributor during contract.
-                </p>
+                <h3 style="margin: 25px 0 5px">
+                  Software Developer at Kloudlog
+                </h3>
+                <h4>A next-generation tool software engineers</h4>
+                <img
+                  style="width: 180px; margin: 20px 0 0"
+                  src="/images/gallery/kloudlog/kloudlog.png"
+                />
+
                 <!-- <button
                 id="gallery-btn-7"
                 class="gallery-btn g-btn-left"
@@ -109,6 +107,7 @@
                 <ul>
                   <li><span class="tech-item">React</span></li>
                   <li><span class="tech-item">TypeScript</span></li>
+                  <li><span class="tech-item">SASS</span></li>
                   <li><span class="tech-item">Terraform</span></li>
                   <li><span class="tech-item">GCP</span></li>
                   <li>
@@ -139,21 +138,23 @@
             </div>
           </div>
 
-          <div class="card--gallery lower">
+          <div class="card--gallery lower extended">
             <div class="card--gallery-inner lower-text">
               <p>
-                My work at Kloudlog involved assisting with Software
-                Architecture decisions and feature design, and implementation of
-                these ideas and structures in a robust React application. My
-                position required a high degree of self-management and the
-                ability to solve issues and blockers independently.
+                My work at Kloudlog involved building a custom React application
+                by assisting with software architecture decisions and feature
+                design, and implementing these ideas and structures in
+                extensible patterns. My position required a high degree of
+                self-management and the ability to solve issues and blockers
+                independently and as a team. NDA - images not available at this
+                time.
               </p>
               <p>
                 Some general tasks and techniques in use are as follows.
                 Multiple Context/Reducer pattern was used to manage separate
                 concerns in the application. Multiple coding languages are
                 parsed and operated upon. API requests for data retrieval and a
-                websocket for real-time data feed. Microservices environment was
+                websocket for real-time data feed. Microservices environment
                 used to separate layers, and to allow for CI/CD by multiple
                 developers.
               </p>
@@ -188,20 +189,19 @@
               </div>
 
               <div class="gallery-right-section">
-                <h3>Client Project</h3>
-                <p>
+                <p style="margin: 0 0 0 10px">
                   <a href="https://wyldgreens.herokuapp.com" target="_blank"
                     >Wyldgreens</a
-                  ><br /><br /><span class="sub-items"
-                    >production site on-hold</span
-                  >
+                  ><br /><br /><span class="sub-items">in-production</span>
                 </p>
                 <br />
                 <h4>Tech</h4>
                 <ul>
+                  <li><span class="tech-item">JavaScript</span></li>
                   <li><span class="tech-item">Node.js</span></li>
-                  <li><span class="tech-item">JS ES6</span></li>
-                  <li><span class="tech-item">NodeMailer</span></li>
+                  <li><span class="tech-item">Express</span></li>
+                  <li><span class="tech-item">Nodemailer</span></li>
+                  <li><span class="tech-item">HTML/CSS</span></li>
                 </ul>
                 <button
                   class="github-btn"
@@ -214,22 +214,24 @@
             </div>
           </div>
 
-          <div class="card--gallery lower">
+          <div class="card--gallery lower extended">
             <div class="card--gallery-inner lower-text">
               <p>
-                This product was built for a Colorado-based local business,
-                unfortunately affected by the Superior fires in 2021. The
-                business' main advertising medium was face to face contact and
-                referrals. The client requested that all materials be presented
-                on a single page.
+                A Node server handles EJS rendering and an automatic mail
+                responder with customizable template. The client requested that
+                all materials be presented on a single page. I worked in tandem
+                with a UX researcher/writer to acheive the client's requests and
+                generate site language and microcopy. The project proved more
+                challenging in it's layout and copy needs than it's technical
+                challenges.
               </p>
               <p>
-                It's a Landing page, About page, Product page, and Order page in
-                one. It uses a parallax on desktop and custom image background
-                to provide a solid color at the top for legibility and
-                cleanliness, gradually moving to a Colorado mountain scene for
-                customer familiarity and business branding. Fully custom CSS and
-                JS animation and form work.
+                The layout combines a Landing page, About page, Product page,
+                and Order page into one. It uses a parallax on desktop and
+                custom image background to provide a solid color at the top for
+                legibility and cleanliness, gradually moving to a Colorado
+                mountain scene for customer familiarity and business branding.
+                Fully custom CSS, JS animation, and form work.
               </p>
             </div>
           </div>
@@ -262,7 +264,6 @@
               </div>
 
               <div class="gallery-right-section">
-                <h3>Client Project</h3>
                 <p>
                   <a href="https://www.looseleashdog.com" target="_blank"
                     >www.looseleashdog.com</a
@@ -276,7 +277,7 @@
                   <li><span class="tech-item">EJS</span></li>
                   <li><span class="tech-item">Prismic</span></li>
                   <li><span class="tech-item">Curator</span></li>
-                  <li><span class="tech-item">NodeMailer</span></li>
+                  <li><span class="tech-item">HTML/CSS</span></li>
                 </ul>
                 <button
                   class="github-btn"
@@ -289,29 +290,24 @@
             </div>
           </div>
 
-          <div class="card--gallery lower">
+          <div class="card--gallery lower extended">
             <div class="card--gallery-inner lower-text">
               <p>
-                This project was built for the owner of a dog training business.
-                'Friendly' design elements match the business mission statement
-                and generates a brand sense that appeals to the target
-                demographics. The business model was previously restricted to
-                Instagram, limiting access to clientele and the community.
+                A site produced for a sole proprietor whose business model was
+                previously restricted to Instagram. This limited access to
+                clientele and the further monetization. The project's goal was
+                to merge different types of content and advertisement in a
+                single place so as to increase the value of every post made.
+                With the primary business traffic directly embeded, link-through
+                traffic is increased while granting the audience access to other
+                materials and monetizable content.
               </p>
               <p>
-                The LumberJack template showcases services, brand message, and
-                contact info, while the blog can generate affiliate links and
-                provide additional learning and enrichment opportunities to
-                clients.
-              </p>
-              <p>
-                Directly embedding an Instagram media carousel increases the
-                value of every post made. With the primary business traffic
-                directly on the site, link-through SEO is increased and grants
-                the audience ease-of-access to other materials and monetizable
-                content. Mobile-friendly content creation allows the business
-                owner to produce content more efficiently and from any place
-                they have service.
+                'Friendly' design elements that match the business' mission
+                statement generate a 'brand sense' that appeals to the target
+                demographics. Mobile-friendly content creation allows the
+                business owner to produce content more efficiently and from any
+                place they have service.
               </p>
             </div>
           </div>
@@ -384,8 +380,8 @@
                 layouts. Firebase is used for authorization and storage of chart
                 data. Users can log in via Google or any standard email address.
                 The application makes use of moveable visual containers that can
-                be grouped and layered. Built with React, using TypeScript and a Context API & Reducer
-                for extensibility.
+                be grouped and layered. Built with React, using TypeScript and a
+                Context API & Reducer for extensibility.
               </p>
               <p>
                 Each note has a tray where the user can store additional
@@ -423,11 +419,11 @@
 
               <div class="gallery-right-section">
                 <h3>Music Experiment</h3>
-                <p>
+                <p style="padding-right: 0">
                   <a
                     href="https://ashthomasweb.github.io/personal--music-trainer/"
                     target="_blank"
-                    >Music Trainer & Generator</a
+                    >Trainer & Generator</a
                   ><br /><br /><span class="sub-items"
                     >on-going development<br />basic UI</span
                   >
@@ -457,17 +453,16 @@
                 web-based ear-trainer and infinite music generator. The tools
                 help a student train their musical ear in the subjects of
                 melody, relative pitch, pitch memory, and tempo. The Music
-                Generator is an early passion project, however the
-                underlying logic in how to solve the musical problems works
-                well.
+                Generator is an early passion project, however the underlying
+                logic in how to solve the musical problems works well.
               </p>
 
               <p>
-                The goal of the project, given further development, is
-                that the generator will express the power of Western Musical
-                structures (usually termed 'music theory') by allowing them to
-                'speak' without human interaction, showcasing their merit and
-                the 'natural behavior' of music.
+                The goal of the project, given further development, is that the
+                generator will express the power of Western Musical structures
+                (usually termed 'music theory') by allowing them to 'speak'
+                without human interaction, showcasing their merit and the
+                'natural behavior' of music.
               </p>
 
               <p>
@@ -514,7 +509,7 @@
               </div>
 
               <div class="gallery-right-section">
-                <h3>Stock Data Analysis and Transactor</h3>
+                <h3>Stock Analysis and Transactor</h3>
                 <p>
                   <a
                     href="https://github.com/ashthomasweb/delta-trades"
@@ -757,7 +752,7 @@
               </div>
 
               <div class="gallery-right-section">
-                <h3>TDD Tool and Logger</h3>
+                <h3>TDD Logger</h3>
                 <p>
                   <a
                     href="https://github.com/ashthomasweb/js--tdd"
@@ -991,8 +986,8 @@
     <div class="banner">
       <div>
         <h2 class="text-only-full-cell">
-          In music, teaching, and in code, clearly delivering information is the
-          key to communication and success.
+          In music, teaching, and programming, clearly delivering information is
+          the key to success.
         </h2>
       </div>
     </div>

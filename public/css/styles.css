@@ -3,9 +3,9 @@
 :root {
   --main-background: #fbf6ed;
   --primary-text: #3a3a3b;
-  --banner-background: #543864;
+  --banner-background: #583d67;
   --inverted-heading: white;
-  --skills-background: #a2a6c0;
+  --skills-background: #cbcedd;
   --skill-box-border: #b7bbd9;
   --sky-blue: #add8e6;
   --footer-background: #222222;
@@ -18,9 +18,8 @@
   --theme-darkgreen: #00d681;
   --copy-dark: #3a3b48;
   --copy-mid: #6a6a6a;
-  --font-body: dinosaur, sans-serif;
   --font-body: Cairo, sans-serif;
-
+  --font-header: Oswald, sans-serif;
 }
 
 a {
@@ -48,7 +47,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0 auto 0;
-  font-family: antarctican-headline, sans-serif;
+  font-family: var(--font-header);
   font-weight: 700;
   font-style: normal;
 }
@@ -60,19 +59,19 @@ h1 {
 }
 
 h2 {
-  font-family: antarctican-headline, sans-serif;
+  font-family: var(--font-header);
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
-  font-size: 38px;
-}
-
-h3 {
   font-size: 36px;
 }
 
+h3 {
+  font-size: 31px;
+}
+
 h4, h5, h6 {
-  font-size: 24px;
+  font-size: 23px;
 }
 
 p {
@@ -182,6 +181,7 @@ button {
 
 .about-title {
   color: var(--inverted-heading);
+  letter-spacing: 1px;
 }
 
 .about-text {
@@ -192,16 +192,16 @@ button {
 }
 
 .github-link {
-  font-family: antarctican-headline, serif;
+  font-family: var(--font-header);
   text-transform: uppercase;
   letter-spacing: .5px;
-  font-weight: 600;
+  font-weight: 500;
   position: relative;
   display: inline-block;
   bottom: -23px;
   width: 135px;
   height: 33px;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 /* Gallery section code in /gallery.css */
@@ -227,7 +227,7 @@ button {
   color: white;
   line-height: 1.4;
   margin: 10px auto 20px;
-  letter-spacing: 2.5px;
+  letter-spacing: 1.5px;
 }
 
 /*  Skills Section  */
@@ -485,7 +485,7 @@ button {
 /*  Footer  */
 
 footer {
-  height: 100px;
+  height: 45px;
   background-color: var(--footer-background);
   padding: 20px;
 }
@@ -495,7 +495,7 @@ footer {
 .project-header-wrapper {
   height: 60px;
   width: 425px;
-  padding: 8px 30px;
+  padding: 13px 30px;
   background-color: #222;
   opacity: 1;
   position: absolute;
@@ -551,7 +551,7 @@ footer {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #7a9fbd;
 }
 
 input:focus + .slider {

@@ -45,5 +45,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+* {
+	user-select: none;
+}
 
 /* END of document */

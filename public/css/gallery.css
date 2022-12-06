@@ -71,7 +71,7 @@
 }
 
 .no-image {
-    height: 310px;
+    height: 317px;
 
 }
 
@@ -80,10 +80,16 @@
     height: 325px;
 }
 
+.extended {
+    height: 405px!important;
+    overflow: hidden!important;
+
+}
+
 .lower-text {
     padding: 10px 12px;
     background-color: #efefef!important;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .card--gallery-inner {
@@ -94,7 +100,7 @@
 }
 
 .card--gallery-inner p {
-    font-size: 16px;
+    font-size: 17px;
     padding: 14px 20px 20px 25px;
 }
 
@@ -103,14 +109,22 @@
     display: inline-block;
     width: 67%;
     height: 100%;
-    padding: 20px 30px;
+    padding: 5px 30px;
     border-right: 1px solid #222;
     background-color: #333;
     color: whitesmoke;
+    text-align: center;
 }
+
+.gallery-img-section h4 {
+    font-weight: 500;
+    margin: 10px 0;
+}
+
 
 .light-text {
     color: whitesmoke;
+    padding: 7px 0!important;
 }
 
 .main-img {
@@ -177,12 +191,17 @@
     background-color: #ddd;
 }
 
+.gallery-right-section a {
+    font-size: 18px;
+
+}
+
+
 .gallery-right-section h3 {
     font-size: 28px;
     font-weight: 600;
-    letter-spacing: 1px;
     position: relative;
-    left: 12px;
+    left: 14px;
     padding-top: 4px;
 }
 
@@ -196,6 +215,7 @@
     font-size: 16px;
     line-height: 1.2;
     height: 107px;
+    margin-left: -10px;
 }
 
 .as-if-link {
@@ -223,7 +243,7 @@
     width: calc(100% - 46px);
     height: 38px;
     font-size: 17px;
-    font-family: antarctican-headline, serif;
+    font-family: var(--font-header);
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-weight: 600;

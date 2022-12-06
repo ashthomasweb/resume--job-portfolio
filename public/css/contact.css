@@ -45,8 +45,8 @@
     height: 137px;
     border: 14px dotted lightblue;
     background-color: var(--theme-darkgreen);
-    font-family: antarctican-mono, sans-serif;
-    font-size: 30px;
+    font-family: var(--font-header);
+    font-size: 28px;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--copy-dark);
