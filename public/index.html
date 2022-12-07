@@ -117,7 +117,6 @@
                   <li><span class="tech-item">TypeScript</span></li>
                   <li><span class="tech-item">SASS</span></li>
                   <li><span class="tech-item">Terraform</span></li>
-                  <li><span class="tech-item">GCP</span></li>
                   <li>
                     <span class="tech-item">Node.js</span>
                     <ul>
@@ -125,6 +124,7 @@
                       <li>Websocket feed</li>
                     </ul>
                   </li>
+                  <li><span class="tech-item">GCP</span></li>
                   <li>
                     <span class="tech-item">Firebase</span>
                     <ul>
@@ -154,17 +154,18 @@
                 design, and implementing these ideas and structures in
                 extensible patterns. My position required a high degree of
                 self-management and the ability to solve issues and blockers
-                independently and as a team. NDA - images not available at this
-                time.
+                independently and as a team.
               </p>
               <p>
-                Some general tasks and techniques in use are as follows.
-                Multiple Context/Reducer pattern was used to manage separate
-                concerns in the application. Multiple coding languages are
-                parsed and operated upon. API requests for data retrieval and a
-                websocket for real-time data feed. Microservices environment
-                used to separate layers, and to allow for CI/CD by multiple
-                developers.
+                I have an NDA with the company. Tasks and techniques authorized
+                to disclose are as follows. Multiple Context/Reducer pattern was
+                used to manage separate concerns in the application. Multiple
+                coding languages are parsed and operated upon. A custom React
+                and SVG drag and drop was created. API requests for data
+                retrieval and a websocket for real-time data feed. Microservices
+                environment used to separate layers, and to facilitate CI/CD by
+                multiple development teams. Standard Agile practices and
+                schedules followed.
               </p>
             </div>
           </div>
@@ -225,21 +226,22 @@
           <div class="card--gallery lower extended">
             <div class="card--gallery-inner lower-text">
               <p>
-                A Node server handles EJS rendering and an automatic mail
-                responder with customizable template. The client requested that
-                all materials be presented on a single page. I worked in tandem
-                with a UX researcher/writer to acheive the client's requests and
-                generate site language and microcopy. The project proved more
-                challenging in it's layout and copy needs than it's technical
-                challenges.
+                A custom layout and build for a client running specialty-food
+                delivery business, primarily conducted and advertised on mobile.
+                The client requested that all materials be presented the same,
+                while on a single page, with no loss of content on mobile. I
+                worked in tandem with a UX researcher/writer to achieve the
+                client's requests and generate site language and microcopy. The
+                project's primary challenge was in it's layout and copy needs
+                rather than it's technical build.
               </p>
               <p>
-                The layout combines a Landing page, About page, Product page,
-                and Order page into one. It uses a parallax on desktop and
-                custom image background to provide a solid color at the top for
-                legibility and cleanliness, gradually moving to a Colorado
-                mountain scene for customer familiarity and business branding.
-                Fully custom CSS, JS animation, and form work.
+                Wyldgreens is a Landing page, About page, Product page, and
+                Order page in one. It uses a parallax on desktop and gradually
+                moving to a Colorado mountain scene for customer familiarity and
+                business branding. Custom CSS, JS animation, and form work. A
+                Node server handles an automatic order responder with
+                customizable template.
               </p>
             </div>
           </div>
@@ -305,10 +307,11 @@
                 previously restricted to Instagram. This limited access to
                 clientele and the further monetization. The project's goal was
                 to merge different types of content and advertisement in a
-                single place so as to increase the value of every post made.
-                With the primary business traffic directly embeded, link-through
-                traffic is increased while granting the audience access to other
-                materials and monetizable content.
+                single place so as to increase the value of every post made. The
+                LumberJack theme provided a solution by directly embedding the
+                existing business traffic, link-through traffic is increased
+                while granting the audience access to other materials and
+                monetizable content.
               </p>
               <p>
                 'Friendly' design elements that match the business' mission
@@ -320,6 +323,90 @@
             </div>
           </div>
         </div>
+
+        <div class="spacer"></div>
+
+        <!-- || Gallery3 Frame  -->
+
+        <div class="gallery-frame">
+          <div class="card--gallery">
+            <div class="card--gallery-inner">
+              <div class="gallery-img-section">
+                <button
+                  id="gallery-btn-l"
+                  class="gallery-btn g-btn-left"
+                  type="button"
+                  onmousedown="gallery3Left()"
+                ></button>
+                <img
+                  id="gallery3-img"
+                  class="main-img"
+                  src="/images/gallery/lumber/capture.png"
+                />
+                <button
+                  id="gallery-btn-r"
+                  class="gallery-btn g-btn-right"
+                  type="button"
+                  onmousedown="gallery3Right()"
+                ></button>
+              </div>
+
+              <div class="gallery-right-section">
+                <h3>Small Business Template</h3>
+                <p>
+                  <a
+                    href="https://lumberjack-theme.herokuapp.com/"
+                    target="_blank"
+                    >LumberJack Theme</a
+                  ><br /><br /><span class="sub-items"
+                    >template in-production</span
+                  >
+                </p>
+                <h4>Tech</h4>
+                <ul>
+                  <li><span class="tech-item">Node.js</span></li>
+                  <li><span class="tech-item">Express</span></li>
+                  <li><span class="tech-item">EJS</span></li>
+                  <li><span class="tech-item">Prismic</span></li>
+                  <li><span class="tech-item">Curator</span></li>
+                  <li><span class="tech-item">NodeMailer</span></li>
+                </ul>
+                <button
+                  class="github-btn"
+                  type="button"
+                  onclick="window.open('https://github.com/ashthomasweb/template--lumberjack', target='_blank')"
+                >
+                  View GitHub Repo
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card--gallery lower extended">
+            <div class="card--gallery-inner lower-text">
+              <p>
+                "LumberJack" is a Full Stack template developed for small
+                businesses and social media creators. The theme integrates
+                third-party services to eliminate issues associated with
+                code-heavy CMS templates. Featuring a headless CMS, a
+                multi-network aggregator, and automatic email responses by
+                NodeMailer - LumberJack's needs for maintenance and updates are
+                low.
+              </p>
+              <p>
+                Designed for a two-color brand scheme with highly legible
+                greyscale copy.Making use of third-party API's keeps the website
+                operator from having to engage with the site code after launch,
+                keeping user-breakage to a minimum. Card elements are modular
+                and can be used in a variety of configurations, color and size.
+                LumberJack's blog is generated using EJS and Prismic. Curator
+                allows owners and creators to build feeds from more than one
+                network, enabling more cross-network audience engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <br />
       </div>
       <div class="personal-projects" data-display="false">
@@ -354,9 +441,7 @@
                 <p>
                   <a href="https://elephantchart.com" target="_blank"
                     >www.elephantchart.com</a
-                  ><br /><br /><span class="sub-items"
-                    >Proof of Concept starter for Kloudlog LLC</span
-                  >
+                  ><br /><br /><span class="sub-items">Proof of Concept</span>
                 </p>
                 <br />
                 <h4>Tech</h4>
@@ -462,10 +547,10 @@
           <div class="card--gallery lower">
             <div class="card--gallery-inner lower-text">
               <p>
-                I'm developing this with another engineer. The software operates
-                on a node server, which chains various modules together
-                resulting in a potential Options Contract being purchased and
-                followup Stop Limit Order being placed.
+                This project is being developing with another engineer. The
+                software is built on a node server, which chains various modules
+                together resulting in a potential <i>Options Contract</i> being
+                purchased, and followup <i>Stop Limit Order</i> being placed.
               </p>
               <p>
                 There are 10 distinct modules, a simple chart interface, and a
@@ -554,15 +639,12 @@
                 Generator is an early passion project, however the underlying
                 logic in how to solve the musical problems works well.
               </p>
-
               <p>
                 The goal of the project, given further development, is that the
-                generator will express the power of Western Musical structures
-                (usually termed 'music theory') by allowing them to 'speak'
-                without human interaction, showcasing their merit and the
-                'natural behavior' of music.
+                generator will express the power of musical structures (usually
+                termed 'music theory') by allowing them to 'speak' without human
+                interaction.
               </p>
-
               <p>
                 The Melodic Trainer facilitates musical development through use
                 of an invaluable skill that is difficult to methodically
@@ -571,93 +653,7 @@
                 trainer utilizes and teaches this with a mode randomizing the
                 playback to multiple orchestral instrument choices. This
                 develops the ear to be sensitive to pitch while listening to
-                instruments outside of the student's familiarity, accentuating
-                the 'pitch' side of the learning.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="spacer"></div>
-
-        <!-- || Gallery3 Frame  -->
-
-        <div class="gallery-frame">
-          <div class="card--gallery">
-            <div class="card--gallery-inner">
-              <div class="gallery-img-section">
-                <button
-                  id="gallery-btn-l"
-                  class="gallery-btn g-btn-left"
-                  type="button"
-                  onmousedown="gallery3Left()"
-                ></button>
-                <img
-                  id="gallery3-img"
-                  class="main-img"
-                  src="/images/gallery/lumber/capture.png"
-                />
-                <button
-                  id="gallery-btn-r"
-                  class="gallery-btn g-btn-right"
-                  type="button"
-                  onmousedown="gallery3Right()"
-                ></button>
-              </div>
-
-              <div class="gallery-right-section">
-                <h3>Full-stack Template</h3>
-                <p>
-                  <a
-                    href="https://lumberjack-theme.herokuapp.com/"
-                    target="_blank"
-                    >LumberJack Theme</a
-                  ><br /><br /><span class="sub-items">in-production</span>
-                </p>
-                <br />
-                <h4>Tech</h4>
-                <ul>
-                  <li><span class="tech-item">Node.js</span></li>
-                  <li><span class="tech-item">Express</span></li>
-                  <li><span class="tech-item">EJS</span></li>
-                  <li><span class="tech-item">Prismic</span></li>
-                  <li><span class="tech-item">Curator</span></li>
-                  <li><span class="tech-item">NodeMailer</span></li>
-                </ul>
-                <button
-                  class="github-btn"
-                  type="button"
-                  onclick="window.open('https://github.com/ashthomasweb/template--lumberjack', target='_blank')"
-                >
-                  View GitHub Repo
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="card--gallery lower">
-            <div class="card--gallery-inner lower-text">
-              <p>
-                "LumberJack" is a Full Stack template developed for small
-                businesses and social media creators. The theme integrates
-                third-party services to eliminate issues associated with
-                code-heavy CMS templates. Featuring a headless CMS, a
-                multi-network aggregator, and automatic email responses by
-                NodeMailer - LumberJack's needs for maintenance and updates are
-                low. Ships with detailed setup instructions.
-              </p>
-              <p>
-                Making use of third-party API's keeps the website operator from
-                having to engage with the site code after launch, keeping
-                user-breakage to a minimum. LumberJack's blog is generated using
-                EJS and Prismic. Curator allows owners and creators to build
-                feeds from more than one network, enabling more cross-network
-                audience engagement.
-              </p>
-              <p>
-                Designed for a two-color brand scheme with highly legible
-                greyscale copy. Card elements are modular and can be used in a
-                variety of configurations, color and size.
+                instruments outside of the student's familiarity.
               </p>
             </div>
           </div>

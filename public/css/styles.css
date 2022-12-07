@@ -236,11 +236,25 @@ button {
   background-color: #282828;
 }
 
+@media (max-width: 1134px) {
+  .skills-parent {
+    zoom: 80%;
+  }
+}
+
+@media (max-width: 933px) {
+  .skills-parent {
+    zoom: 70%;
+  }
+}
+
+
 .skills-container {
   background-color: var(--skills-background);
   padding: 40px 0 50px;
   width: 75%;
   max-width: 1135px;
+  min-width: 1135px;
 
   margin-left: auto;
   margin-right: auto;
@@ -354,7 +368,7 @@ button {
   width: 2px;
   height: 40px;
 }
-
+/* 
 @media screen and (max-width: 1059.5px) {
 
   .on-break {
@@ -362,7 +376,7 @@ button {
     margin-bottom: -8px;
   }
 
-}
+} */
 
 
 /* Programming Banner */
@@ -377,8 +391,9 @@ button {
 .edu-exp-wrap {
   margin: 0 auto;
   height: 270px;
-  width: 75%;
   max-width: 1135px;
+  min-width: 1135px;
+
 }
 
 .exp-wrap {
@@ -458,8 +473,9 @@ button {
   padding: 25px 0;
   display: inline-block;
   pointer-events: none;
-  width: 75vw;
   max-width: 1100px;
+  min-width: 1100px;
+
 }
 
 .educator-img {
