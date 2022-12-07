@@ -15,7 +15,7 @@ function toggleProjectPane(e) {
             }, 10);
             setTimeout(() => {
                 professionalElem.style.display = 'block'
-            }, 110);
+            }, 190);
             setTimeout(() => {
                 personalElem.dataset.display = 'false'
                 personalElem.style.display = 'none'
