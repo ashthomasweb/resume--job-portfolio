@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json())
 
 // Middleware to ping Heroku Apps 
-const appsToPing = ['wyldgreens.herokuapp.com', 'lumberjack-theme.herokuapp.com']
+const appsToPing = ['lumberjack-theme.herokuapp.com']
 function wakeUpHerokuApps(input) {
     var options = {
         host: input,
@@ -37,9 +37,9 @@ function wakeUpHerokuApps(input) {
 app.use((req, res, next) => {
     appsToPing.forEach((app) => {
         wakeUpHerokuApps(app);
-        setTimeout(() => {
-            wakeUpHerokuApps(app)
-        }, 1000 * 60 * 29.5)
+        // setTimeout(() => {
+        //     wakeUpHerokuApps(app)
+        // }, 1000 * 60 * 29.5)
     })
     next()
 })

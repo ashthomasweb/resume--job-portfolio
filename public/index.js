@@ -110,6 +110,11 @@ const gallery10 = [
     "/images/gallery/FERN/Capture1.png",
 ];
 
+const gallery11 = [
+  '/images/gallery/codestasher/Capture.png',
+  '/images/gallery/codestasher/Capture1.png',
+]
+
 // gallery image copy/paste control scopes - Rainy day refactor project!
 
 {
@@ -319,6 +324,30 @@ const gallery10 = [
         }
         currentImg.setAttribute("src", gallery10[position])
     }
+}
+
+
+{
+  let position = 0
+  let currentImg = document.getElementById('gallery11-img')
+
+  function gallery11Right() {
+    if (position == gallery11.length - 1) {
+      position = 0
+    } else {
+      position++
+    }
+    currentImg.setAttribute('src', gallery11[position])
+  }
+
+  function gallery11Left() {
+    if (position == 0) {
+      position = gallery11.length - 1
+    } else {
+      position--
+    }
+    currentImg.setAttribute('src', gallery11[position])
+  }
 }
 
 document.querySelector('.edu-exp-wrap').addEventListener('mouseover', function() {
