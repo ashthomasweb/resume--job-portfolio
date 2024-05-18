@@ -41,7 +41,7 @@
 
 .gallery-frame {
     box-shadow: 0 0px 50px -15px #383838;
-    width: 950px;
+    width: 1060px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -60,24 +60,22 @@
 .card--gallery {
     position: relative;
     display: block;
-    width: 950px;
-    height: 480px;
+    width: 100%;
+    height: 514px;
     border: 7px solid black;
     background-color: #222;
     text-align: left;
-
 }
 
 .lower {
     margin-top: -8px;
-    height: 350px;
+    height: 405px;
     width: 100%;
 }
 
 .extended {
     height: 405px!important;
     overflow: hidden!important;
-
 }
 
 .lower-text {
@@ -88,9 +86,28 @@
 
 .card--gallery-inner {
     position: absolute;
-    width: calc(66% - 0px);
+    width: calc(70% - 0px);
     height: calc(100% - 0px);
     background-color: rgb(235, 235, 235);
+}
+
+.card--gallery-inner::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+}
+
+/* The scrollbar track (background) */
+.card--gallery-inner::-webkit-scrollbar-track {
+    background: transparent; /* Color of the scrollbar track */
+}
+
+/* The scrollbar handle (thumb) */
+.card--gallery-inner::-webkit-scrollbar-thumb {
+    background: #555; /* Color of the scrollbar handle */
+}
+
+/* The handle on hover */
+.card--gallery-inner::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar handle on hover */
 }
 
 .card--gallery-inner p {
@@ -105,8 +122,8 @@
     font-family: var(--font-body);
     font-weight: 500;
     color: var(--primary-text);
-    margin: 7px 0;
-    line-height: 26px;
+    margin: 12px 0;
+    line-height: 24px;
 }
 
 
@@ -140,7 +157,7 @@
     left: 0;
     right: 0;
     display: block;
-    height: 450px;
+    height: 500px;
     margin: 0 auto;
 }
 
@@ -180,7 +197,6 @@
     background-image: url("/images/right-arrow.png");
     background-position: 17px 182px;
     background-size: 40%;
-
 }
 
 .gallery-btn button {
@@ -192,15 +208,20 @@
     top: 0;
     right: 0;
     display: inline-block;
-    width: calc(33%);
+    width: calc(29%);
     height: 100%;
-    padding: 10px;
+    padding: 13px;
     background-color: #ddd;
 }
 
 .gallery-right-section a {
-    font-size: 18px;
-
+    font-size: 22px;
+    font-family: var(--font-header);
+    font-weight: 500;
+    line-height: 1.4;
+    border-bottom: 2px solid var(--theme-link);
+    color: var(--theme-link);
+    margin-bottom: 15px;
 }
 
 
@@ -216,6 +237,7 @@
     font-size: 20px;
     position: relative;
     left: 25px;
+    margin-top: 10px;
 }
 
 .gallery-right-section p {
@@ -225,16 +247,18 @@
     margin-left: -10px;
 }
 
-.as-if-link {
-    border-bottom: 4px solid rgba(0, 0, 0, .1);
+.gallery-right-section ul {
+    padding-left: 10px;
 }
 
 .sub-items {
-    font-size: 13px;
+    font-size: 18px;
     font-style: italic;
     position: relative;
     left: 6px;
     bottom: 5px;
+    display: block;
+    margin: 16px 0 0 0;
 }
 
 .tech-item {

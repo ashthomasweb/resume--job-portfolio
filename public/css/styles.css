@@ -29,9 +29,9 @@ a {
   color: var(--theme-link);
   font-weight: 600;
   margin-bottom: 10px;
-  border-bottom: 4px solid #17517e70;
-
+  border-bottom: 3px solid #17517e70;
   transition: border-bottom .3s ease-in-out;
+  display: inline;
 }
 
 a:hover {
@@ -106,6 +106,25 @@ li::marker {
 
 button {
   cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+/* The scrollbar track (background) */
+::-webkit-scrollbar-track {
+    background: #aaa; /* Color of the scrollbar track */
+}
+
+/* The scrollbar handle (thumb) */
+::-webkit-scrollbar-thumb {
+    background: #555; /* Color of the scrollbar handle */
+}
+
+/* The handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--theme-link); /* Color of the scrollbar handle on hover */
 }
 
 /*  General Layout  */
@@ -212,7 +231,7 @@ button {
   font-family: var(--font-body);
   font-weight: 400;
   color: var(--inverted-heading);
-  max-width: 600px;
+  /* max-width: 600px; */
   margin: 10px auto 20px;
   line-height: 1.4;
   letter-spacing: 1.5px;

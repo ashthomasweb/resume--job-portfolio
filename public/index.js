@@ -141,9 +141,15 @@ const galleryObject = {
     13: {
         position: 0,
         images: [
-            '/images/gallery/enow/enow-1.png',
             '/images/gallery/enow/enow-2.png',
             '/images/gallery/enow/enow-3.png',
+            '/images/gallery/enow/enow-1.png',
+        ]
+    },
+    14: {
+        position: 0,
+        images: [
+            '/images/gallery/hal/hal-1.png',
         ]
     }
 }
@@ -167,13 +173,5 @@ function galleryLeft(galleryNumber) {
     }
     currentImg.setAttribute("src", galleryObject[galleryNumber].images[galleryObject[galleryNumber].position])
 }
-
-// document.querySelector('.edu-exp-wrap').addEventListener('mouseover', function () {
-//     document.querySelector('.exp-wrap').style.animationPlayState = 'paused'
-// })
-
-// document.querySelector('.edu-exp-wrap').addEventListener('mouseout', function () {
-//     document.querySelector('.exp-wrap').style.animationPlayState = 'running'
-// })
 
 // END of document
