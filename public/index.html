@@ -23,6 +23,9 @@
 
         <section class="top-container">
             <h1>hi, i'm ash thomas</h1>
+            <div class="avatar-backing" >
+                <div class="light"></div>
+            </div>
             <img class="avatar" src="/images/self_avatar.png" />
             <h2>i'm a frontend software engineer</h2>
         </section>
@@ -40,14 +43,17 @@
                         accessible across the globe. While I can work throughout the full
                         stack, I am best in a frontend role.
                     </p>
-                    <button class="github-btn" style="
-                width: 180px;
-                position: relative;
-                bottom: -23px;
-                font-size: 15px;
-                transform: none;
-                left: -1px;
-                " type="button" onclick="window.open('https://github.com/ashthomasweb', target='_blank')">
+                    <button class="github-btn" 
+                    style="
+                        width: 180px;
+                        position: relative;
+                        bottom: -23px;
+                        font-size: 15px;
+                        transform: none;
+                        left: -1px; "
+                    type="button" 
+                    onclick="window.open('https://github.com/ashthomasweb', target='_blank')"
+                    >
                         GitHub Profile
                     </button>
                 </div>
@@ -69,6 +75,7 @@
                 <!-- || Gallery12 Frame  -->
                 <div class="gallery-frame">
                     <div class="card--gallery">
+                        <div class="gallery-mat" ></div>
                         <div class="gallery-img-section">
                             <button id="gallery-btn-12" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft('12')"></button>
                             <img id="gallery12-img" class="main-img" src="/images/gallery/lake-level-viewer/llv-1.png" />
@@ -77,7 +84,7 @@
 
                     </div>
 
-                    <div class="card--gallery lower extended">
+                    <div class="card--gallery lower">
                         <div class="card--gallery-inner lower-text">
                             <p>The NOAA Great Lakes Level Viewer is a tool that's part of the inundation series of app's hosted by The Office for Coastal Management.
                                 I led the development team on this project while mentoring a junior developer. We interfaced with the Physical Scientists involved in
@@ -107,11 +114,11 @@
                                 target="_blank">NOAA Lake Level Viewer</a>
                             <span class="sub-items">in-production</span>
                             <h4>Tech</h4>
-                            <ul>
-                                <li><span class="tech-item">React</span></li>
-                                <li><span class="tech-item">OpenLayers</span></li>
-                                <li><span class="tech-item">HighCharts</span></li>
-                                <li><span class="tech-item">SASS</span></li>
+                            <ul class="tech-items">
+                                <li>React</li>
+                                <li>OpenLayers</li>
+                                <li>HighCharts</li>
+                                <li>SASS</li>
                             </ul>
                         </div>
                     </div>
@@ -122,6 +129,7 @@
                 <!-- || Gallery13 Frame  -->
                 <div class="gallery-frame">
                     <div class="card--gallery">
+                        <div class="gallery-mat" ></div>
                         <div class="gallery-img-section">
                             <button id="gallery-btn-13" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft('13')"></button>
                             <img id="gallery13-img" class="main-img" src="/images/gallery/enow/enow-2.png" />
@@ -129,7 +137,7 @@
                         </div>
                     </div>
 
-                    <div class="card--gallery lower extended">
+                    <div class="card--gallery lower">
                         <div class="card--gallery-inner lower-text">
 
                             <p>The NOAA Economic Ocean Watch Explorer (ENOW) displays data on all the coastal states and counties of the Continental United States, as well as six US Territories. The same
@@ -162,10 +170,10 @@
                             <a class="entry-header" href="https://coast.noaa.gov/enowexplorer/" target="_blank">NOAA ENOW Explorer<br />Economic National Ocean Watch</a>
                             <span class="sub-items">in-production</span>
                             <h4>Tech</h4>
-                            <ul>
-                                <li><span class="tech-item">React</span></li>
-                                <li><span class="tech-item">HighCharts</span></li>
-                                <li><span class="tech-item">SASS</span></li>
+                            <ul class="tech-items">
+                                <li>React</li>
+                                <li>HighCharts</li>
+                                <li>SASS</li>
                             </ul>
                         </div>
                     </div>
@@ -175,14 +183,16 @@
                 <!-- || Gallery7 Frame  -->
                 <div class="gallery-frame">
                     <div class="card--gallery">
+                        <div class="gallery-mat" ></div>
                         <div class="gallery-img-section">
-                            <h3 style="margin: 25px 0 5px">Kloudlog</h3>
+                            <h3 style="margin: 25px 0 5px; font-size: 36px">Kloudlog</h3>
                             <h4>Graphical User Interface for Infrastructure as Code</h4>
-                            <img style="width: 180px; margin: 20px 0 0" src="/images/gallery/kloudlog/kloudlog.png" />
+                            <h5>Terraform - Google Cloud Platform</h5>
+                            <img style="width: 200px; margin: 20px 0 0" src="/images/gallery/kloudlog/kloudlog.png" />
                         </div>
                     </div>
 
-                    <div class="card--gallery lower extended">
+                    <div class="card--gallery lower">
                         <div class="card--gallery-inner lower-text">
                             <p>
                                 At Kloudlog, I spearheaded the development of a full-stack React application that enables visual creation and editing of GCP resources such as
@@ -216,27 +226,14 @@
                             <a>Kloudlog</a>
                             <span class="sub-items">in-development</span>
                             <h4>Tech</h4>
-                            <ul>
-                                <li><span class="tech-item">React</span></li>
-                                <li><span class="tech-item">TypeScript</span></li>
-                                <li><span class="tech-item">SASS</span></li>
-                                <li><span class="tech-item">Terraform</span></li>
-                                <li>
-                                    <span class="tech-item">Node.js</span>
-                                    <ul>
-                                        <li>API Layer</li>
-                                        <li>Websocket feed</li>
-                                    </ul>
-                                </li>
-                                <li><span class="tech-item">GCP</span></li>
-                                <li>
-                                    <span class="tech-item">Firebase</span>
-                                    <ul>
-                                        <li>Auth</li>
-                                        <li>Hosting</li>
-                                        <li>Storage</li>
-                                    </ul>
-                                </li>
+                            <ul class="tech-items">
+                                <li>React</li>
+                                <li>TypeScript</li>
+                                <li>SASS</li>
+                                <li>Terraform</li>
+                                <li>Node.js</span>
+                                <li>GCP</li>
+                                <li>Firebase</li>
                             </ul>
                         </div>
                     </div>
@@ -247,6 +244,7 @@
 
                 <div class="gallery-frame">
                     <div class="card--gallery">
+                        <div class="gallery-mat" ></div>
                         <div class="gallery-img-section">
                             <button id="gallery-btn-5" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(5)"></button>
                             <img id="gallery5-img" class="main-img" src="/images/gallery/wyldgreens/Capture1.png" />
@@ -254,7 +252,7 @@
                         </div>
                     </div>
 
-                    <div class="card--gallery lower extended">
+                    <div class="card--gallery lower">
                         <div class="card--gallery-inner lower-text">
                             <p>Wyldgreens is a custom built single page layout that guides the customer through learning about the product/service, selecting products,
                                 and placing an order. I designed it to be user friendly while maintaining a unified presentation across all devices. I collaborated with
@@ -281,12 +279,12 @@
                             <a href="https://wyldgreens.herokuapp.com" target="_blank">Wyldgreens</a>
                             <span class="sub-items">in-production</span>
                             <h4>Tech</h4>
-                            <ul>
-                                <li><span class="tech-item">JavaScript</span></li>
-                                <li><span class="tech-item">Node.js</span></li>
-                                <li><span class="tech-item">Express</span></li>
-                                <li><span class="tech-item">Nodemailer</span></li>
-                                <li><span class="tech-item">HTML/CSS</span></li>
+                            <ul class="tech-items">
+                                <li>JavaScript</li>
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>Nodemailer</li>
+                                <li>HTML/CSS</li>
                             </ul>
                             <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/client--wyldgreens', target='_blank')">
                                 View GitHub Repo
@@ -300,6 +298,7 @@
 
                 <div class="gallery-frame">
                     <div class="card--gallery">
+                        <div class="gallery-mat" ></div>
                         <div class="gallery-img-section">
                             <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(1)"></button>
                             <img id="gallery1-img" class="main-img" src="/images/gallery/loose-leash-dog/lld-capture.png" />
@@ -307,7 +306,7 @@
                         </div>
                     </div>
 
-                    <div class="card--gallery lower extended">
+                    <div class="card--gallery lower">
                         <div class="card--gallery-inner lower-text">
                             <p>A vibrant website tailored for a sole proprietor whose business was previously confined to Instagram. This restriction limited access to potential
                                 clients and hindered further monetization opportunities. Using the LumberJack theme we seamlessly integrated existing business traffic, amplified
@@ -333,13 +332,13 @@
                             <a href="https://www.looseleashdog.com" target="_blank">Loose Leash Dog</a>
                             <span class="sub-items">in-production</span>
                             <h4>Tech</h4>
-                            <ul>
-                                <li><span class="tech-item">Node.js</span></li>
-                                <li><span class="tech-item">Express</span></li>
-                                <li><span class="tech-item">EJS</span></li>
-                                <li><span class="tech-item">Prismic</span></li>
-                                <li><span class="tech-item">Curator</span></li>
-                                <li><span class="tech-item">HTML/CSS</span></li>
+                            <ul class="tech-items">
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>EJS</li>
+                                <li>Prismic</li>
+                                <li>Curator</li>
+                                <li>HTML/CSS</li>
                             </ul>
                             <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/client--looseleashdog.com', target='_blank')">
                                 View GitHub Repo
@@ -354,6 +353,7 @@
 
                 <div class="gallery-frame">
                     <div class="card--gallery">
+                        <div class="gallery-mat" ></div>
                         <div class="gallery-img-section">
                             <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(3)"></button>
                             <img id="gallery3-img" class="main-img" src="/images/gallery/lumber/capture.png" />
@@ -361,7 +361,7 @@
                         </div>
                     </div>
 
-                    <div class="card--gallery lower extended">
+                    <div class="card--gallery lower">
                         <div class="card--gallery-inner lower-text">
                             <p>
                                 "LumberJack" is a Full Stack template developed for small businesses and social media creators. The theme integrates third-party services to
@@ -390,13 +390,13 @@
                             <a href="https://lumberjack-theme.herokuapp.com/" target="_blank">LumberJack Theme</a>
                             <span class="sub-items">in-production</span>
                             <h4>Tech</h4>
-                            <ul>
-                                <li><span class="tech-item">Node.js</span></li>
-                                <li><span class="tech-item">Express</span></li>
-                                <li><span class="tech-item">EJS</span></li>
-                                <li><span class="tech-item">Prismic</span></li>
-                                <li><span class="tech-item">Curator</span></li>
-                                <li><span class="tech-item">NodeMailer</span></li>
+                            <ul class="tech-items">
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>EJS</li>
+                                <li>Prismic</li>
+                                <li>Curator</li>
+                                <li>NodeMailer</li>
                             </ul>
                             <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/template--lumberjack', target='_blank')">
                                 View GitHub Repo
@@ -414,6 +414,7 @@
                 <!-- || Gallery11 Frame  -->
                 <div class="gallery-frame">
                     <div class="card--gallery">
+                        <div class="gallery-mat" ></div>
                         <div class="gallery-img-section">
                             <button id="gallery-btn-11" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(11)"></button>
                             <img id="gallery11-img" class="main-img" src="/images/gallery/codestasher/Capture.png" />
@@ -451,11 +452,11 @@
                             <a href="https://codestasher.com" target="_blank">Codestasher</a>
                             <span class="sub-items">Version 2.0</span>
                             <h4>Tech</h4>
-                            <ul>
-                                <li><span class="tech-item">React</span></li>
-                                <li><span class="tech-item">Firebase</span></li>
-                                <li><span class="tech-item">Sass</span></li>
-                                <li><span class="tech-item">Ace Editor</span></li>
+                            <ul class="tech-items">
+                                <li>React</li>
+                                <li>Firebase</li>
+                                <li>Sass</li>
+                                <li>Ace Editor</li>
                             </ul>
                             <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/devport', target='_blank')">
                                 View GitHub Repo
@@ -469,6 +470,7 @@
                 <!-- || Gallery14 Frame  -->
                 <div class="gallery-frame">
                     <div class="card--gallery">
+                        <div class="gallery-mat" ></div>
                         <div class="gallery-img-section">
                             <button id="gallery-btn-14" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(14)"></button>
                             <img id="gallery14-img" class="main-img" src="/images/gallery/hal/hal-1.png" />
@@ -501,10 +503,10 @@
                             <a href="https://www.npmjs.com/package/@ashthomascode/hal" target="_blank">Hal CLI</a>
                             <span class="sub-items">available on npm</span>
                             <h4>Tech</h4>
-                            <ul>
-                                <li><span class="tech-item">Node</span></li>
-                                <li><span class="tech-item">Inquirer</span></li>
-                                <li><span class="tech-item">FS</span></li>
+                            <ul class="tech-items">
+                                <li>Node</li>
+                                <li>Inquirer</li>
+                                <li>FS</li>
                             </ul>
                             <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/component-library', target='_blank')">
                                 View GitHub Repo
@@ -517,6 +519,7 @@
                 <!-- || Gallery7 Frame  -->
                 <div class="gallery-frame">
                     <div class="card--gallery">
+                        <div class="gallery-mat" ></div>
                         <div class="gallery-img-section">
                             <button id="gallery-btn-7" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(7)"></button>
                             <img id="gallery7-img" class="main-img" src="/images/gallery/elephant-chart/EC6.png" />
@@ -555,13 +558,13 @@
                             <a href="https://elephantchart.com" target="_blank">Elephant Chart</a>
                             <span class="sub-items">POC used by Kloudlog</span>
                             <h4>Tech</h4>
-                            <ul>
-                                <li><span class="tech-item">React</span></li>
-                                <li><span class="tech-item">TypeScript</span></li>
-                                <li><span class="tech-item">SASS</span></li>
-                                <li><span class="tech-item">Node.js</span></li>
+                            <ul class="tech-items">
+                                <li>React</li>
+                                <li>TypeScript</li>
+                                <li>SASS</li>
+                                <li>Node.js</li>
                                 <li>
-                                    <span class="tech-item">Firebase Auth & Storage</span>
+                                    Firebase Auth & Storage</span>
                                 </li>
                             </ul>
                             <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/typescript--elephant-chart', target='_blank')">
@@ -576,6 +579,7 @@
 
                 <div class="gallery-frame">
                     <div class="card--gallery">
+                        <div class="gallery-mat" ></div>
                         <div class="gallery-img-section">
                             <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(4)"></button>
                             <img id="gallery4-img" class="main-img" src="/images/gallery/delta/delta1.png" />
@@ -613,13 +617,13 @@
 
                             <span class="sub-items">in-development</span>
                             <h4>Tech & Patterns</h4>
-                            <ul>
-                                <li><span class="tech-item">React</span></li>
-                                <li><span class="tech-item">JavaScript</span></li>
-                                <li><span class="tech-item">Couplers</span></li>
-                                <li><span class="tech-item">Interface Pattern</span></li>
-                                <li><span class="tech-item">Factory Methods</span></li>
-                                <li><span class="tech-item">Subscribers</span></li>
+                            <ul class="tech-items">
+                                <li>React</li>
+                                <li>JavaScript</li>
+                                <li>Couplers</li>
+                                <li>Interface Pattern</li>
+                                <li>Factory Methods</li>
+                                <li>Subscribers</li>
                             </ul>
                             <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/delta-trades', target='_blank')">
                                 View GitHub Repo
@@ -632,6 +636,7 @@
 
                 <div class="gallery-frame">
                     <div class="card--gallery">
+                        <div class="gallery-mat" ></div>
                         <div class="gallery-img-section">
                             <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(4)"></button>
                             <img id="gallery4-img" class="main-img" src="/images/gallery/music-trainer/melody.jpg" />
@@ -662,10 +667,10 @@
                             <a href="https://ashthomasweb.github.io/personal--music-trainer/" target="_blank">Music Trainer & Generator</a>
                             <span class="sub-items">in-backlog</span>
                             <h4>Tech</h4>
-                            <ul>
-                                <li><span class="tech-item">ES6</span></li>
-                                <li><span class="tech-item">WebAudio</span></li>
-                                <li><span class="tech-item">Local Storage</span></li>
+                            <ul class="tech-items">
+                                <li>ES6</li>
+                                <li>WebAudio</li>
+                                <li>Local Storage</li>
                             </ul>
                             <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/personal--music-trainer', target='_blank')">
                                 View GitHub Repo
@@ -678,6 +683,7 @@
 
                 <div class="gallery-frame">
                     <div class="card--gallery">
+                        <div class="gallery-mat" ></div>
                         <div class="gallery-img-section">
                             <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(4)"></button>
                             <img id="gallery4-img" class="main-img" src="/images/gallery/orbiter/orbiter1.png" />
@@ -708,9 +714,9 @@
                             <a href="https://orbiter-a7b41.web.app/" target="_blank">Solar Orbiter</a>
                             <span class="sub-items">just for fun!</span>
                             <h4>Tech</h4>
-                            <ul>
-                                <li><span class="tech-item">React</span></li>
-                                <li><span class="tech-item">CSS</span></li>
+                            <ul class="tech-items">
+                                <li>React</li>
+                                <li>CSS</li>
                             </ul>
                             <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/orbiter', target='_blank')">
                                 View GitHub Repo
@@ -725,6 +731,7 @@
 
                 <div class="gallery-frame">
                     <div class="card--gallery">
+                        <div class="gallery-mat" ></div>
                         <div class="gallery-img-section">
                             <button id="gallery-btn-8" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(8)"></button>
                             <img id="gallery8-img" class="main-img" src="/images/gallery/logger/Capture1.png" />
@@ -754,8 +761,8 @@
                             <a href="https://github.com/ashthomasweb/js--tdd" target="_blank">uLog</a>
                             <span class="sub-items">workflow tool</span>
                             <h4>Tech</h4>
-                            <ul>
-                                <li><span class="tech-item">Node</span></li>
+                            <ul class="tech-items">
+                                <li>Node</li>
                             </ul>
                             <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/js--tdd', target='_blank')">
                                 View GitHub Repo
@@ -769,6 +776,7 @@
 
                 <div class="gallery-frame">
                     <div class="card--gallery">
+                        <div class="gallery-mat" ></div>
                         <div class="gallery-img-section">
                             <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(6)"></button>
                             <img id="gallery6-img" class="main-img" src="/images/gallery/metaqdb/window-view.jpg" />
@@ -799,12 +807,12 @@
                             <a href="https://github.com/ashthomasweb/python--metaquery-db" target="_blank">MetaQuery DB</a>
                             <span class="sub-items">workflow tool</span>
                             <h4>Tech</h4>
-                            <ul>
-                                <li><span class="tech-item">Python</span></li>
-                                <li><span class="tech-item">MySQL</span></li>
-                                <li><span class="tech-item">MongoDB</span></li>
-                                <li><span class="tech-item">TKinter</span></li>
-                                <li><span class="tech-item">PyMongo</span></li>
+                            <ul class="tech-items">
+                                <li>Python</li>
+                                <li>MySQL</li>
+                                <li>MongoDB</li>
+                                <li>TKinter</li>
+                                <li>PyMongo</li>
                             </ul>
                             <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/python--metaquery-db', target='_blank')">
                                 View GitHub Repo

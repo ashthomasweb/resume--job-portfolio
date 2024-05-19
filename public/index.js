@@ -174,4 +174,15 @@ function galleryLeft(galleryNumber) {
     currentImg.setAttribute("src", galleryObject[galleryNumber].images[galleryObject[galleryNumber].position])
 }
 
+function applyAnimation() {
+    const elem = document.querySelector('.avatar-backing')
+    const light = document.querySelector('.light')
+
+    elem.classList.add('animate')
+    light.style.opacity = 1
+    setTimeout(() => {
+        elem.classList.remove('animate')
+        light.style.opacity = 0
+    }, 500)
+}
 // END of document

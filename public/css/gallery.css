@@ -26,7 +26,7 @@
 .gallery-container::before {
   background-image: url(/images/arabesque.png);
   background-attachment: fixed;
-  background-color: #1b2149;
+  background-color: var(--gallery-background);
   position: absolute;
   top: 0px;
   right: 0px;
@@ -43,8 +43,8 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  outline: 2px solid #383838;
-  border-radius: 1px;
+  background: #393939;
+  border-radius: 33px;
   box-sizing: border-box;
 }
 
@@ -60,19 +60,17 @@
   display: block;
   width: 100%;
   height: 514px;
-  border: 7px solid black;
-  background-color: #222;
+  border: 7px solid #393939;
+  background-color: var(--primary-theme);
   text-align: left;
+  border-radius: 33px;
 }
 
 .lower {
   margin-top: -8px;
   height: 405px;
   width: 100%;
-}
-
-.extended {
-  height: 405px !important;
+  background-color: #393939;
   overflow: hidden !important;
 }
 
@@ -126,14 +124,34 @@
 
 .gallery-img-section {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
   width: 100%;
   height: 100%;
   padding: 5px 30px;
   border-right: 1px solid #222;
-  background-color: #2f2f31;
+  background-attachment: fixed;
   color: whitesmoke;
   text-align: center;
+  border-radius: 27px;
+  overflow: hidden;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-mat {
+    background-color: #677ea5;
+  background-image: url(/images/arabesque.png);
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 27px;
+  opacity: .25;
+
+  zoom: 110%;
+  filter: blur(.6px);
+  overflow: hidden;
 }
 
 .gallery-img-section h4 {
@@ -153,8 +171,10 @@
   left: 0;
   right: 0;
   display: block;
-  height: 500px;
+  height: 478px;
   margin: 0 auto;
+  box-shadow: 0 0 54px -3px #222;
+  border-radius: 10px;
 }
 
 .gallery-btn {
@@ -207,7 +227,7 @@
   width: calc(29%);
   height: 100%;
   padding: 13px;
-  background-color: #ddd;
+  background-color: #efefef;
 }
 
 .gallery-right-section a {
@@ -256,7 +276,7 @@
   margin: 16px 0 0 0;
 }
 
-.tech-item {
+.tech-items li {
   margin-left: -4px !important;
   position: relative;
   top: 1px;

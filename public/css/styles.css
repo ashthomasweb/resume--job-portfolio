@@ -1,21 +1,18 @@
-
-
 :root {
-  --main-background: #e3dce5;
+  --main-background: #F1F6F9;
+  --primary-theme: #4B586E;
   --primary-text: #3a3a3b;
-  --banner-background: #55455e;
+  --banner-background: #545c8a;
   --inverted-heading: white;
-  --skills-background: #cbcedd;
+  --skills-background: #9BA4B4;
+  --gallery-background: #14274E;
   --skill-box-border: #b7bbd9;
   --sky-blue: #add8e6;
   --footer-background: #222222;
   --cool-white-background: #ebfbff;
-  --lightblue-alt: #b0e9ff;
-  --theme-yellow: #f7d84f;
   --theme-blue: #3fc5f0;
   --theme-link: #17517e;
 
-  --theme-darkgreen: #00d681;
   --copy-dark: #3a3b48;
   --copy-mid: #6a6a6a;
   --font-body: Cairo, sans-serif;
@@ -30,13 +27,12 @@ a {
   font-weight: 600;
   margin-bottom: 10px;
   border-bottom: 3px solid #17517e70;
-  transition: border-bottom .3s ease-in-out;
+  transition: border-bottom 0.3s ease-in-out;
   display: inline;
 }
 
 a:hover {
   border-bottom: 4px solid var(--theme-link);
-
 }
 
 body {
@@ -45,7 +41,12 @@ body {
   background-color: var(--main-background);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0 auto 0;
   font-family: var(--font-header);
   font-weight: 700;
@@ -70,8 +71,13 @@ h3 {
   font-size: 31px;
 }
 
-h4, h5, h6 {
+h4 {
   font-size: 23px;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 500;
 }
 
 p {
@@ -81,7 +87,7 @@ p {
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   color: var(--primary-text);
 }
 
@@ -109,22 +115,22 @@ button {
 }
 
 ::-webkit-scrollbar {
-    width: 10px; /* Width of the scrollbar */
+  width: 10px; /* Width of the scrollbar */
 }
 
 /* The scrollbar track (background) */
 ::-webkit-scrollbar-track {
-    background: #aaa; /* Color of the scrollbar track */
+  background: #aaa; /* Color of the scrollbar track */
 }
 
 /* The scrollbar handle (thumb) */
 ::-webkit-scrollbar-thumb {
-    background: #555; /* Color of the scrollbar handle */
+  background: #555; /* Color of the scrollbar handle */
 }
 
 /* The handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--theme-link); /* Color of the scrollbar handle on hover */
+  background: var(--theme-link); /* Color of the scrollbar handle on hover */
 }
 
 /*  General Layout  */
@@ -132,7 +138,7 @@ button {
 .banner {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: var(--banner-background);
+  background-color: var(--primary-theme);
   position: relative;
 }
 
@@ -151,13 +157,15 @@ button {
   left: 50%;
   transform: translateX(-50%);
   position: relative;
-
 }
 
 /*  Avatar Section  */
 
 .top-container {
   padding: 35px;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .top-container h2 {
@@ -167,9 +175,48 @@ button {
   letter-spacing: 1px;
 }
 
+.avatar-backing {
+  width: 333px;
+  height: 333px;
+  background-color: #bcbcbc;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 10;
+  left: calc(50% - 162.5px);
+  top: 28%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.avatar-backing.animate {
+    animation: rotation .5s linear;
+}
+
+.light {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: red;
+    position: relative;
+    left: 10px;
+    opacity: 0;
+}
+/* 
+@keyframes rotation {
+    0% { transform: rotate(0deg);}
+    9.999% { transform: rotate(0deg);}
+    10% { transform: rotate(36deg);}
+    19.999% { transform: rotate(36deg);}
+    20% { transform: rotate(72deg);}
+    100% { transform: rotate(360deg);}
+} */
+
 .avatar {
+  position: relative;
   margin: 25px auto 17px;
   height: 380px;
+  z-index: 20;
 }
 
 /* About Banner */
@@ -213,7 +260,7 @@ button {
 .github-link {
   font-family: var(--font-header);
   text-transform: uppercase;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   font-weight: 500;
   position: relative;
   display: inline-block;
@@ -239,7 +286,6 @@ button {
   text-transform: none;
 }
 
-
 .banner-title {
   text-transform: uppercase;
   font-weight: 600;
@@ -252,7 +298,7 @@ button {
 /*  Skills Section  */
 
 .skills-parent {
-  background-color: #303030;
+  background-color: var(--skills-background);
 }
 
 @media (max-width: 1134px) {
@@ -266,7 +312,6 @@ button {
     zoom: 70%;
   }
 }
-
 
 .skills-container {
   padding: 40px 0 50px;
@@ -310,7 +355,7 @@ button {
   display: table;
   padding: 5px;
   border: 4px solid var(--skill-box-border);
-
+  border-radius: 8px;
 }
 
 .skill-row-center {
@@ -321,7 +366,7 @@ button {
   display: table;
   padding: 5px;
   border: 4px solid var(--skill-box-border);
-
+  border-radius: 8px;
 }
 
 .skill-row-right {
@@ -334,19 +379,6 @@ button {
   border: 4px solid var(--skill-box-border);
 }
 
-#education-pane {
-  display: block;
-  height: 270px;
-  overflow: hidden;
-}
-
-#experience-pane {
-  display: block;
-  height: 270px;
-  overflow: hidden;
-  transition: height .2s ease-in-out;
-}
-
 .skill-text {
   text-align: center;
   font-size: 22px;
@@ -354,31 +386,8 @@ button {
   vertical-align: middle;
 }
 
-.prev {
-  font-size: 18px;
-  opacity: .8;
-  position: relative;
-}
 
-.prev-tag {
-  position: absolute;
-  top: -22px;
-  left: 50%;
-  width: 80%;
-  transform: translateX(-50%);
-  font-size: 13px;
-  opacity: 1;
-  line-height: 1;
-  background-color: var(--skill-box-border);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  padding-bottom: 3px;
-  font-style: italic;
-}
 
-.prev-e {
-  height: 175px;
-}
 
 .spacer-small {
   left: 50%;
@@ -396,123 +405,16 @@ button {
 
 } */
 
-
-/* Programming Banner */
-
-/*  Experience Section */
-
-.experience-container {
-  background-color: var(--sky-blue);
-  width: 100%;
-}
-
-.edu-exp-wrap {
-  margin: 0 auto;
-  height: 270px;
-  max-width: 1135px;
-  min-width: 1135px;
-
-}
-
-.exp-wrap {
-  margin: 0 auto;
-  padding: 10px 0 40px;
-  width: 100%;
-  height: 270px;
-  position: relative;
-  user-select: none;
-  /* max-width: 1100px; */
-  background-color: var(--cool-white-background);
-}
-
-.exp-wrap h2 {
-  margin-bottom: 37px;
-}
-
-.exp-cont-inner {
-  display: inline-block;
-  height: 200px;
-}
-
-.exp-text-right {
-  margin-left: auto;
-  margin-right: auto;
-  width: 450px;
-  position: relative;
-  padding-left: 26px;
-  color: #666;
-}
+/* Switches */
 
 .top-pane {
   top: 57px;
 }
 .bottom-pane {
-  bottom: 0!important;
-  position: relative!important;
+  bottom: 0 !important;
+  position: relative !important;
 }
 
-.exp-text-left {
-  margin-left: auto;
-  margin-right: auto;
-  width: 396px;
-  position: relative;
-  color: #666;
-}
-
-.layout-container {
-  padding: 20px;
-}
-
-.layout-img {
-  width: 200px;
-}
-
-.remote-container {
-  top: 0;
-  /* position: relative;
-  left: 166px; */
-  height: 250px;
-  padding: 20px;
-  display: inline-block;
-  pointer-events: none;
-  width: 74vw;
-  max-width: 1100px;
-}
-
-.remote-img {
-  width: 200px;
-}
-
-.educator-container {
-  top: 0;
-  position: relative;
-  left: 5px;
-  height: 250px;
-  padding: 25px 0;
-  display: inline-block;
-  pointer-events: none;
-  max-width: 1100px;
-  min-width: 1100px;
-
-}
-
-.educator-img {
-  width: 202px;
-}
-
-.detail-container {
-  padding: 20px;
-}
-
-.details-img {
-  width: 200px;
-}
-
-.experience-hr {
-  width: 350px;
-  margin: 15px auto;
-  opacity: .5;
-}
 
 /* Contact css in /contact.css */
 
@@ -530,13 +432,14 @@ footer {
   height: 60px;
   width: 425px;
   padding: 13px 30px;
-  background-color: #222;
+  background-color: #4e4d5b;
   opacity: 1;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   outline: 4px solid #333;
   color: whitesmoke;
+  border-radius: 8px;
 }
 
 .project-header-wrapper h3 {
@@ -554,7 +457,7 @@ footer {
   height: 30px;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -568,20 +471,22 @@ footer {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50px;
 }
 
 .slider:before {
   position: absolute;
-  content: "";
+  content: '';
   height: 22px;
   width: 22px;
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50px;
 }
 
 input:checked + .slider {
@@ -589,7 +494,7 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #2196f3;
 }
 
 input:checked + .slider:before {
