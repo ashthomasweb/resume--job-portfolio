@@ -1,9 +1,9 @@
 
 
 :root {
-  --main-background: #fbf6ed;
+  --main-background: #e3dce5;
   --primary-text: #3a3a3b;
-  --banner-background: #583d67;
+  --banner-background: #55455e;
   --inverted-heading: white;
   --skills-background: #cbcedd;
   --skill-box-border: #b7bbd9;
@@ -252,7 +252,7 @@ button {
 /*  Skills Section  */
 
 .skills-parent {
-  background-color: #282828;
+  background-color: #303030;
 }
 
 @media (max-width: 1134px) {
@@ -269,7 +269,6 @@ button {
 
 
 .skills-container {
-  background-color: var(--skills-background);
   padding: 40px 0 50px;
   width: 75%;
   max-width: 1135px;
