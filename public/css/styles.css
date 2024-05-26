@@ -145,6 +145,7 @@ button {
 .top {
   box-shadow: 0 18px 30px -5px #444;
   border-bottom: solid 3px #383838;
+  padding-bottom: 34px;
 }
 
 .bottom {

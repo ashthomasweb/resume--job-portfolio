@@ -76,7 +76,7 @@
 
 .lower-text {
   padding: 10px 12px;
-  background-color: #efefef !important;
+  background-color: var(--cool-white-background);
   overflow-y: auto;
 }
 
@@ -84,7 +84,6 @@
   position: absolute;
   width: calc(70% - 0px);
   height: calc(100% - 0px);
-  background-color: rgb(235, 235, 235);
 }
 
 .card--gallery-inner::-webkit-scrollbar {
@@ -227,7 +226,7 @@
   width: calc(29%);
   height: 100%;
   padding: 13px;
-  background-color: #efefef;
+  background-color: var(--cool-white-background);
 }
 
 .gallery-right-section a {
@@ -235,8 +234,8 @@
   font-family: var(--font-header);
   font-weight: 500;
   line-height: 1.4;
-  border-bottom: 2px solid var(--theme-link);
-  color: var(--theme-link);
+  border-bottom: 2px solid var(--primary-theme);
+  color: var(--primary-theme);
   margin-bottom: 15px;
 }
 
@@ -274,6 +273,7 @@
   bottom: 5px;
   display: block;
   margin: 16px 0 0 0;
+  opacity: .7;
 }
 
 .tech-items li {
@@ -294,19 +294,21 @@
   font-weight: 600;
   left: 50%;
   border: 1px solid #777;
-  border-radius: 2px;
+  border-radius: 6px;
   color: #888;
+  background-color: #ebf0f7;
   transform: translateX(-50%);
-  transition: color 0.15s ease-out, border 0.15s ease-in-out,
-    background-color 0.15s ease-out, letter-spacing 0.15s ease-out;
+  transition: color 0.15s ease-out, border 0.15s ease-in-out, border-radius 0.15s,
+    background-color 0.15s ease-out, letter-spacing 0.15s ease-out, box-shadow 0.15s;
 }
 
 .github-btn:hover {
   color: #444;
-  background-color: #fafafa;
+  background-color: white;
   border: 1px solid #222;
-  border-radius: 2px;
+  border-radius: 4px;
   letter-spacing: 1.7px;
+  box-shadow: 0 0 5px 0 #00000090;
 }
 
 .spacer {
