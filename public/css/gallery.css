@@ -276,6 +276,13 @@
   opacity: .7;
 }
 
+.date {
+    bottom: 0;
+    margin: 3px 0 0 0;
+    font-size: 16px;
+    letter-spacing: .5px;
+}
+
 .tech-items li {
   margin-left: -4px !important;
   position: relative;

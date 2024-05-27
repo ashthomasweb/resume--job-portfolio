@@ -21,871 +21,877 @@
 
 <body>
 
-        <section class="top-container">
-            <h1>hi, i'm ash thomas</h1>
-            <div class="avatar-backing" >
-                <div class="light"></div>
+    <section class="top-container">
+        <h1>hi, i'm ash thomas</h1>
+        <div class="avatar-backing">
+            <div class="light"></div>
+        </div>
+        <img class="avatar" src="/images/self_avatar.png" />
+        <h2>i'm a frontend software engineer</h2>
+    </section>
+
+    <div class="banner top">
+        <div class="banner-cell-wrap">
+            <div class="inner-banner-half-cell laptop-cell">
+                <img class="laptop-img" src="/images/laptop-code.png" />
             </div>
-            <img class="avatar" src="/images/self_avatar.png" />
-            <h2>i'm a frontend software engineer</h2>
-        </section>
 
-        <div class="banner top">
-            <div class="banner-cell-wrap">
-                <div class="inner-banner-half-cell laptop-cell">
-                    <img class="laptop-img" src="/images/laptop-code.png" />
-                </div>
-
-                <div class="inner-banner-half-cell text-cell">
-                    <h2 class="about-title">A Bit About Me</h2>
-                    <p class="about-text">
-                        I love creating scientific and research tools that are permanent and
-                        accessible across the globe. While I can work throughout the full
-                        stack, I am best in a frontend role.
-                    </p>
-                    <button class="github-btn" 
-                    style="
+            <div class="inner-banner-half-cell text-cell">
+                <h2 class="about-title">A Bit About Me</h2>
+                <p class="about-text">
+                    I love creating scientific and research tools that are permanent and
+                    accessible across the globe. While I can work throughout the full
+                    stack, I am best in a frontend role.
+                </p>
+                <button class="github-btn" style="
                         width: 200px;
                         position: relative;
                         bottom: -23px;
                         transform: none;
-                        left: -1px; "
-                    type="button" 
-                    onclick="window.open('https://github.com/ashthomasweb', target='_blank')"
-                    >
-                        GitHub Profile
-                    </button>
-                </div>
+                        left: -1px; " type="button" onclick="window.open('https://github.com/ashthomasweb', target='_blank')">
+                    GitHub Profile
+                </button>
             </div>
         </div>
+    </div>
 
-        <section class="gallery-container">
-            <div class="project-header-wrapper top-pane">
-                <h3 id="project-header">Professional Projects</h3>
+    <section class="gallery-container">
+        <div class="project-header-wrapper top-pane">
+            <h3 id="project-header">Professional Projects</h3>
+            <label class="switch">
+                <input id="top-switch-input" type="checkbox" onClick="toggleProjectPane(event)" />
+                <span id="thanks-w3" class="slider"></span>
+            </label>
+        </div>
+
+        <div class="professional-projects">
+            <div class="spacer"></div>
+
+            <!-- || Gallery12 Frame  -->
+            <div class="gallery-frame">
+                <div class="card--gallery">
+                    <div class="gallery-mat"></div>
+                    <div class="gallery-img-section">
+                        <button id="gallery-btn-12" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft('12')"></button>
+                        <img id="gallery12-img" class="main-img" src="/images/gallery/lake-level-viewer/llv-1.png" />
+                        <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight('12')"></button>
+                    </div>
+
+                </div>
+
+                <div class="card--gallery lower">
+                    <div class="card--gallery-inner lower-text">
+                        <p>Showcased to the US Congress and other government bodies with great reception, this tool
+                            is part of the inundation series of app's hosted by The Office for Coastal Management.
+                            Leading the development team while mentoring a junior developer, we interfaced with the
+                            Physical Sciences Team to ensure maximum integrity and accuracy of the simulations.
+                        </p>
+                        <ul>
+                            <li>
+                                Under federal directive we created a tool to simulate shore inundations of the US Great Lakes.
+                            </li>
+                            <li>
+                                OpenLayers, Highcharts, and a pixel-rendering system display various water levels on a variety of charts and map types.
+                            </li>
+                            <li>
+                                Publicly available for decision-making by city planners, residents, and civil engineers.
+                            </li>
+                            <li>
+                                Link sharing and persistent state are provided through base-64 strings appended to the URL.
+                            </li>
+                            <li>
+                                Dynamic application usage by third parties is enabled by water-level and location data controllable through the URL hash parameter.
+                            </li>
+                            <li>
+                                A Social Vulnerability basemap retrieved from the CDC API, and a Depth Query feature to query multiple
+                                points of water levels in the inundation zone or the shoreline.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gallery-right-section">
+                        <a href="https://coast.noaa.gov/llv/#/13.00/-86.66/45.75/0.00/ft/LWD&search=eyJpc1NpZGViYXJPcGVuIjpmYWxzZSwiaXNDaGFydE9wZW4iOmZhbHNlLCJpc0NhbnZhc09wZW4iOmZhbHNlLCJjdXJyZW50U3RhdGlvbiI6bnVsbCwiY29vcmRzIjp7IngiOi04Ni42NTk5OTk5OTk5OTk5NywieSI6NDUuNzV9LCJ6b29tIjoxMywid2F0ZXJMZXZlbCI6MCwiaXNTcGxhc2hWaXNpYmxlIjp0cnVlLCJjdXJyZW50TGFrZSI6bnVsbCwiY3VycmVudERhdGFMYXllciI6IldhdGVyIExldmVsIiwic25hcHNob3RMb2NhdGlvbiI6IiIsImN1cnJlbnRMYWtlTGV2ZWxEYXRhIjpbeyJuYW1lIjoiQ2xhaXIiLCJmZWV0Ijo1NzUuMTYsIm1ldGVyIjoxNzUuMzF9LHsibmFtZSI6IkVyaWUiLCJmZWV0Ijo1NzIuMjgsIm1ldGVyIjoxNzQuNDN9LHsibmFtZSI6Ikh1cm9uIiwiZmVldCI6NTc5LjMzLCJtZXRlciI6MTc2LjU4fSx7Im5hbWUiOiJNaWNoaWdhbiIsImZlZXQiOjU3OS4zMywibWV0ZXIiOjE3Ni41OH0seyJuYW1lIjoiT250YXJpbyIsImZlZXQiOjI0NS4xMSwibWV0ZXIiOjc0LjcxfSx7Im5hbWUiOiJTdXBlcmlvciIsImZlZXQiOjYwMi4zLCJtZXRlciI6MTgzLjU4fV0sImN1cnJlbnRCYXNlbWFwIjoic2F0ZWxsaXRlIiwib3BhY2l0eUxldmVsIjo4MCwiZGF0dW0iOiJMV0QiLCJyZWNvcmRzQXZlcmFnZXNBY3RpdmUiOnRydWUsInVzZXJEYXRlIjpudWxsLCJjdXJyZW50U3RhdGlvbkZlYXR1cmVzIjp7Imxha2UiOiIiLCJud3NNaW5vciI6bnVsbCwibndzTW9kZXJhdGUiOm51bGwsIm53c01ham9yIjpudWxsfSwicXVlcnlPcHRpb25zIjp7Im5hbWUiOm51bGwsImlkIjpudWxsLCJzdGF0ZSI6bnVsbH0sImN1cnJlbnRMYWtlRGF0YSI6eyJuYW1lIjpudWxsLCJhdmdMdmwiOm51bGwsIm1pbkx2bCI6bnVsbCwibWF4THZsIjpudWxsLCJMV0QiOm51bGwsImN1ckx2bCI6bnVsbH0sInVuaXQiOiJmdCJ9"
+                            target="_blank">NOAA Lake Level Viewer</a>
+                        <span class="sub-items">in-production</span>
+                        <!-- <span class="sub-items date">Jan 2024</span> -->
+                        <h4>Tech</h4>
+                        <ul class="tech-items">
+                            <li>React</li>
+                            <li>OpenLayers</li>
+                            <li>HighCharts</li>
+                            <li>SASS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer"></div>
+
+
+            <!-- || Gallery13 Frame  -->
+            <div class="gallery-frame">
+                <div class="card--gallery">
+                    <div class="gallery-mat"></div>
+                    <div class="gallery-img-section">
+                        <button id="gallery-btn-13" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft('13')"></button>
+                        <img id="gallery13-img" class="main-img" src="/images/gallery/enow/enow-2.png" />
+                        <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight('13')"></button>
+                    </div>
+                </div>
+
+                <div class="card--gallery lower">
+                    <div class="card--gallery-inner lower-text">
+
+                        <p>The NOAA Economic Ocean Watch Explorer (ENOW) displays data on all the coastal states and counties of the
+                            Continental United States, as well as six US Territories. Spanning sectors from Tourism and Recreation,
+                            to Offshore Mining, to Ship Building and Construction, ENOW allows users to gather comprehensive
+                            data on their state, county, or territory. That same data is also served to a tool called Ocean Reports
+                            that allows users to filter and download the data in csv formats.
+
+                        </p>
+                        <ul>
+                            <li>
+                                Spans six economic sectors and four data categories across 30 coastal states, 400+ marine counties over 16 years, and covers data on six US territories from the last
+                                three years.
+                            </li>
+                            <li>
+                                Explore over 15 years of economic data for coastal communities, including 6 U.S. Territories.
+                            </li>
+                            <li>
+                                HighCharts is used to display a variety of chart-types, giving users access to information in multiple formats.
+                            </li>
+                            <li>
+                                The tool offers more than 165,000 unique data combinations, enabling tailored data exploration to suit diverse needs.
+                            </li>
+                            <li>
+                                3 interactive charts and a statistics panel display each data combination; offering over 660,000 infographics to support
+                                social and economic professionals understanding community dynamics.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gallery-right-section">
+                        <a class="entry-header" href="https://coast.noaa.gov/enowexplorer/" target="_blank">NOAA ENOW Explorer<br />Economic National Ocean Watch</a>
+                        <span class="sub-items">in-production</span>
+                        <!-- <span class="sub-items date">Aug 2023</span> -->
+                        <h4>Tech</h4>
+                        <ul class="tech-items">
+                            <li>React</li>
+                            <li>HighCharts</li>
+                            <li>SASS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer"></div>
+
+            <!-- || Gallery7 Frame  -->
+            <div class="gallery-frame">
+                <div class="card--gallery">
+                    <div class="gallery-mat"></div>
+                    <div class="gallery-img-section">
+                        <h3 style="margin: 25px 0 5px; font-size: 36px">Kloudlog</h3>
+                        <h4>Graphical User Interface for Infrastructure as Code</h4>
+                        <h5>Terraform - Google Cloud Platform</h5>
+                        <img style="width: 200px; margin: 20px 0 0" src="/images/gallery/kloudlog/kloudlog.png" />
+                    </div>
+                </div>
+
+                <div class="card--gallery lower">
+                    <div class="card--gallery-inner lower-text">
+                        <p>
+                            Principal contributor to full stack react application that enables the user to create, test, and run various Terraform configurations of infrastructure modules.
+                            A custom drag-and-drop interface allows visual creation and editing of GCP resources such as Storage Bucket, Compute Engine, and Virtual Machine.
+                        </p>
+                        <ul>
+                            <li>
+                                Terraform infrastructure allows users to build and manage GCP resources within a visually intuitive environment.
+                            </li>
+                            <li>
+                                A custom-built SVG drag-and-drop system enhances interactivity, with functional access-points to Redux actions at each stage of the drag-and-drop.
+                            </li>
+                            <li>
+                                Persistent action history, visual customization options, and a change-log system similar to GitHub enhance user experience.
+                            </li>
+                            <li>
+                                Multiple Context/Reducers make the app highly performant and extensible.
+                            </li>
+                            <li>
+                                Websocket delivers real-time data updates, ensuring users always have the latest information at their fingertips.
+                            </li>
+                            <li>
+                                Microservices architecture segregates application layers for optimal performance and scalability.
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="gallery-right-section">
+                        <a>Kloudlog</a>
+                        <span class="sub-items">in-development</span>
+                        <!-- <span class="sub-items date">May 2023</span> -->
+                        <h4>Tech</h4>
+                        <ul class="tech-items">
+                            <li>React</li>
+                            <li>TypeScript</li>
+                            <li>SASS</li>
+                            <li>Terraform</li>
+                            <li>Node.js</span>
+                            <li>GCP</li>
+                            <li>Firebase</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer"></div>
+
+            <!-- || Gallery5 Frame  -->
+
+            <div class="gallery-frame">
+                <div class="card--gallery">
+                    <div class="gallery-mat"></div>
+                    <div class="gallery-img-section">
+                        <button id="gallery-btn-5" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(5)"></button>
+                        <img id="gallery5-img" class="main-img" src="/images/gallery/wyldgreens/Capture1.png" />
+                        <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight(5)"></button>
+                    </div>
+                </div>
+
+                <div class="card--gallery lower">
+                    <div class="card--gallery-inner lower-text">
+                        <p>Wyldgreens serves as a Landing, About, Product, and Order page in one, featuring parallax effects on desktop and a Colorado mountain
+                            scene for brand identity. A user-friendly design that delivers a unified presentation across all devices. I collaborated with a
+                            UX writer to make the copy instructive, compelling, and efficient to ensure no content loss on mobile.
+                        </p>
+                        <ul>
+                            <li>
+                                Nodemailer automatically responds to orders with customizable templates, streamlining business operations.
+                            </li>
+                            <li>
+                                Custom CSS and JavaScript animations enhance user experience.
+                            </li>
+                            <li>
+                                Responsive design provides the same user experience on any device.
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="gallery-right-section">
+                        <a href="https://wyldgreens.herokuapp.com" target="_blank">Wyldgreens</a>
+                        <span class="sub-items">in-production</span>
+                        <!-- <span class="sub-items date">Feb 2022</span> -->
+                        <h4>Tech</h4>
+                        <ul class="tech-items">
+                            <li>JavaScript</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>Nodemailer</li>
+                            <li>HTML/CSS</li>
+                        </ul>
+                        <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/client--wyldgreens', target='_blank')">
+                            View GitHub Repo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- || Gallery1 Frame  -->
+            <div class="spacer"></div>
+
+            <div class="gallery-frame">
+                <div class="card--gallery">
+                    <div class="gallery-mat"></div>
+                    <div class="gallery-img-section">
+                        <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(1)"></button>
+                        <img id="gallery1-img" class="main-img" src="/images/gallery/loose-leash-dog/lld-capture.png" />
+                        <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight(1)"></button>
+                    </div>
+                </div>
+
+                <div class="card--gallery lower">
+                    <div class="card--gallery-inner lower-text">
+                        <p>A vibrant website tailored for a sole proprietor whose business was previously confined to Instagram. This limited access to
+                            potential clients and hindered further monetization opportunities. Using the LumberJack theme we seamlessly integrated
+                            existing business traffic, amplified link-through rates and offered audiences access to a wealth of additional materials
+                            and monetizable content- all on a single platform.</p>
+                        <ul>
+                            <li>
+                                Built with the Lumberjack reusable template, I was able to quickly bring the customer's branding and product offerings to a production site.
+                            </li>
+                            <li>
+                                Showcases the business owners most recent Instagram photos and posts, with click through links, further connecting her audience.
+                            </li>
+                            <li>
+                                Embracing mobile-friendly content creation, we empowered the business owner to craft content effortlessly
+                                from any location with internet access, enhancing efficiency and flexibility.
+                            </li>
+                            <li>
+                                Designed with 'friendly' elements that resonate with the essence of the business' mission statement,
+                                cultivating a 'brand sense' that deeply connects with our target demographics.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gallery-right-section">
+                        <a href="https://www.looseleashdog.com" target="_blank">Loose Leash Dog</a>
+                        <span class="sub-items">in-production</span>
+                        <!-- <span class="sub-items date">Aug 2021</span> -->
+                        <h4>Tech</h4>
+                        <ul class="tech-items">
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>EJS</li>
+                            <li>Prismic</li>
+                            <li>Curator</li>
+                            <li>HTML/CSS</li>
+                        </ul>
+                        <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/client--looseleashdog.com', target='_blank')">
+                            View GitHub Repo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer"></div>
+
+            <!-- || Gallery3 Frame  -->
+
+            <div class="gallery-frame">
+                <div class="card--gallery">
+                    <div class="gallery-mat"></div>
+                    <div class="gallery-img-section">
+                        <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(3)"></button>
+                        <img id="gallery3-img" class="main-img" src="/images/gallery/lumber/capture.png" />
+                        <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight(3)"></button>
+                    </div>
+                </div>
+
+                <div class="card--gallery lower">
+                    <div class="card--gallery-inner lower-text">
+                        <p>
+                            LumberJack is a Full Stack template developed for small businesses and social media creators.
+                            Designed for developers to quickly take a customer's brand identity and place it in a fully functional
+                            template. Featuring a headless CMS, a multi-network aggregator, and automatic email responses thru
+                            NodeMailer, maintenance needs and updates are low. Giving clients more time to focus on what truly
+                            matters, their business.
+                        </p>
+                        <ul>
+                            <li>
+                                EJS and Prismic integrate to generate dynamic content, making blogging easy and accessible from anywhere the business owner happens to be.
+                            </li>
+                            <li>
+                                Versatile card elements, which are modular and customizable, offer endless possibilities in terms of configuration, color schemes, and sizes.
+                            </li>
+                            <li>
+                                Presented in a visually striking two-color brand scheme, complemented by highly legible greyscale. </li>
+                            <li>
+                                NodeMailer automatically responds to customer orders, freeing up the business owner's valuable time.</li>
+                            <li>
+                                Curator allows clients to effortlessly build feeds from multiple networks, fostering cross-network audience engagement and expanding their reach.
+                            </li>
+                    </div>
+                    <div class="gallery-right-section">
+                        <a href="https://lumberjack-theme.herokuapp.com/" target="_blank">LumberJack Theme</a>
+                        <span class="sub-items">in-production</span>
+                        <!-- <span class="sub-items date">Mar 2021</span> -->
+                        <h4>Tech</h4>
+                        <ul class="tech-items">
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>EJS</li>
+                            <li>Prismic</li>
+                            <li>Curator</li>
+                            <li>NodeMailer</li>
+                        </ul>
+                        <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/template--lumberjack', target='_blank')">
+                            View GitHub Repo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+        </div>
+
+        <!-- ***************** PERSONAL GALLERY ****************** -->
+
+        <div class="personal-projects" data-display="false">
+            <!-- <h3>Personal Projects</h3> -->
+            <div class="spacer"></div>
+
+            <!-- || Gallery11 Frame  -->
+            <div class="gallery-frame">
+                <div class="card--gallery">
+                    <div class="gallery-mat"></div>
+                    <div class="gallery-img-section">
+                        <button id="gallery-btn-11" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(11)"></button>
+                        <img id="gallery11-img" class="main-img" src="/images/gallery/codestasher/Capture.png" />
+                        <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight(11)"></button>
+                    </div>
+                </div>
+
+                <div class="card--gallery lower">
+                    <div class="card--gallery-inner lower-text">
+                        <p>
+                            Codestasher offers a comprehensive solution for organizing and managing reusable code snippets.
+                            Each entry is capable of housing multiple snippets designated to various files. With a single
+                            click, users can swiftly copy their code to the clipboard, facilitating productivity and
+                            modularity in their workflow. Built in TypeScript React, hosted, authenticated, and stored with Firebase.
+                        </p>
+                        <ul>
+                            <li>
+                                Drag-and-drop feature allows seamless movement of entries between categories for optimal organization.
+                            </li>
+                            <li>
+                                With four levels of nesting available, users can meticulously structure their code entries to suit their needs.
+                            </li>
+                            <li>
+                                Ace Editor provides syntax highlighting and other essential editor functionalities to enhance coding precision and efficiency.
+                            </li>
+                            <li>
+                                Supporting multiple languages within each entry, language specific syntax highlighting enhances user workflow.
+                            </li>
+                            <li>
+                                Features a developer-friendly dark theme, similar to that of native VSCode.
+                            </li>
+                    </div>
+                    <div class="gallery-right-section">
+                        <a href="https://codestasher.com" target="_blank">Codestasher</a>
+                        <span class="sub-items">in-production</span>
+                        <!-- <span class="sub-items date">Apr 2023</span> -->
+                        <h4>Tech</h4>
+                        <ul class="tech-items">
+                            <li>React</li>
+                            <li>Firebase</li>
+                            <li>Sass</li>
+                            <li>Ace Editor</li>
+                        </ul>
+                        <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/devport', target='_blank')">
+                            View GitHub Repo
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer"></div>
+
+
+            <!-- || Gallery14 Frame  -->
+            <div class="gallery-frame">
+                <div class="card--gallery">
+                    <div class="gallery-mat"></div>
+                    <div class="gallery-img-section">
+                        <button id="gallery-btn-14" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(14)"></button>
+                        <img id="gallery14-img" class="main-img" src="/images/gallery/hal/hal-1.png" />
+                        <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight(14)"></button>
+                    </div>
+                </div>
+
+                <div class="card--gallery lower">
+                    <div class="card--gallery-inner lower-text">
+                        <p>
+                            Built in Node using the Inquirer library, 'Hal' is a command line interface tool to store and create
+                            reusable components for popular JS web libraries. Featuring an interactive CLI, the user can create
+                            entire new app builds, or pick and choose individual components to load into their codebase. The
+                            application handles the busy work of creating new builds and components, freeing up valuable time for the user.
+                        </p>
+                        <ul>
+                            <li>
+                                Published on npm and available as a global installation, user's can enhance their workflow in any project on their computer.
+                            </li>
+                            <li>
+                                Reusable components can be manually loaded into a user's codebase. Minimal commenting allows for the file's import connections to be updated.</li>
+                            <li>
+                                Future plans include, installable packages for popular libraries, single-line statements with flags,
+                                and importing multiple components simultaneously.
+                            </li>
+                    </div>
+                    <div class="gallery-right-section">
+                        <a href="https://www.npmjs.com/package/@ashthomascode/hal" target="_blank">Hal CLI</a>
+                        <span class="sub-items">available on npm</span>
+                        <!-- <span class="sub-items date">Dec 2023</span> -->
+                        <h4>Tech</h4>
+                        <ul class="tech-items">
+                            <li>Node</li>
+                            <li>Inquirer</li>
+                            <li>FS</li>
+                        </ul>
+                        <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/component-library', target='_blank')">
+                            View GitHub Repo
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer"></div>
+
+            <!-- || Gallery7 Frame  -->
+            <div class="gallery-frame">
+                <div class="card--gallery">
+                    <div class="gallery-mat"></div>
+                    <div class="gallery-img-section">
+                        <button id="gallery-btn-7" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(7)"></button>
+                        <img id="gallery7-img" class="main-img" src="/images/gallery/elephant-chart/EC6.png" />
+                        <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight(7)"></button>
+                    </div>
+                </div>
+
+                <div class="card--gallery lower">
+                    <div class="card--gallery-inner lower-text">
+                        <p>
+                            Elephant Chart is a streamlined organization tool. The tray system provides a dedicated space for supplementary
+                            information alongside user notes. Its intuitive drag-and-drop feature, complemented by the ability to save custom charts and layouts,
+                            optimize user workflow. Built in React and hosted with Firebase, Elephant Chart uses a simple serverless architecture.
+                        </p>
+                        <ul>
+                            <li>React and Context API & Reducer provide a state-management system suitable for high-velocity DOM updates.</li>
+
+                            <li>A Dynamic z-index layering system, allows the user to build a custom 'stack' of visual elements, with certain elements always 'in the back'.</li>
+
+                            <li>Hosted in Firebase, secure authorization via Google or standard email addresses ensures privacy for all users.</li>
+
+                            <li>A customizable backboard, note colors, and checkmark feature, help users stay productive and focused on their tasks.</li>
+                        </ul>
+                    </div>
+                    <div class="gallery-right-section">
+                        <a href="https://elephantchart.com" target="_blank">Elephant Chart</a>
+                        <span class="sub-items">POC used by Kloudlog</span>
+                        <!-- <span class="sub-items date">Dec 2022</span> -->
+                        <h4>Tech</h4>
+                        <ul class="tech-items">
+                            <li>React</li>
+                            <li>TypeScript</li>
+                            <li>SASS</li>
+                            <li>Node.js</li>
+                            <li>
+                                Firebase Auth & Storage</span>
+                            </li>
+                        </ul>
+                        <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/typescript--elephant-chart', target='_blank')">
+                            View GitHub Repo
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer"></div>
+
+            <!-- || Gallery4 Frame  -->
+
+            <div class="gallery-frame">
+                <div class="card--gallery">
+                    <div class="gallery-mat"></div>
+                    <div class="gallery-img-section">
+                        <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(4)"></button>
+                        <img id="gallery4-img" class="main-img" src="/images/gallery/delta/delta1.png" />
+                        <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight(4)"></button>
+                    </div>
+                </div>
+
+                <div class="card--gallery lower">
+                    <div class="card--gallery-inner lower-text">
+                        <p>
+                            Delta Trades is a stock market analyzer and user interface powered by Tradier’s API. It analyzes and automatically places
+                            transactions for the user. This project is currently under development in collaboration with another engineer. Coming
+                            soon is an Interface Pattern to facilitate the simultaneous connection and operation of multiple Brokerage API connections,
+                            enhancing the versatility and extensibility of the application.
+                        </p>
+                        <ul>
+                            <li>
+                                A Queue data structure and algorithm continuously analyzes the most recent 10 minutes of data in real-time.
+                            </li>
+                            <li>
+                                A Node server runs 10 asynchronous modules in series to analyze, process, log, and store data and transactions.
+                            </li>
+                            <li>
+                                The async coupling system runs the modules in series, allowing integration of middleware solutions.
+                            </li>
+                            <li>
+                                A logger module continuously dispatches updates to an alert manager, resulting in storage within a database.
+                            </li>
+                            <li>
+                                A React UI and candlestick-chart provide historical insights into the algorithm's performance, facilitating comprehensive testing and analysis.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gallery-right-section">
+                        <a href="https://github.com/ashthomasweb/delta-trades" target="_blank">Delta Trades</a>
+
+                        <span class="sub-items">in-development</span>
+                        <!-- <span class="sub-items date">Nov 2022</span> -->
+                        <h4>Tech & Patterns</h4>
+                        <ul class="tech-items">
+                            <li>React</li>
+                            <li>JavaScript</li>
+                            <li>Couplers</li>
+                            <li>Interface Pattern</li>
+                            <li>Factory Methods</li>
+                            <li>Subscribers</li>
+                        </ul>
+                        <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/delta-trades', target='_blank')">
+                            View GitHub Repo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer"></div>
+
+            <div class="gallery-frame">
+                <div class="card--gallery">
+                    <div class="gallery-mat"></div>
+                    <div class="gallery-img-section">
+                        <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(4)"></button>
+                        <img id="gallery4-img" class="main-img" src="/images/gallery/music-trainer/melody.jpg" />
+                        <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight(4)"></button>
+                    </div>
+                </div>
+
+                <div class="card--gallery lower">
+                    <div class="card--gallery-inner lower-text">
+                        <p>
+                            Leveraging JavaScript ES6, WebAudio API, and Garritan Instrument audio samples, this project delivers an infinite music
+                            generator and a web-based ear-training platform. Music theory principles are applied to generate voice-led SATB
+                            arrangements based on user guidelines.
+
+                            Covering essential subjects such as melody, relative pitch, pitch memory, tempo, and the concept of "Klangfarbenmelodie";
+                            the program aids students in honing their musical ear. This is my first programming project and like the UI, I was green,
+                            but the logic behind the arrangement generator is sound. I plan to revamp the UI and extend the code in the future.
+                        </p>
+                        <ul>
+                            <li>
+                                Featuring a mode that plays a single note across a randomized selection of orchestral instruments. This develops
+                                the ear to be sensitive to pitch regardless of the instrument.
+                            </li>
+                            <li>
+                                The arrangement generator has adjustments the user can make deciding what harmonies, key, length, repetitions,
+                                and modal changes that can be made.
+                            </li>
+                            <li>Future plans include a refactor of existing logic, a modern UI look and feel, and dynamically generated
+                                musical score for viewing and download.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gallery-right-section">
+                        <a href="https://ashthomasweb.github.io/personal--music-trainer/" target="_blank">Music Trainer & Generator</a>
+                        <span class="sub-items">in-backlog</span>
+                        <!-- <span class="sub-items date">Sep 2021</span> -->
+                        <h4>Tech</h4>
+                        <ul class="tech-items">
+                            <li>ES6</li>
+                            <li>WebAudio</li>
+                            <li>Local Storage</li>
+                        </ul>
+                        <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/personal--music-trainer', target='_blank')">
+                            View GitHub Repo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer"></div>
+
+            <div class="gallery-frame">
+                <div class="card--gallery">
+                    <div class="gallery-mat"></div>
+                    <div class="gallery-img-section">
+                        <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(4)"></button>
+                        <img id="gallery4-img" class="main-img" src="/images/gallery/orbiter/orbiter1.png" />
+                        <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight(4)"></button>
+                    </div>
+                </div>
+
+                <div class="card--gallery lower">
+                    <div class="card--gallery-inner lower-text">
+                        <p>
+                            Driven by my lifelong passion for space exploration, I used CSS and React to develop a 3D illusion of the main bodies in our solar system and their orbits. Using
+                            real planetary data, the bodies and their orbits are represented accurately and to scale. This is my way of exploring the 'final frontier' from my desk.
+                        </p>
+                        <ul>
+                            <li>
+                                CSS is used to create an imaging effect, giving the illusion of 3D space despite the underlying mechanism not being a true 3D environment.
+                            </li>
+                            <li>
+                                Positioning techniques accurately represent the scale and orbital angles of celestial bodies, with the background image
+                                sourced from the James Webb Telescope.
+                            </li>
+                            <li>
+                                The inner planets and Pluto are shown in relative proportions, while the gas giants and sun are scaled down for visibility.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gallery-right-section">
+                        <a href="https://orbiter-a7b41.web.app/" target="_blank">Solar Orbiter</a>
+                        <span class="sub-items">just for fun!</span>
+                        <!-- <span class="sub-items date">Nov 2022</span> -->
+                        <h4>Tech</h4>
+                        <ul class="tech-items">
+                            <li>React</li>
+                            <li>CSS</li>
+                        </ul>
+                        <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/orbiter', target='_blank')">
+                            View GitHub Repo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer"></div>
+
+            <!-- || Gallery8 Frame  -->
+
+            <div class="gallery-frame">
+                <div class="card--gallery">
+                    <div class="gallery-mat"></div>
+                    <div class="gallery-img-section">
+                        <button id="gallery-btn-8" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(8)"></button>
+                        <img id="gallery8-img" class="main-img" src="/images/gallery/logger/Capture1.png" />
+                        <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight(8)"></button>
+                    </div>
+                </div>
+
+                <div class="card--gallery lower">
+                    <div class="card--gallery-inner lower-text">
+                        <p>
+                            uLog is a lightweight test package for JavaScript and Node. Designed to verify function returns and log test data to a .txt file
+                            in the project directory. User efficiency is enhanced through color coded logs and helpful communication windows.
+                        </p>
+                        <ul>
+                            <li>
+                                Categorization of test runs, addition of notes to test logs, and indication of expected failures with Pass/Fail display enhance user experience.
+                            </li>
+                            <li>
+                                Color-coded logs and function definitions in the log output speed up the debugging process.
+                            </li>
+                            <li>
+                                Planned features include an options object for customizable output, aimed at further improving user experience and flexibility.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gallery-right-section">
+                        <a href="https://github.com/ashthomasweb/js--tdd" target="_blank">uLog</a>
+                        <span class="sub-items">workflow tool</span>
+                        <!-- <span class="sub-items date">Feb 2022</span> -->
+                        <h4>Tech</h4>
+                        <ul class="tech-items">
+                            <li>Node</li>
+                        </ul>
+                        <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/js--tdd', target='_blank')">
+                            View GitHub Repo
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer"></div>
+
+            <!-- || Gallery6 Frame  -->
+
+            <div class="gallery-frame">
+                <div class="card--gallery">
+                    <div class="gallery-mat"></div>
+                    <div class="gallery-img-section">
+                        <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(6)"></button>
+                        <img id="gallery6-img" class="main-img" src="/images/gallery/metaqdb/window-view.jpg" />
+                        <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight(6)"></button>
+                    </div>
+                </div>
+
+                <div class="card--gallery lower">
+                    <div class="card--gallery-inner lower-text">
+                        <p>
+                            MetaQuery DB is a desktop application facilitating queries across multiple databases through a single
+                            user interface. Designed to query various database providers from a single application window. Using
+                            Python and tKinter, the user can query from MongoDB Local, Mongo Atlas, MySQL Local, and ElephantSQL.
+                        </p>
+                        <ul>
+                            <li>
+                                Dependency Injection and an Interface Pattern provide extensibility to other databases.
+                            </li>
+                            <li>
+                                A three layer architecture allows for future UI enhancements without having to interact with the business logic
+                            </li>
+                            <li>
+                                The application connects to various databases with user credentials from a single application window.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gallery-right-section">
+                        <a href="https://github.com/ashthomasweb/python--metaquery-db" target="_blank">MetaQuery DB</a>
+                        <span class="sub-items">workflow tool</span>
+                        <!-- <span class="sub-items date">Oct 2021</span> -->
+                        <h4>Tech</h4>
+                        <ul class="tech-items">
+                            <li>Python</li>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                            <li>TKinter</li>
+                            <li>PyMongo</li>
+                        </ul>
+                        <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/python--metaquery-db', target='_blank')">
+                            View GitHub Repo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer"></div>
+
+            <div id="lower-switch-pane" class="project-header-wrapper bottom-pane">
+                <h3 id="project-header">Personal Projects</h3>
                 <label class="switch">
-                    <input id="top-switch-input" type="checkbox" onClick="toggleProjectPane(event)" />
-                    <span id="thanks-w3" class="slider"></span>
+                    <input id="lower-switch" type="checkbox" checked onClick="toggleProjectPane(event)" />
+                    <span class="slider"></span>
                 </label>
             </div>
-
-            <div class="professional-projects">
-                <div class="spacer"></div>
-
-                <!-- || Gallery12 Frame  -->
-                <div class="gallery-frame">
-                    <div class="card--gallery">
-                        <div class="gallery-mat" ></div>
-                        <div class="gallery-img-section">
-                            <button id="gallery-btn-12" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft('12')"></button>
-                            <img id="gallery12-img" class="main-img" src="/images/gallery/lake-level-viewer/llv-1.png" />
-                            <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight('12')"></button>
-                        </div>
-
-                    </div>
-
-                    <div class="card--gallery lower">
-                        <div class="card--gallery-inner lower-text">
-                            <p>The NOAA Great Lakes Level Viewer is a tool that's part of the inundation series of app's hosted by The Office for Coastal Management.
-                                I led the development team on this project while mentoring a junior developer. We interfaced with the Physical Scientists involved in
-                                the management of the data to ensure maximum integrity and accuracy of the simulations. The app was showcased to the US Congress and
-                                other government bodies with great reception.
-                            </p>
-                            <ul>
-                                <li>
-                                    Built a tool under federal directive for simulating shore inundations of the US Great Lakes.
-                                </li>
-                                <li>
-                                    Made publicly available for decision-making by city planners, residents, and civil engineers.
-                                </li>
-                                <li>
-                                    Utilized link sharing and dynamic application usage through base-64 strings appended to the URL allow users to share the exact location and water-level.
-                                </li>
-                                <li>
-                                    Utilized OpenLayers, Highcharts, and a pixel-rendering system to display various water levels on a variety of charts and map types.
-                                </li>
-                                <li>
-                                    Provided a Social Vulnerability layer for users via CDC API, and a Depth Query feature to query multiple points of water levles in the inundation zone or the shoreline.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="gallery-right-section">
-                            <a href="https://coast.noaa.gov/llv/#/13.00/-86.66/45.75/0.00/ft/LWD&search=eyJpc1NpZGViYXJPcGVuIjpmYWxzZSwiaXNDaGFydE9wZW4iOmZhbHNlLCJpc0NhbnZhc09wZW4iOmZhbHNlLCJjdXJyZW50U3RhdGlvbiI6bnVsbCwiY29vcmRzIjp7IngiOi04Ni42NTk5OTk5OTk5OTk5NywieSI6NDUuNzV9LCJ6b29tIjoxMywid2F0ZXJMZXZlbCI6MCwiaXNTcGxhc2hWaXNpYmxlIjp0cnVlLCJjdXJyZW50TGFrZSI6bnVsbCwiY3VycmVudERhdGFMYXllciI6IldhdGVyIExldmVsIiwic25hcHNob3RMb2NhdGlvbiI6IiIsImN1cnJlbnRMYWtlTGV2ZWxEYXRhIjpbeyJuYW1lIjoiQ2xhaXIiLCJmZWV0Ijo1NzUuMTYsIm1ldGVyIjoxNzUuMzF9LHsibmFtZSI6IkVyaWUiLCJmZWV0Ijo1NzIuMjgsIm1ldGVyIjoxNzQuNDN9LHsibmFtZSI6Ikh1cm9uIiwiZmVldCI6NTc5LjMzLCJtZXRlciI6MTc2LjU4fSx7Im5hbWUiOiJNaWNoaWdhbiIsImZlZXQiOjU3OS4zMywibWV0ZXIiOjE3Ni41OH0seyJuYW1lIjoiT250YXJpbyIsImZlZXQiOjI0NS4xMSwibWV0ZXIiOjc0LjcxfSx7Im5hbWUiOiJTdXBlcmlvciIsImZlZXQiOjYwMi4zLCJtZXRlciI6MTgzLjU4fV0sImN1cnJlbnRCYXNlbWFwIjoic2F0ZWxsaXRlIiwib3BhY2l0eUxldmVsIjo4MCwiZGF0dW0iOiJMV0QiLCJyZWNvcmRzQXZlcmFnZXNBY3RpdmUiOnRydWUsInVzZXJEYXRlIjpudWxsLCJjdXJyZW50U3RhdGlvbkZlYXR1cmVzIjp7Imxha2UiOiIiLCJud3NNaW5vciI6bnVsbCwibndzTW9kZXJhdGUiOm51bGwsIm53c01ham9yIjpudWxsfSwicXVlcnlPcHRpb25zIjp7Im5hbWUiOm51bGwsImlkIjpudWxsLCJzdGF0ZSI6bnVsbH0sImN1cnJlbnRMYWtlRGF0YSI6eyJuYW1lIjpudWxsLCJhdmdMdmwiOm51bGwsIm1pbkx2bCI6bnVsbCwibWF4THZsIjpudWxsLCJMV0QiOm51bGwsImN1ckx2bCI6bnVsbH0sInVuaXQiOiJmdCJ9"
-                                target="_blank">NOAA Lake Level Viewer</a>
-                            <span class="sub-items">in-production</span>
-                            <h4>Tech</h4>
-                            <ul class="tech-items">
-                                <li>React</li>
-                                <li>OpenLayers</li>
-                                <li>HighCharts</li>
-                                <li>SASS</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="spacer"></div>
-
-
-                <!-- || Gallery13 Frame  -->
-                <div class="gallery-frame">
-                    <div class="card--gallery">
-                        <div class="gallery-mat" ></div>
-                        <div class="gallery-img-section">
-                            <button id="gallery-btn-13" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft('13')"></button>
-                            <img id="gallery13-img" class="main-img" src="/images/gallery/enow/enow-2.png" />
-                            <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight('13')"></button>
-                        </div>
-                    </div>
-
-                    <div class="card--gallery lower">
-                        <div class="card--gallery-inner lower-text">
-
-                            <p>The NOAA Economic Ocean Watch Explorer (ENOW) displays data on all the coastal states and counties of the Continental United States, as well as six US Territories. The same
-                                data is also served
-                                to a tool called Ocean Reports that allows users to filter and download the data in csv formats. Spanning sectors from Tourism and Recreation, to Offshore Mining, to Ship
-                                Building and Construction,
-                                ENOW allows users to gather comprehensive data on their state, county, or territory
-                            </p>
-                            <ul>
-                                <li>
-                                    Explore over 15 years of economic data for coastal communities, including 6 U.S. Territories.
-                                </li>
-                                <li>
-                                    Featuring a seamless user experience with a responsive single-page application that dynamically parses and displays data using HighCharts.
-                                </li>
-                                <li>
-                                    Spans six economic sectors and four data categories across 30 coastal states, 400+ marine counties over 16 years, and in a recent update, covers data on six US
-                                    Territories from the last three years.
-                                </li>
-                                <li>
-                                    The tool offers more than 165,000 unique data combinations, enabling tailored data exploration to suit diverse needs.
-                                </li>
-                                <li>
-                                    Each combination of data is shown on three interactive charts and a statistics panel, offering over 660,000 distinct views to support social and economic professionals
-                                    in understanding community dynamics.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="gallery-right-section">
-                            <a class="entry-header" href="https://coast.noaa.gov/enowexplorer/" target="_blank">NOAA ENOW Explorer<br />Economic National Ocean Watch</a>
-                            <span class="sub-items">in-production</span>
-                            <h4>Tech</h4>
-                            <ul class="tech-items">
-                                <li>React</li>
-                                <li>HighCharts</li>
-                                <li>SASS</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="spacer"></div>
-
-                <!-- || Gallery7 Frame  -->
-                <div class="gallery-frame">
-                    <div class="card--gallery">
-                        <div class="gallery-mat" ></div>
-                        <div class="gallery-img-section">
-                            <h3 style="margin: 25px 0 5px; font-size: 36px">Kloudlog</h3>
-                            <h4>Graphical User Interface for Infrastructure as Code</h4>
-                            <h5>Terraform - Google Cloud Platform</h5>
-                            <img style="width: 200px; margin: 20px 0 0" src="/images/gallery/kloudlog/kloudlog.png" />
-                        </div>
-                    </div>
-
-                    <div class="card--gallery lower">
-                        <div class="card--gallery-inner lower-text">
-                            <p>
-                                At Kloudlog, I spearheaded the development of a full-stack React application that enables visual creation and editing of GCP resources such as
-                                Storage Buckets, Compute Engines, and Virtual Machines using a custom drag-and-drop interface. The user is able to create, test, and run various
-                                Terraform configurations of infrastructure modules.
-                            </p>
-                            <ul>
-                                <li>
-                                    Seamlessly integrates Terraform infrastructure, allowing users to build and manage GCP resources within a visually intuitive environment.
-                                </li>
-                                <li>
-                                    Engineered using multiple Context/Reducers, the app is fully reactive and performant.
-                                </li>
-                                <li>
-                                    Features custom-built SVG drag-and-drop system for enhanced interactivity, with functional access-points to Redux actions at each stage of the drag-and-drop.
-                                </li>
-                                <li>
-                                    User experience is enhanced with features like persistent action history, visual customization options, and a change-log system akin to popular version control
-                                    platforms.
-                                </li>
-                                <li>
-                                    Real-time data updates are delivered via websocket, ensuring users always have the latest information at their fingertips.
-                                </li>
-                                <li>
-                                    Developed in a Microservices architecture to segregate application layers for optimal performance and scalability.
-                                </li>
-                            </ul>
-
-                        </div>
-                        <div class="gallery-right-section">
-                            <a>Kloudlog</a>
-                            <span class="sub-items">in-development</span>
-                            <h4>Tech</h4>
-                            <ul class="tech-items">
-                                <li>React</li>
-                                <li>TypeScript</li>
-                                <li>SASS</li>
-                                <li>Terraform</li>
-                                <li>Node.js</span>
-                                <li>GCP</li>
-                                <li>Firebase</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="spacer"></div>
-
-                <!-- || Gallery5 Frame  -->
-
-                <div class="gallery-frame">
-                    <div class="card--gallery">
-                        <div class="gallery-mat" ></div>
-                        <div class="gallery-img-section">
-                            <button id="gallery-btn-5" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(5)"></button>
-                            <img id="gallery5-img" class="main-img" src="/images/gallery/wyldgreens/Capture1.png" />
-                            <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight(5)"></button>
-                        </div>
-                    </div>
-
-                    <div class="card--gallery lower">
-                        <div class="card--gallery-inner lower-text">
-                            <p>Wyldgreens is a custom built single page layout that guides the customer through learning about the product/service, selecting products,
-                                and placing an order. I designed it to be user friendly while maintaining a unified presentation across all devices. I collaborated with
-                                a UX writer to make the copy instructive and compelling, while being as efficient as possible to ensure no content loss on mobile.</p>
-                            <ul>
-                                <li>
-                                    Designed and built a custom layout for a specialty-food delivery client, focusing on mobile usability and a unified presentation across all devices.
-                                </li>
-                                <li>
-                                    Collaborated with a UX writer to ensure consistent site language and microcopy, meeting the client's request for a single-page layout without content loss on mobile.
-                                </li>
-                                <li>
-                                    Wyldgreens serves as a Landing, About, Product, and Order page in one, featuring parallax effects on desktop and a Colorado mountain scene for brand identity.
-                                </li>
-                                <li>
-                                    Implemented custom CSS, JavaScript animations, and form functionality to enhance user experience.
-                                </li>
-                                <li>
-                                    Leveraged a Node server to automate order responses with customizable templates, streamlining business operations.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="gallery-right-section">
-                            <a href="https://wyldgreens.herokuapp.com" target="_blank">Wyldgreens</a>
-                            <span class="sub-items">in-production</span>
-                            <h4>Tech</h4>
-                            <ul class="tech-items">
-                                <li>JavaScript</li>
-                                <li>Node.js</li>
-                                <li>Express</li>
-                                <li>Nodemailer</li>
-                                <li>HTML/CSS</li>
-                            </ul>
-                            <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/client--wyldgreens', target='_blank')">
-                                View GitHub Repo
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- || Gallery1 Frame  -->
-                <div class="spacer"></div>
-
-                <div class="gallery-frame">
-                    <div class="card--gallery">
-                        <div class="gallery-mat" ></div>
-                        <div class="gallery-img-section">
-                            <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(1)"></button>
-                            <img id="gallery1-img" class="main-img" src="/images/gallery/loose-leash-dog/lld-capture.png" />
-                            <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight(1)"></button>
-                        </div>
-                    </div>
-
-                    <div class="card--gallery lower">
-                        <div class="card--gallery-inner lower-text">
-                            <p>A vibrant website tailored for a sole proprietor whose business was previously confined to Instagram. This restriction limited access to potential
-                                clients and hindered further monetization opportunities. Using the LumberJack theme we seamlessly integrated existing business traffic, amplified
-                                link-through rates and offered audiences access to a wealth of additional materials and monetizable content- all on a single platform.</p>
-                            <ul>
-                                <li>
-                                    Designed with 'friendly' elements that resonate with the essence of the business' mission statement, cultivating a 'brand sense' that deeply connects with our target
-                                    demographics.
-                                </li>
-                                <li>
-                                    Embracing mobile-friendly content creation, we empowered the business owner to craft content effortlessly from any location with internet access, enhancing efficiency
-                                    and flexibility.
-                                </li>
-                                <li>
-                                    Built with the Lumberjack reusable template, I was able to quickly bring the customer’s branding and product offerings to a production site.
-                                </li>
-                                <li>
-                                    Showcases the business owners most recent Instagram photos and posts, with click through links, further connecting her audience.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="gallery-right-section">
-                            <a href="https://www.looseleashdog.com" target="_blank">Loose Leash Dog</a>
-                            <span class="sub-items">in-production</span>
-                            <h4>Tech</h4>
-                            <ul class="tech-items">
-                                <li>Node.js</li>
-                                <li>Express</li>
-                                <li>EJS</li>
-                                <li>Prismic</li>
-                                <li>Curator</li>
-                                <li>HTML/CSS</li>
-                            </ul>
-                            <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/client--looseleashdog.com', target='_blank')">
-                                View GitHub Repo
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="spacer"></div>
-
-                <!-- || Gallery3 Frame  -->
-
-                <div class="gallery-frame">
-                    <div class="card--gallery">
-                        <div class="gallery-mat" ></div>
-                        <div class="gallery-img-section">
-                            <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(3)"></button>
-                            <img id="gallery3-img" class="main-img" src="/images/gallery/lumber/capture.png" />
-                            <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight(3)"></button>
-                        </div>
-                    </div>
-
-                    <div class="card--gallery lower">
-                        <div class="card--gallery-inner lower-text">
-                            <p>
-                                "LumberJack" is a Full Stack template developed for small businesses and social media creators. The theme integrates third-party services to
-                                eliminate issues associated with code-heavy CMS platforms. Featuring a headless CMS, a multi-network aggregator, and automatic email responses
-                                thru NodeMailer - LumberJack's needs for maintenance and updates are low- giving clients more time to focus on what truly matters, their business.
-                                Designed for developers to quickly take a customer's brand identity and place it in a fully functional template, complete with in-code documentation.
-                            </p>
-                            <ul>
-                                <li>
-                                    LumberJack seamlessly integrates third-party services, streamlining the client’s website functionality.
-                                </li>
-                                <li>
-                                    Presented in a visually striking two-color brand scheme, complemented by highly legible greyscale.
-                                </li>
-                                <li>
-                                    LumberJack's versatile card elements, which are modular and customizable, offer endless possibilities in terms of configuration, color schemes, and sizes.
-                                </li>
-                                <li>
-                                    Curator allows clients to effortlessly build feeds from multiple networks, fostering cross-network audience engagement and expanding their reach.
-                                </li>
-                                <li>
-                                    LumberJack's integration of EJS and Prismic for generating dynamic content make blogging easy and accessible from anywhere the client happens to be.
-                                </li>
-                        </div>
-                        <div class="gallery-right-section">
-                            <a href="https://lumberjack-theme.herokuapp.com/" target="_blank">LumberJack Theme</a>
-                            <span class="sub-items">in-production</span>
-                            <h4>Tech</h4>
-                            <ul class="tech-items">
-                                <li>Node.js</li>
-                                <li>Express</li>
-                                <li>EJS</li>
-                                <li>Prismic</li>
-                                <li>Curator</li>
-                                <li>NodeMailer</li>
-                            </ul>
-                            <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/template--lumberjack', target='_blank')">
-                                View GitHub Repo
-                            </button>
-                        </div>
-                    </div>
-                </div>
-               
-                <br />
-            </div>
-            <div class="personal-projects" data-display="false">
-                <!-- <h3>Personal Projects</h3> -->
-                <div class="spacer"></div>
-
-                <!-- || Gallery11 Frame  -->
-                <div class="gallery-frame">
-                    <div class="card--gallery">
-                        <div class="gallery-mat" ></div>
-                        <div class="gallery-img-section">
-                            <button id="gallery-btn-11" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(11)"></button>
-                            <img id="gallery11-img" class="main-img" src="/images/gallery/codestasher/Capture.png" />
-                            <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight(11)"></button>
-                        </div>
-                    </div>
-
-                    <div class="card--gallery lower" >
-                        <div class="card--gallery-inner lower-text">
-                            <p>
-                                Codestasher offers a comprehensive solution for organizing and managing reusable code snippets. Each entry is capable of housing multiple code snippets designated to
-                                various
-                                files. With a single click, users can swiftly copy their code to the clipboard, facilitating productivity and modularity in their workflow. Built in TypeScript React,
-                                hosted,
-                                authenticated, and stored with Firebase.
-                            </p>
-                            <ul>
-                                <li>
-                                    With four levels of nesting available, users can meticulously structure their code entries to suit their needs efficiently.
-                                </li>
-                                <li>
-                                    Codestasher's intuitive drag-and-drop feature, allows seamless movement of entries between categories for optimal organization.
-                                </li>
-                                <li>
-                                    By incorporating the Ace Editor library, syntax highlighting and essential editor functionalities for enhanced coding precision are available to the user.
-                                </li>
-                                <li>
-                                    Codestasher supports multiple languages within each entry, ensuring accurate highlighting tailored to your coding requirements.
-                                </li>
-                                <li>
-                                    Features a developer-friendly dark theme, similar to that of native VSCode.
-                                </li>
-                        </div>
-                        <div class="gallery-right-section">
-                            <a href="https://codestasher.com" target="_blank">Codestasher</a>
-                            <span class="sub-items">in-production</span>
-                            <h4>Tech</h4>
-                            <ul class="tech-items">
-                                <li>React</li>
-                                <li>Firebase</li>
-                                <li>Sass</li>
-                                <li>Ace Editor</li>
-                            </ul>
-                            <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/devport', target='_blank')">
-                                View GitHub Repo
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="spacer"></div>
-
-                
-                <!-- || Gallery14 Frame  -->
-                <div class="gallery-frame">
-                    <div class="card--gallery">
-                        <div class="gallery-mat" ></div>
-                        <div class="gallery-img-section">
-                            <button id="gallery-btn-14" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(14)"></button>
-                            <img id="gallery14-img" class="main-img" src="/images/gallery/hal/hal-1.png" />
-                            <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight(14)"></button>
-                        </div>
-                    </div>
-
-                    <div class="card--gallery lower" >
-                        <div class="card--gallery-inner lower-text">
-                            <p>
-                                Built in Node using the Inquirer library, 'Hal' is a command line interface tool to store and create reusable components 
-                                for popular JS web libraries. Featuring an interactive CLI, the user can create entire new app builds, or pick and choose 
-                                individual components to load into their codebase. The application handles the busy work of creating new builds and components.
-                            </p>
-                            <ul>
-                                <li>
-                                    Published on npm and available as a global installation, user's can enhance their workflow in any project on their computer. 
-                                </li>
-                                <li>
-                                    Reusable components can be manually loaded into a user's codebase. Minimal commenting allows for the file's import connections to be updated.
-                                </li>
-                                <li>
-                                    User can navigate their computer codebase and create new directories.
-                                </li>
-                                <li>
-                                    Future plans include, installable packages for popular libraries, single-line statements with flags, and importing multiple components simultaneously.
-                                </li>
-                        </div>
-                        <div class="gallery-right-section">
-                            <a href="https://www.npmjs.com/package/@ashthomascode/hal" target="_blank">Hal CLI</a>
-                            <span class="sub-items">available on npm</span>
-                            <h4>Tech</h4>
-                            <ul class="tech-items">
-                                <li>Node</li>
-                                <li>Inquirer</li>
-                                <li>FS</li>
-                            </ul>
-                            <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/component-library', target='_blank')">
-                                View GitHub Repo
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="spacer"></div>
-
-                <!-- || Gallery7 Frame  -->
-                <div class="gallery-frame">
-                    <div class="card--gallery">
-                        <div class="gallery-mat" ></div>
-                        <div class="gallery-img-section">
-                            <button id="gallery-btn-7" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(7)"></button>
-                            <img id="gallery7-img" class="main-img" src="/images/gallery/elephant-chart/EC6.png" />
-                            <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight(7)"></button>
-                        </div>
-                    </div>
-
-                    <div class="card--gallery lower">
-                        <div class="card--gallery-inner lower-text">
-                            <p>
-                                Elephant Chart is a streamlined organization tool. The tray system provides a dedicated space for supplementary information alongside user notes. It’s intuitive
-                                drag-and-drop
-                                feature, complemented by the ability to save custom charts and layouts optimize user workflow. Built in React and hosted with Firebase, Elephant Chart uses a simple
-                                serverless architecture.
-                            </p>
-                            <ul>
-                                <li>
-                                    Firebase provides authorization and secure data storage, Elephant Chart offers login via Google or standard email addresses, ensuring accessibility and privacy for all
-                                    users.
-                                </li>
-                                <li>
-                                    With movable visual containers within Elephant Chart, facilitates grouping and layering to meet your organizational requirements.
-                                </li>
-                                <li>
-                                    Developed with React using the Context API & Reducer for extensibility and scalability.
-                                </li>
-                                <li>
-                                    Users' ability to group and maneuver notes with the 'Mat' function, enhances organizational efficiency.
-                                </li>
-                                <li>
-                                    Customizable backboard and note colors with the ability to individually check off notes, Elephant Chart empowers users to stay productive and focused on their tasks.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="gallery-right-section">
-                            <a href="https://elephantchart.com" target="_blank">Elephant Chart</a>
-                            <span class="sub-items">POC used by Kloudlog</span>
-                            <h4>Tech</h4>
-                            <ul class="tech-items">
-                                <li>React</li>
-                                <li>TypeScript</li>
-                                <li>SASS</li>
-                                <li>Node.js</li>
-                                <li>
-                                    Firebase Auth & Storage</span>
-                                </li>
-                            </ul>
-                            <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/typescript--elephant-chart', target='_blank')">
-                                View GitHub Repo
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="spacer"></div>
-
-                <!-- || Gallery4 Frame  -->
-
-                <div class="gallery-frame">
-                    <div class="card--gallery">
-                        <div class="gallery-mat" ></div>
-                        <div class="gallery-img-section">
-                            <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(4)"></button>
-                            <img id="gallery4-img" class="main-img" src="/images/gallery/delta/delta1.png" />
-                            <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight(4)"></button>
-                        </div>
-                    </div>
-
-                    <div class="card--gallery lower">
-                        <div class="card--gallery-inner lower-text">
-                            <p>
-                                Stockbot is a stock market analyzer and user interface powered by Tradier’s API. It analyzes and automatically places transactions for the user.
-                                This project is currently under development in collaboration with another engineer. Coming soon is an Interface Pattern to facilitate the simultaneous
-                                connection and operation of multiple Investor API Clients, enhancing the versatility and scalability of the application.
-                            </p>
-                            <ul>
-                                <li>
-                                    A user-friendly React UI and candlestick-chart interface provide historical insights into the algorithm's performance, facilitating comprehensive testing and analysis.
-                                </li>
-                                <li>
-                                    Using Node, 10 asynchronous modules work in series to analyze, process, log, and store data and transactions.
-                                </li>
-                                <li>
-                                    The async coupling system runs the modules in series, allowing integration of middleware solutions.
-                                </li>
-                                <li>
-                                    A logger module continuously dispatches updates to an alert manager, resulting in storage within a database.
-                                </li>
-                                <li>
-                                    Uses a Queue data structure and algorithm continuously analyzes the most recent 10 minutes of data in real-time.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="gallery-right-section">
-                            <a href="https://github.com/ashthomasweb/delta-trades" target="_blank">Delta Trades</a>
-
-                            <span class="sub-items">in-development</span>
-                            <h4>Tech & Patterns</h4>
-                            <ul class="tech-items">
-                                <li>React</li>
-                                <li>JavaScript</li>
-                                <li>Couplers</li>
-                                <li>Interface Pattern</li>
-                                <li>Factory Methods</li>
-                                <li>Subscribers</li>
-                            </ul>
-                            <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/delta-trades', target='_blank')">
-                                View GitHub Repo
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="spacer"></div>
-
-                <div class="gallery-frame">
-                    <div class="card--gallery">
-                        <div class="gallery-mat" ></div>
-                        <div class="gallery-img-section">
-                            <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(4)"></button>
-                            <img id="gallery4-img" class="main-img" src="/images/gallery/music-trainer/melody.jpg" />
-                            <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight(4)"></button>
-                        </div>
-                    </div>
-
-                    <div class="card--gallery lower">
-                        <div class="card--gallery-inner lower-text">
-                            <ul>
-                                <li>
-                                    Leveraging JavaScript ES6 and the WebAudio API, this project delivers a web-based ear-training platform and an infinite music generator. Designed to aid students in
-                                    honing their musical ear, the tools cover essential subjects such as melody, relative pitch, pitch memory, and tempo.
-                                </li>
-                                <li>
-                                    While the Music Generator initially started as a passion project, its underlying logic effectively addresses various musical challenges. With further development, the
-                                    aim is to showcase the expressive power of musical structures, commonly referred to as 'music theory', by enabling them to 'speak' autonomously.
-                                </li>
-                                <li>
-                                    The Melodic Trainer serves as a valuable tool for musical development, targeting a skill that is often challenging to systematically practice. Centered around the
-                                    concept of "klangfarbenmelodie", where a single note is expressed through different tones and instruments, this trainer fosters sensitivity to pitch by randomizing
-                                    playback across multiple orchestral instrument choices. This approach expands the student's auditory palette beyond familiar instruments, enriching their musical
-                                    understanding.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="gallery-right-section">
-                            <a href="https://ashthomasweb.github.io/personal--music-trainer/" target="_blank">Music Trainer & Generator</a>
-                            <span class="sub-items">in-backlog</span>
-                            <h4>Tech</h4>
-                            <ul class="tech-items">
-                                <li>ES6</li>
-                                <li>WebAudio</li>
-                                <li>Local Storage</li>
-                            </ul>
-                            <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/personal--music-trainer', target='_blank')">
-                                View GitHub Repo
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="spacer"></div>
-
-                <div class="gallery-frame">
-                    <div class="card--gallery">
-                        <div class="gallery-mat" ></div>
-                        <div class="gallery-img-section">
-                            <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(4)"></button>
-                            <img id="gallery4-img" class="main-img" src="/images/gallery/orbiter/orbiter1.png" />
-                            <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight(4)"></button>
-                        </div>
-                    </div>
-
-                    <div class="card--gallery lower">
-                        <div class="card--gallery-inner lower-text">
-                            <p>
-                                Driven by my lifelong passion for space exploration, I used CSS and React to develop a 3D illusion of the main bodies in our solar system and their orbits. Using real
-                                planetary data, the bodies and their orbits are represented accurately and to scale. This is my way of exploring the 'final frontier' from my desk.
-                            </p>
-                            <ul>
-                                <li>
-                                    Implemented an imaging effect using a combination of CSS and React, creating a 3D illusion of planetary orbits despite the underlying mechanism not being true 3D space.
-                                </li>
-                                <li>
-                                    Utilized positioning techniques to accurately represent the scale and orbital angles of celestial bodies, with the background image sourced from the James Webb
-                                    Telescope.
-                                </li>
-                                <li>
-                                    The inner planets and Pluto are shown in relative proportions, while the gas giants and sun are scaled down for visibility.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="gallery-right-section">
-                            <a href="https://orbiter-a7b41.web.app/" target="_blank">Solar Orbiter</a>
-                            <span class="sub-items">just for fun!</span>
-                            <h4>Tech</h4>
-                            <ul class="tech-items">
-                                <li>React</li>
-                                <li>CSS</li>
-                            </ul>
-                            <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/orbiter', target='_blank')">
-                                View GitHub Repo
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="spacer"></div>
-
-                <!-- || Gallery8 Frame  -->
-
-                <div class="gallery-frame">
-                    <div class="card--gallery">
-                        <div class="gallery-mat" ></div>
-                        <div class="gallery-img-section">
-                            <button id="gallery-btn-8" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(8)"></button>
-                            <img id="gallery8-img" class="main-img" src="/images/gallery/logger/Capture1.png" />
-                            <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight(8)"></button>
-                        </div>
-                    </div>
-
-                    <div class="card--gallery lower" >
-                        <div class="card--gallery-inner lower-text">
-                            <p>
-                                uLog is a lightweight test package for JavaScript and Node.js, designed to verify function returns and log test data to a .txt file in the project directory.
-                                User efficiency is enhanced through color coded logs and helpful communication windows.
-                            </p>
-                            <ul>
-                                <li>
-                                    Implemented user-friendly features including categorization of test runs, addition of notes to test logs, and indication of expected failures with Pass/Fail display.
-                                </li>
-                                <li>
-                                    Enhanced usability with color-coded logs for easy problem identification, including function definitions in the log output.
-                                </li>
-                                <li>
-                                    Planned features include an options object for customizable output, aimed at further improving user experience and flexibility.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="gallery-right-section">
-                            <a href="https://github.com/ashthomasweb/js--tdd" target="_blank">uLog</a>
-                            <span class="sub-items">workflow tool</span>
-                            <h4>Tech</h4>
-                            <ul class="tech-items">
-                                <li>Node</li>
-                            </ul>
-                            <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/js--tdd', target='_blank')">
-                                View GitHub Repo
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="spacer"></div>
-
-                <!-- || Gallery6 Frame  -->
-
-                <div class="gallery-frame">
-                    <div class="card--gallery">
-                        <div class="gallery-mat" ></div>
-                        <div class="gallery-img-section">
-                            <button id="gallery-btn-l" class="gallery-btn g-btn-left" type="button" onmousedown="galleryLeft(6)"></button>
-                            <img id="gallery6-img" class="main-img" src="/images/gallery/metaqdb/window-view.jpg" />
-                            <button id="gallery-btn-r" class="gallery-btn g-btn-right" type="button" onmousedown="galleryRight(6)"></button>
-                        </div>
-                    </div>
-
-                    <div class="card--gallery lower">
-                        <div class="card--gallery-inner lower-text">
-                            <p>
-                                MetaQuery DB is a desktop application facilitating queries across multiple databases through a unified user interface.
-                                Designed to query various database providers from a single application window. Using Python and tKinter, in conjunction
-                                with an Interface Pattern, can query from MongoDB Local, Mongo Atlas, MySQL Local, and ElephantSQL.
-                            </p>
-                            <ul>
-                                <li>
-                                    Utilized dependency injection and a software interface pattern for extensibility to other databases.
-                                </li>
-                                <li>
-                                    The application connects to various databases with user credentials from a single application window.
-                                </li>
-                                <li>
-                                    A three layer architecture allows for future UI enhancements without having to interact with the business logic
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="gallery-right-section">
-                            <a href="https://github.com/ashthomasweb/python--metaquery-db" target="_blank">MetaQuery DB</a>
-                            <span class="sub-items">workflow tool</span>
-                            <h4>Tech</h4>
-                            <ul class="tech-items">
-                                <li>Python</li>
-                                <li>MySQL</li>
-                                <li>MongoDB</li>
-                                <li>TKinter</li>
-                                <li>PyMongo</li>
-                            </ul>
-                            <button class="github-btn" type="button" onclick="window.open('https://github.com/ashthomasweb/python--metaquery-db', target='_blank')">
-                                View GitHub Repo
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="spacer"></div>
-
-                <div id="lower-switch-pane" class="project-header-wrapper bottom-pane">
-                    <h3 id="project-header">Personal Projects</h3>
-                    <label class="switch">
-                        <input id="lower-switch" type="checkbox" checked onClick="toggleProjectPane(event)" />
-                        <span class="slider"></span>
-                    </label>
-                </div>
-                <br />
-            </div>
-        </section>
-
-        <div class="banner bottom">
-            <div>
-                <h2 class="banner-title">Preferred Languages and Technologies</h2>
-            </div>
+            <br />
         </div>
+    </section>
 
-        <section class="skills-parent">
-            <div class="skills-container">
-                <div class="inner-skill-container">
-                    <div class="inner2-skill-container">
-                        <div class="skill-row-left">
-                            <p class="skill-text">
-                                React<br />
-                                Angular<br />
-                                Python<br />
-                                Node
-                            </p>
-                        </div>
-                    </div>
+    <div class="banner bottom">
+        <div>
+            <h2 class="banner-title">Preferred Languages and Technologies</h2>
+        </div>
+    </div>
 
-                    <div class="inner2-skill-container">
-                        <div class="skill-row-center">
-                            <p class="skill-text">
-                                JavaScript<br />
-                                TypeScript<br />
-                                OpenLayers<br />
-                                Highcharts
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="inner2-skill-container on-break">
-                        <div class="skill-row-center">
-                            <p class="skill-text">
-                                Firebase<br />
-                                SQL<br />
-                                NoSQL<br />
-                                Express<br />
-                            </p>
-                        </div>
+    <section class="skills-parent">
+        <div class="skills-container">
+            <div class="inner-skill-container">
+                <div class="inner2-skill-container">
+                    <div class="skill-row-left">
+                        <p class="skill-text">
+                            React<br />
+                            Angular<br />
+                            Python<br />
+                            Node
+                        </p>
                     </div>
                 </div>
-        </section>
 
-        <div class="banner">
-            <div>
-                <h2 class="text-only-full-cell">
-                    <em>Clearly delivering information is the key to success.</em>
-                </h2>
+                <div class="inner2-skill-container">
+                    <div class="skill-row-center">
+                        <p class="skill-text">
+                            JavaScript<br />
+                            TypeScript<br />
+                            OpenLayers<br />
+                            Highcharts
+                        </p>
+                    </div>
+                </div>
+
+                <div class="inner2-skill-container on-break">
+                    <div class="skill-row-center">
+                        <p class="skill-text">
+                            Firebase<br />
+                            SQL<br />
+                            NoSQL<br />
+                            Express<br />
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
+    </section>
 
-        <footer></footer>
+    <div class="banner">
+        <div>
+            <h2 class="text-only-full-cell">
+                <em>Clearly delivering information is the key to success.</em>
+            </h2>
+        </div>
+    </div>
+
+    <footer></footer>
 
     <script src="index.js" charset="utf-8"></script>
 </body>
